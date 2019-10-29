@@ -59,37 +59,52 @@ User.init({
 Параметры
 1) {force: true} - удалить сущность и создать заного
 ```js
-sequelize.sync(?параметр).then((result) => ...).catch((err)=> ...);
+sequelize.sync(?параметр)
+	.then((result) => ...)
+	.catch((err)=> ...);
 ```
 #### Добавить сущность
 ```js
-User.create({name: myName, age: 30}).then((data)=> ...).catch((err)=> ...)
+User.create({name: myName, age: 30})
+	.then((data)=> ...)
+	.catch((err)=> ...)
 ```
 
 #### Получить все данные по сущностям User в виде объекта
 ```js
-User.findAll({raw: true }).then((data)=> ...).catch((err)=> ...)
+User.findAll({raw: true })
+	.then((data)=> ...)
+	.catch((err)=> ...)
 ```
 
 #### Получить сущность по номеру
 ```js
-User.findByPk(2).then((data)=> ...).catch((err)=> ...)
+User.findByPk(2)
+	.then((data)=> ...)
+	.catch((err)=> ...)
 ```
 
 #### Получить сущность по имени
 ```js
-User.findAll({where:{name: "Tom"}, raw: true }).then((data)=> ...).catch((err)=> ...)
+User.findAll({where:{name: "Tom"}, raw: true })
+	.then((data)=> ...)
+	.catch((err)=> ...)
 ```
 
 ####  Обновить свойства age у всех объектов с именем myName
 ```js
-User.update({ age: 36 }, {where: {name: myName}}).then((data)=> ...).catch((err)=> ...)
+User.update({ age: 36 }, {where: {name: myName}})
+	.then((data)=> ...)
+	.catch((err)=> ...)
 ```
 
 #### Удалить сущность c именем myName
 ```js
-User.destroy({where: {name: myName}}).then((data)=> ...).catch((err)=> ...)
+User.destroy({where: {name: myName}})
+	.then((data)=> ...)
+	.catch((err)=> ...)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzIzMjEwNDddfQ==
+eyJoaXN0b3J5IjpbLTE1MzE0NTA4NTksLTE0MzIzMjEwNDddfQ
+==
 -->
