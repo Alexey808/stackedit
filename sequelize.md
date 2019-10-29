@@ -101,10 +101,10 @@ User.update({ age: 36 }, {where: {name: myName}})
 #### Удалить сущность c именем myName
 ```js
 User.destroy({where: {name: myName}})
-	.then((data)=> ...)
-	.catch((err)=> ...)
+.then((data)=> ...)
+.catch((err)=> ...)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzE0NTA4NTksLTE0MzIzMjEwNDddfQ
-==
+eyJoaXN0b3J5IjpbLTI3ODkwMTQ4MywtMTUzMTQ1MDg1OSwtMT
+QzMjMyMTA0N119
 -->
