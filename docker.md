@@ -31,10 +31,10 @@ docker rm -f $(docker ps -a -q)`
 **Контейнер (закрываемый вместе с процессом)**  
 `docker run -ti ...`
 
-****  
+**Список контейнеров**  
 `docker ps`
 
-**Посмот**  
+**Список имеджей**  
 `docker images`
 
 **Основная очистка**  
@@ -56,5 +56,5 @@ docker rm -f $(docker ps -a -q)`
 `sudo chown -R $(whoami) /usr/local/bin`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA0NjEyODksMTQyMTgwNjA0XX0=
+eyJoaXN0b3J5IjpbMjA5NzA2MzExNywxNDIxODA2MDRdfQ==
 -->
