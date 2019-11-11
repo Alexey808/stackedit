@@ -13,20 +13,16 @@ ENTRYPOINT [“/app/tomcat/catalina.sh”]  # запускать исполня�
 ```
 
 **Удалить image**  
-`terminal
-docker rmi image_name:tag`
+`docker rmi image_name:tag`
 
 **Удалить все images**  
-`terminal
-docker rmi $(docker images -a -q)`
+`docker rmi $(docker images -a -q)`
 
 **Удалить container**  
-`terminal
-docker rm id_или_name`
+`docker rm id_или_name`
 
 **Удалить все контейнеры**  
-`terminal
-docker rm -f $(docker ps -a -q)`
+`docker rm -f $(docker ps -a -q)`
 
 **Контейнер (закрываемый вместе с процессом)**  
 `docker run -ti ...`
@@ -56,5 +52,6 @@ docker rm -f $(docker ps -a -q)`
 `sudo chown -R $(whoami) /usr/local/bin`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NzA2MzExNywxNDIxODA2MDRdfQ==
+eyJoaXN0b3J5IjpbLTEwNzAwNjM4NTksMjA5NzA2MzExNywxND
+IxODA2MDRdfQ==
 -->
