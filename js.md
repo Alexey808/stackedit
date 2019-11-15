@@ -20,6 +20,10 @@ void function aRecursion(i) {
 ```
 
     enter code here
+    dsds
+    dsds
+	    ewew
+		    ewe
 
 **Анонимные функции | Паттерн IIFE**
 ```js
@@ -54,5 +58,5 @@ console.log(Sequence.getNextValue()); // 2
 console.log(Sequence.getCurrentValue()); // 2
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE0MjU4OTg0LC0xNjMyNTcyODE3XX0=
+eyJoaXN0b3J5IjpbMTUxNzU1Mzk1NSwtMTYzMjU3MjgxN119
 -->
