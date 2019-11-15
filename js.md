@@ -19,12 +19,6 @@ void function aRecursion(i) {
 // 2
 ```
 
-    enter code here
-    dsds
-    dsds
-	    ewew
-		    ewe
-
 **Анонимные функции | Паттерн IIFE**
 ```js
 //пример 1, возвращаемые значения
@@ -57,6 +51,8 @@ console.log(Sequence.getNextValue()); // 1
 console.log(Sequence.getNextValue()); // 2  
 console.log(Sequence.getCurrentValue()); // 2
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNzU1Mzk1NSwtMTYzMjU3MjgxN119
+eyJoaXN0b3J5IjpbNzI4MzI3MTE1LC0xNjMyNTcyODE3XX0=
 -->
