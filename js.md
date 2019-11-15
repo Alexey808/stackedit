@@ -19,6 +19,8 @@ void function aRecursion(i) {
 // 2
 ```
 
+    enter code here
+
 **Анонимные функции | Паттерн IIFE**
 ```js
 //пример 1, возвращаемые значения
@@ -52,5 +54,5 @@ console.log(Sequence.getNextValue()); // 2
 console.log(Sequence.getCurrentValue()); // 2
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzI1NzI4MTddfQ==
+eyJoaXN0b3J5IjpbOTE0MjU4OTg0LC0xNjMyNTcyODE3XX0=
 -->
