@@ -6,7 +6,7 @@
 void function() {
 	console.log('test');
 }()
-// test
+//> test
 ```
 ```js
 void function aRecursion(i) {
@@ -15,8 +15,8 @@ void function aRecursion(i) {
 		aRecursion(i)
 	}
 }(2)
-// 1
-// 2
+//> 1
+//> 2
 ```
 
 **Анонимные функции | Паттерн IIFE**
@@ -54,5 +54,6 @@ console.log(Sequence.getCurrentValue()); // 2
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI4MzI3MTE1LC0xNjMyNTcyODE3XX0=
+eyJoaXN0b3J5IjpbLTExMTI0NTg3MSw3MjgzMjcxMTUsLTE2Mz
+I1NzI4MTddfQ==
 -->
