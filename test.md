@@ -1,3 +1,10 @@
+[https://github.com/Alexey808/stackedit](https://github.com/Alexey808/stackedit)
+
+
+
+
+
+
 
 Запуск БД: `sudo service mongod start` 
 Запуск backend: `yarn start:dev` 
@@ -156,5 +163,5 @@ C --> D
 
 !!!!!!!!!!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcyMTQyMDQwLC04NTc5NTk2MTZdfQ==
+eyJoaXN0b3J5IjpbMTA2MTAxMzczOSwtODU3OTU5NjE2XX0=
 -->
