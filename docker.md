@@ -20,6 +20,7 @@ ENTRYPOINT [“/app/tomcat/catalina.sh”]  # запускать исполня�
 
 **Удалить container**  
 `docker rm id_или_name`
+`docker rm -f id_или_name`
 
 **Удалить все контейнеры**  
 `docker rm -f $(docker ps -a -q)`
@@ -52,6 +53,6 @@ ENTRYPOINT [“/app/tomcat/catalina.sh”]  # запускать исполня�
 `sudo chown -R $(whoami) /usr/local/bin`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzAwNjM4NTksMjA5NzA2MzExNywxND
-IxODA2MDRdfQ==
+eyJoaXN0b3J5IjpbMTI1MDMwNzg1OCwtMTA3MDA2Mzg1OSwyMD
+k3MDYzMTE3LDE0MjE4MDYwNF19
 -->
