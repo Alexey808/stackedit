@@ -111,8 +111,15 @@ function runSettingsOnInit() {
 })  
 export class AppModule {}
 ```
+**NgPlural**
+```ts
+<p [ngPlural]="components">  
+  <ng-template ngPluralCase="=1">1 component removed</ng-template>  
+<ng-template ngPluralCase=">1">{{components}} components removed </ng-template>  
+</p>
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMzc1OTUyNSwxODgyNTUzNzI3LDE5OD
-A1NTU2ODQsMjEzOTQyMDUwMCwtMTc4ODgwODAyMCwtMTY0Nzky
-OTQ5MywtNzk2ODU4MDQzXX0=
+eyJoaXN0b3J5IjpbMTc2NzE0OTM1MSwtNjAzNzU5NTI1LDE4OD
+I1NTM3MjcsMTk4MDU1NTY4NCwyMTM5NDIwNTAwLC0xNzg4ODA4
+MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ==
 -->
