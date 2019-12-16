@@ -26,7 +26,7 @@ class  MyComponent {
 }
 ```
 
-**Установка заголовка(title) для страницы**
+**Установка заголовка с помощью службы "Title" **
 ```ts
 import { Title } from "@angular/platform-browser"@Component({  
     ...  
@@ -38,5 +38,5 @@ export class LoginComponent implements OnInit {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzY1ODU0OCwtNzk2ODU4MDQzXX0=
+eyJoaXN0b3J5IjpbLTEwMjQxMzEwNjQsLTc5Njg1ODA0M119
 -->
