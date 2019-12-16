@@ -7,11 +7,13 @@ of('one', 'two').subscribe(v => console.log(v)); // one two
 
 from([1,2,3]).subscribe(v => console.log(v)); // 1 2 3
 
-const inteval$ = interval(500).subscribe(v => console.log('interval', v));  // 0,1
+timer(2000).subscribe(v => console.log(v));  //0
+
+const inteval$ = interval(500).subscribe(v => console.log('interval', v));  // каждые 500мс number++
 setTimeout(()  => inteval$.unsubscribe(),  1000);
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc5MzQ1MTY3LC04MTMzNTgzNiwtMTU0Mz
-EyNTY0NywxMDY4ODY1NDgzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTQwMDU2NDExMiwtODEzMzU4MzYsLTE1ND
+MxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgxMTZdfQ==
 -->
