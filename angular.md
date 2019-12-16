@@ -28,7 +28,8 @@ class  MyComponent {
 
 **Установка заголовка с помощью службы "Title" **
 ```ts
-import { Title } from "@angular/platform-browser"@Component({  
+import { Title } from "@angular/platform-browser"
+@Component({  
     ...  
 })  
 export class LoginComponent implements OnInit {  
@@ -38,7 +39,21 @@ export class LoginComponent implements OnInit {
 }
 ```
 
-**Установка "meta" информации cmjfu**
+**Установка "meta" информации страницы**
+```ts
+import { Meta } from "@angular/platform-browser"
+@Component({  
+    ...  
+})  
+export class BlogComponent implements OnInit {  
+    constructor(private meta: Meta) {} ngOnInit() {  
+        meta.updateTag({name: "title", content: ""})  
+        meta.updateTag({name: "description", content: "Lorem ipsum dolor"})  
+        meta.updateTag({name: "image", content: "./assets/blog-image.jpg"})  
+        meta.updateTag({name: "site", content: "My Site"})  
+    }  
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MTA3NzQ3OCwtNzk2ODU4MDQzXX0=
+eyJoaXN0b3J5IjpbLTE2NDc5Mjk0OTMsLTc5Njg1ODA0M119
 -->
