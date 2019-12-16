@@ -86,7 +86,7 @@ providers: [
 export class AppModule {}
 ```
 
-**Метод запускающийся при инициализации приложения | ## AppInitializer**
+**Метод запускающийся при инициализации приложения | #APP_INITIALIZER**
 ```ts
 function runSettingsOnInit() {  
 ...  
@@ -100,7 +100,7 @@ function runSettingsOnInit() {
 })
 ```
 
-****
+**Bootstrap Listener | #APP_BOOTSTRAP_LISTENER**
 ```ts
 @NgModule({  
   {  
@@ -112,7 +112,7 @@ function runSettingsOnInit() {
 export class AppModule {}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MjU1MzcyNywxOTgwNTU1Njg0LDIxMz
-k0MjA1MDAsLTE3ODg4MDgwMjAsLTE2NDc5Mjk0OTMsLTc5Njg1
-ODA0M119
+eyJoaXN0b3J5IjpbLTYwMzc1OTUyNSwxODgyNTUzNzI3LDE5OD
+A1NTU2ODQsMjEzOTQyMDUwMCwtMTc4ODgwODAyMCwtMTY0Nzky
+OTQ5MywtNzk2ODU4MDQzXX0=
 -->
