@@ -25,6 +25,8 @@ class  MyComponent {
 	}
 }
 ```
+
+**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5Njg1ODA0M119
+eyJoaXN0b3J5IjpbOTQ2ODExMDQxLC03OTY4NTgwNDNdfQ==
 -->
