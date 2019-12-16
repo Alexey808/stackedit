@@ -110,7 +110,8 @@ function runSettingsOnInit() {
 ...  
 })  
 export class AppModule {}
-```
+```  
+
 **Одиночное и множественное представление | #ngPlural**
 Атрибут [ngPlural] для выражения переключения. Внутренние элементы с [ngPluralCase] будут отображаться на основе их выражения.
 ```ts
@@ -120,7 +121,7 @@ export class AppModule {}
 </p>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ4Mzk0NDQwLC02MDM3NTk1MjUsMTg4Mj
+eyJoaXN0b3J5IjpbNzQ5MTQ4ODkwLC02MDM3NTk1MjUsMTg4Mj
 U1MzcyNywxOTgwNTU1Njg0LDIxMzk0MjA1MDAsLTE3ODg4MDgw
 MjAsLTE2NDc5Mjk0OTMsLTc5Njg1ODA0M119
 -->
