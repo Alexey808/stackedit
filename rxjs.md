@@ -20,7 +20,8 @@ const inteval$ = interval(500)
 setTimeout(()  => inteval$.unsubscribe(),  1000);
 ```
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTM4ODQyNTEsLTgxMzM1ODM2LC0xNT
+eyJoaXN0b3J5IjpbLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC0xNT
 QzMTI1NjQ3LDEwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
 -->
