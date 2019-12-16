@@ -86,8 +86,20 @@ providers: [
 export class AppModule {}
 ```
 
+** | ## AppInitializer**
+```ts
+function runSettingsOnInit() {  
+...  
+}
+```
+```ts
+@NgModule({  
+	providers: [  
+		{ provide: APP_INITIALIZER, useFactory: runSettingsOnInit }  
+	]  
+})
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMDU0NzY5MiwtMTc4ODgwODAyMCwtMT
-Y0NzkyOTQ5MywtNzk2ODU4MDQzXX0=
+eyJoaXN0b3J5IjpbLTE0NzExODU1NDQsLTE3ODg4MDgwMjAsLT
+E2NDc5Mjk0OTMsLTc5Njg1ODA0M119
 -->
