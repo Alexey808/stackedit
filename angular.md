@@ -94,12 +94,12 @@ function runSettingsOnInit() {
 ```
 ```ts
 @NgModule({  
-	providers: [  
-		{ provide: APP_INITIALIZER, useFactory: runSettingsOnInit }  
-	]  
+  providers: [  
+    { provide: APP_INITIALIZER, useFactory: runSettingsOnInit }  
+  ]  
 })
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzOTQyMDUwMCwtMTc4ODgwODAyMCwtMT
-Y0NzkyOTQ5MywtNzk2ODU4MDQzXX0=
+eyJoaXN0b3J5IjpbLTMzNTM1NzA4LDIxMzk0MjA1MDAsLTE3OD
+g4MDgwMjAsLTE2NDc5Mjk0OTMsLTc5Njg1ODA0M119
 -->
