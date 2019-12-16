@@ -55,7 +55,8 @@ export class BlogComponent implements OnInit {
 }
 ```
 
-**Proxy перехват о | #HttpInterceptor**
+**Proxy (перехват, модификация, замена) запросов | #HttpInterceptor**
+
 ```ts
 @Injectable()  
 export class MockBackendInterceptor implements HttpInterceptor {  
@@ -80,6 +81,6 @@ providers: [
 export class AppModule {}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NDU5OTU2MywtMTY0NzkyOTQ5MywtNz
+eyJoaXN0b3J5IjpbLTQ2MjEwNjY1MywtMTY0NzkyOTQ5MywtNz
 k2ODU4MDQzXX0=
 -->
