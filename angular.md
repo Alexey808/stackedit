@@ -33,9 +33,9 @@ import { Title } from "@angular/platform-browser"
     ...  
 })  
 export class LoginComponent implements OnInit {  
-    constructor(private title: Title) {} ngOnInit() {  
-        title.setTitle("Login")  
-    }  
+  constructor(private title: Title) {} ngOnInit() {  
+    title.setTitle("Login")  
+  }  
 }
 ```
 
@@ -46,12 +46,12 @@ import { Meta } from "@angular/platform-browser"
     ...  
 })  
 export class BlogComponent implements OnInit {  
-    constructor(private meta: Meta) {} ngOnInit() {  
-        meta.updateTag({name: "title", content: ""})  
-        meta.updateTag({name: "description", content: "Lorem ipsum dolor"})  
-        meta.updateTag({name: "image", content: "./assets/blog-image.jpg"})  
-        meta.updateTag({name: "site", content: "My Site"})  
-    }  
+  constructor(private meta: Meta) {} ngOnInit() {  
+    meta.updateTag({name: "title", content: ""})  
+    meta.updateTag({name: "description", content: "Lorem ipsum dolor"})  
+    meta.updateTag({name: "image", content: "./assets/blog-image.jpg"})  
+    meta.updateTag({name: "site", content: "My Site"})  
+  }  
 }
 ```
 
@@ -65,21 +65,21 @@ export class BlogComponent implements OnInit {
 ```ts
 @Injectable()  
 export class MockBackendInterceptor implements HttpInterceptor {  
-    constructor() {} 
-    intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {  
-        ...  
-    }  
+  constructor() {} 
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {  
+    ...  
+  }  
 }
 ```
 ```ts
 @NgModule({  
 ...  
 providers: [  
-	{  
-		provide: HTTP_INTERCEPTORS,  
-		useClass: MockBackendInterceptor,  
-		multi: true  
-	}  
+  {  
+    provide: HTTP_INTERCEPTORS,  
+    useClass: MockBackendInterceptor,  
+    multi: true  
+  }  
 ]  
 ...  
 })  
@@ -100,6 +100,6 @@ function runSettingsOnInit() {
 })
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNTM1NzA4LDIxMzk0MjA1MDAsLTE3OD
-g4MDgwMjAsLTE2NDc5Mjk0OTMsLTc5Njg1ODA0M119
+eyJoaXN0b3J5IjpbMTk4MDU1NTY4NCwyMTM5NDIwNTAwLC0xNz
+g4ODA4MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ==
 -->
