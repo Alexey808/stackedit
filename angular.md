@@ -54,6 +54,32 @@ export class BlogComponent implements OnInit {
     }  
 }
 ```
+
+**** | #HttpInterceptor
+```ts
+@Injectable()  
+export class MockBackendInterceptor implements HttpInterceptor {  
+    constructor() {} 
+    intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {  
+        ...  
+    }  
+}
+```
+```ts
+@NgModule({  
+...  
+providers: [  
+	{  
+		provide: HTTP_INTERCEPTORS,  
+		useClass: MockBackendInterceptor,  
+		multi: true  
+	}  
+]  
+...  
+})  
+export class AppModule {}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDc5Mjk0OTMsLTc5Njg1ODA0M119
+eyJoaXN0b3J5IjpbMTg0MDI0MDgyNCwtMTY0NzkyOTQ5MywtNz
+k2ODU4MDQzXX0=
 -->
