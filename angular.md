@@ -26,7 +26,17 @@ class  MyComponent {
 }
 ```
 
-**
+**Установка заголовка(title) для страницы**
+```ts
+import { Title } from "@angular/platform-browser"@Component({  
+    ...  
+})  
+export class LoginComponent implements OnInit {  
+    constructor(private title: Title) {} ngOnInit() {  
+        title.setTitle("Login")  
+    }  
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ2ODExMDQxLC03OTY4NTgwNDNdfQ==
+eyJoaXN0b3J5IjpbLTMzNzY1ODU0OCwtNzk2ODU4MDQzXX0=
 -->
