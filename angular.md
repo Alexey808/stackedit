@@ -85,7 +85,9 @@ providers: [
 })  
 export class AppModule {}
 ```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODg4MDgwMjAsLTE2NDc5Mjk0OTMsLT
-c5Njg1ODA0M119
+eyJoaXN0b3J5IjpbMTMxMDU0NzY5MiwtMTc4ODgwODAyMCwtMT
+Y0NzkyOTQ5MywtNzk2ODU4MDQzXX0=
 -->
