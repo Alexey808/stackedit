@@ -3,11 +3,11 @@
 
 
 ```ts
-const testOf$ =  of('one', 'two', 'three');
-testOf$.subscribe(v => console.log(v)); // one two three
+of('one', 'two').subscribe(v => console.log(v)); // one two
+from([1,2,3]).subscribe(v => console.log(v)); // 1 2 3
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MzU4MjIxNiwxMDY4ODY1NDgzLDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbLTE1NDMxMjU2NDcsMTA2ODg2NTQ4Myw3Mz
+A5OTgxMTZdfQ==
 -->
