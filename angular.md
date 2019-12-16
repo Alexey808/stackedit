@@ -1,6 +1,6 @@
 [https://habr.com/ru/company/ruvds/blog/476956/](https://habr.com/ru/company/ruvds/blog/476956/)
 
-**Принудительный ререндер | markDirty**
+**Принудительный ререндер | #markDirty**
 Возможно ререндер идёт с корня. Ломая стратегию OnPush в других компонентах. Но рекомендовали использовать markDirty а не detectChanges
 ```ts
 import { ɵmarkDirty as markDirty } from  '@angular/core';
@@ -13,7 +13,7 @@ class  MyComponent {
 }
 ```
 
-**Cинхронно вызывает процесс обнаружения изменений в компоненте и его подкомпонентах  | detectChanges**
+**Cинхронно вызывает процесс обнаружения изменений в компоненте и его подкомпонентах  | #detectChanges**
 Предположительно ререндер идёт от компонента.
 ```ts
 import { ɵdetectChanges as detectChanges } from '@angular/core';
@@ -26,7 +26,7 @@ class  MyComponent {
 }
 ```
 
-**Установка заголовка с помощью службы "Title" **
+**Установка заголовка с помощью службы "Title"  | #Title**
 ```ts
 import { Title } from "@angular/platform-browser"
 @Component({  
@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
 }
 ```
 
-**Установка "meta" информации страницы**
+**Установка "meta" информации страницы | #Meta**
 ```ts
 import { Meta } from "@angular/platform-browser"
 @Component({  
@@ -55,7 +55,7 @@ export class BlogComponent implements OnInit {
 }
 ```
 
-**** | #HttpInterceptor
+**Proxy перехват о | #HttpInterceptor**
 ```ts
 @Injectable()  
 export class MockBackendInterceptor implements HttpInterceptor {  
@@ -80,6 +80,6 @@ providers: [
 export class AppModule {}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MDI0MDgyNCwtMTY0NzkyOTQ5MywtNz
+eyJoaXN0b3J5IjpbLTg2NDU5OTU2MywtMTY0NzkyOTQ5MywtNz
 k2ODU4MDQzXX0=
 -->
