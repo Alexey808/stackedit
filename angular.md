@@ -1,6 +1,6 @@
 [https://habr.com/ru/company/ruvds/blog/476956/](https://habr.com/ru/company/ruvds/blog/476956/)
 
-**Принудительный ререндер | #markDirty**
+**Принудительный ререндер | #markDirty**  
 Возможно ререндер идёт с корня. Ломая стратегию OnPush в других компонентах. Но рекомендовали использовать markDirty а не detectChanges
 ```ts
 import { ɵmarkDirty as markDirty } from  '@angular/core';
@@ -13,7 +13,7 @@ class  MyComponent {
 }
 ```
 
-**Cинхронно вызывает процесс обнаружения изменений в компоненте и его подкомпонентах  | #detectChanges**
+**Cинхронно вызывает процесс обнаружения изменений в компоненте и его подкомпонентах  | #detectChanges**  
 Предположительно ререндер идёт от компонента.
 ```ts
 import { ɵdetectChanges as detectChanges } from '@angular/core';
@@ -26,7 +26,7 @@ class  MyComponent {
 }
 ```
 
-**Установка заголовка с помощью службы "Title"  | #Title**
+**Установка заголовка с помощью службы "Title"  | #Title**  
 ```ts
 import { Title } from "@angular/platform-browser"
 @Component({  
@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
 }
 ```
 
-**Установка "meta" информации страницы | #Meta**
+**Установка "meta" информации страницы | #Meta**  
 ```ts
 import { Meta } from "@angular/platform-browser"
 @Component({  
@@ -55,7 +55,7 @@ export class BlogComponent implements OnInit {
 }
 ```
 
-**Proxy (перехват, модификация, замена) запросов | #HttpInterceptor**
+**Proxy (перехват, модификация, замена) запросов | #HttpInterceptor**  
 Используется для: 
 -   Аутентификация
 -   Кэширование
@@ -86,7 +86,7 @@ providers: [
 export class AppModule {}
 ```
 
-**Метод запускающийся при инициализации приложения | #APP_INITIALIZER**
+**Метод запускающийся при инициализации приложения | #APP_INITIALIZER**  
 ```ts
 function runSettingsOnInit() {  
 ...  
@@ -121,7 +121,7 @@ export class AppModule {}
 </p>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ5MTQ4ODkwLC02MDM3NTk1MjUsMTg4Mj
-U1MzcyNywxOTgwNTU1Njg0LDIxMzk0MjA1MDAsLTE3ODg4MDgw
-MjAsLTE2NDc5Mjk0OTMsLTc5Njg1ODA0M119
+eyJoaXN0b3J5IjpbMTE2ODU1NzA4MiwtNjAzNzU5NTI1LDE4OD
+I1NTM3MjcsMTk4MDU1NTY4NCwyMTM5NDIwNTAwLC0xNzg4ODA4
+MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ==
 -->
