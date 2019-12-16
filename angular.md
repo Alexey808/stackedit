@@ -111,15 +111,16 @@ function runSettingsOnInit() {
 })  
 export class AppModule {}
 ```
-**NgPlural**
+**Одиночное и множественное представление | #ngPlural**
+Атрибут [ngPlural] для выражения переключения. Внутренние элементы с [ngPluralCase] будут отображаться на основе их выражения.
 ```ts
 <p [ngPlural]="components">  
   <ng-template ngPluralCase="=1">1 component removed</ng-template>  
-<ng-template ngPluralCase=">1">{{components}} components removed </ng-template>  
+  <ng-template ngPluralCase=">1">{{components}} components removed </ng-template>  
 </p>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NzE0OTM1MSwtNjAzNzU5NTI1LDE4OD
-I1NTM3MjcsMTk4MDU1NTY4NCwyMTM5NDIwNTAwLC0xNzg4ODA4
-MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ==
+eyJoaXN0b3J5IjpbMjQ4Mzk0NDQwLC02MDM3NTk1MjUsMTg4Mj
+U1MzcyNywxOTgwNTU1Njg0LDIxMzk0MjA1MDAsLTE3ODg4MDgw
+MjAsLTE2NDc5Mjk0OTMsLTc5Njg1ODA0M119
 -->
