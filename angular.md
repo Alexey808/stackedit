@@ -113,6 +113,7 @@ export class AppModule {}
 ```  
 
 **Одиночное и множественное представление | #ngPlural**
+
 Атрибут [ngPlural] для выражения переключения. Внутренние элементы с [ngPluralCase] будут отображаться на основе их выражения.
 ```ts
 <p [ngPlural]="components">  
@@ -121,7 +122,7 @@ export class AppModule {}
 </p>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2ODU1NzA4MiwtNjAzNzU5NTI1LDE4OD
-I1NTM3MjcsMTk4MDU1NTY4NCwyMTM5NDIwNTAwLC0xNzg4ODA4
-MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ==
+eyJoaXN0b3J5IjpbNzM1NjI0NTg0LC02MDM3NTk1MjUsMTg4Mj
+U1MzcyNywxOTgwNTU1Njg0LDIxMzk0MjA1MDAsLTE3ODg4MDgw
+MjAsLTE2NDc5Mjk0OTMsLTc5Njg1ODA0M119
 -->
