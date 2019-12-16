@@ -15,13 +15,15 @@ timer(2000).subscribe(v => console.log(v)); //0
 range(42, 3).subscribe(v => console.log(v)); //42,43,44
 ```
 ```ts
-const inteval$ = interval(500).subscribe(v => console.log('interval', v));  // каждые 500мс number++
+const inteval$ = interval(500)
+  .pipe(take(2))
+  .subscribe(v => console.log('interval', v));  // каждые 500мс number++
 setTimeout(()  => inteval$.unsubscribe(),  1000);
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMyNTQ3OTQxLC0xNjQ3NDI0NjIxLC04MT
-MzNTgzNiwtMTU0MzEyNTY0NywxMDY4ODY1NDgzLDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbLTIwNjAzODEyMTIsNTMyNTQ3OTQxLC0xNj
+Q3NDI0NjIxLC04MTMzNTgzNiwtMTU0MzEyNTY0NywxMDY4ODY1
+NDgzLDczMDk5ODExNl19
 -->
