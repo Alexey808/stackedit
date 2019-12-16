@@ -56,7 +56,12 @@ export class BlogComponent implements OnInit {
 ```
 
 **Proxy (перехват, модификация, замена) запросов | #HttpInterceptor**
-
+Используется для: 
+-   Аутентификация
+-   Кэширование
+-   Подмена бэкэнд
+-   Преобразование URL
+-   Изменение заголовков
 ```ts
 @Injectable()  
 export class MockBackendInterceptor implements HttpInterceptor {  
@@ -81,6 +86,6 @@ providers: [
 export class AppModule {}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MjEwNjY1MywtMTY0NzkyOTQ5MywtNz
-k2ODU4MDQzXX0=
+eyJoaXN0b3J5IjpbLTE3ODg4MDgwMjAsLTE2NDc5Mjk0OTMsLT
+c5Njg1ODA0M119
 -->
