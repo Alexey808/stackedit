@@ -37,6 +37,8 @@ export class LoginComponent implements OnInit {
     }  
 }
 ```
+
+**Установка "meta" информации cmjfu**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQxMzEwNjQsLTc5Njg1ODA0M119
+eyJoaXN0b3J5IjpbMTY4MTA3NzQ3OCwtNzk2ODU4MDQzXX0=
 -->
