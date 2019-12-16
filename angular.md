@@ -99,7 +99,20 @@ function runSettingsOnInit() {
   ]  
 })
 ```
+
+****
+```ts
+@NgModule({  
+  {  
+    provide: APP_BOOTSTRAP_LISTENER, multi: true,  
+    useExisting: runOnBootstrap  
+  }  
+...  
+})  
+export class AppModule {}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MDU1NTY4NCwyMTM5NDIwNTAwLC0xNz
-g4ODA4MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ==
+eyJoaXN0b3J5IjpbMTg4MjU1MzcyNywxOTgwNTU1Njg0LDIxMz
+k0MjA1MDAsLTE3ODg4MDgwMjAsLTE2NDc5Mjk0OTMsLTc5Njg1
+ODA0M119
 -->
