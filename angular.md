@@ -86,7 +86,7 @@ providers: [
 export class AppModule {}
 ```
 
-** | ## AppInitializer**
+**Метод запускающийся при инициализации приложения | ## AppInitializer**
 ```ts
 function runSettingsOnInit() {  
 ...  
@@ -100,6 +100,6 @@ function runSettingsOnInit() {
 })
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzExODU1NDQsLTE3ODg4MDgwMjAsLT
-E2NDc5Mjk0OTMsLTc5Njg1ODA0M119
+eyJoaXN0b3J5IjpbMjEzOTQyMDUwMCwtMTc4ODgwODAyMCwtMT
+Y0NzkyOTQ5MywtNzk2ODU4MDQzXX0=
 -->
