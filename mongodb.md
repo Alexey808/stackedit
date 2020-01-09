@@ -15,7 +15,7 @@ sudo rm -r /var/log/mongodb
 sudo rm -r /var/lib/mongodb
 ```
 
-##
+## Работа с БД
 
 **Создание сущности в бд (1 вариант)**  
 ```
@@ -81,6 +81,6 @@ User.init({
 **Удалить сущность c именем myName**  
 `User.destroy({where: {name: myName}}).then((data)=> ...).catch((err)=> ...)`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0OTI4MzU0MSwtNTA2NTY2MTQ2LC0xNT
-Q3ODc4MTU2LDQ5NzgxODgxMCwxMjg5NjEyNDI3XX0=
+eyJoaXN0b3J5IjpbLTE5NTAyMzgzNTYsLTUwNjU2NjE0NiwtMT
+U0Nzg3ODE1Niw0OTc4MTg4MTAsMTI4OTYxMjQyN119
 -->
