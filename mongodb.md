@@ -1,18 +1,19 @@
 ## Начало работы в БД
-`sudo service mongod start`
-`sudo service mongod status`
-`sudo service mongod stop`
-`sudo service mongod restart`
-`mongo` - запуск оболочки
-`show dbs` - просмотр всех бд
-`use NAME_DATABASE` - выбрать бд
-`show collection` - просмотр коллекций
-`db.users.find()` - вывод коллекции users
+`sudo service mongod start`  
+`sudo service mongod status`  
+`sudo service mongod stop`  
+`sudo service mongod restart`  
+`mongo` - запуск оболочки  
+
+`show dbs` - просмотр всех бд  
+`use NAME_DATABASE` - выбрать бд  
+`show collection` - просмотр коллекций  
+`db.users.find()` - вывод коллекции users  
 
 **Распаковка бэкапа**
-Если расположение распакованной бд след ~/develop/work/test/mongo/dump/testing_plan
+Если расположение распакованной бд след   `~/develop/work/test/mongo/dump/testing`
 ```
-sudo mongorestore --db testing_plan ~/develop/work/test-plan/mongo/dump/testing_plan/
+sudo mongorestore --db testing_plan ~/develop/work/test/mongo/dump/testing/
 ```
 
 
@@ -92,7 +93,7 @@ User.init({
 **Удалить сущность c именем myName**  
 `User.destroy({where: {name: myName}}).then((data)=> ...).catch((err)=> ...)`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEyNDE5OTU1LC0xOTUwMjM4MzU2LC01MD
-Y1NjYxNDYsLTE1NDc4NzgxNTYsNDk3ODE4ODEwLDEyODk2MTI0
-MjddfQ==
+eyJoaXN0b3J5IjpbLTEzNDgxMzgwNzksLTE5NTAyMzgzNTYsLT
+UwNjU2NjE0NiwtMTU0Nzg3ODE1Niw0OTc4MTg4MTAsMTI4OTYx
+MjQyN119
 -->
