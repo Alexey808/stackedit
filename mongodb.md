@@ -24,7 +24,7 @@ docker exec -it 5e61ca6761d1 /bin/bash
 ```
 sudo mongorestore --db testing_plan ~/develop/work/test/mongo/dump/testing/
 ```
-**Удаление пакетов Mongodb**  
+**Удаление пакетов MongoDB**  
 ```
 sudo apt-get purge mongodb-org*
 ```
@@ -39,7 +39,7 @@ sudo rm -r /var/lib/mongodb
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTAzOTk2MTYsLTE5NTAyMzgzNTYsLT
+eyJoaXN0b3J5IjpbLTEyOTc1MDEzMTIsLTE5NTAyMzgzNTYsLT
 UwNjU2NjE0NiwtMTU0Nzg3ODE1Niw0OTc4MTg4MTAsMTI4OTYx
 MjQyN119
 -->
