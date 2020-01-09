@@ -21,26 +21,26 @@ const User = sequelize.define("user", {
 ```
 class User extends Model {}
 User.init({
-id: {
-type: Sequelize.INTEGER,
-autoIncrement: true,
-primaryKey: true,
-allowNull: false
-},
-name: {
-type: Sequelize.STRING,
-allowNull: false
-},
-age: {
-type: Sequelize.INTEGER,
-allowNull: false
-}
+  id: {
+    type: Sequelize.INTEGER,
+    autoIncrement: true,
+    primaryKey: true,
+    allowNull: false
+  },
+  name: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  age: {
+    type: Sequelize.INTEGER,
+    allowNull: false
+  }
 }, {
-sequelize,
-modelName: "user"
+  sequelize,
+  modelName: "user"
 });
-``
-** Синхронизация с бд **
+```
+**Синхронизация с бд**
 
 1) {force: true} - удалить сущность и создать заного
 
@@ -70,6 +70,6 @@ User.update({ age: 36 }, {where: {name: myName}}).then((data)=> ...).catch((err)
 
 User.destroy({where: {name: myName}}).then((data)=> ...).catch((err)=> ...)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NTE2MjMxOCw0OTc4MTg4MTAsMTI4OT
-YxMjQyN119
+eyJoaXN0b3J5IjpbLTEyNTkyOTM2NjAsNDk3ODE4ODEwLDEyOD
+k2MTI0MjddfQ==
 -->
