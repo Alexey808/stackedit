@@ -1,3 +1,12 @@
+## Начало работы в БД
+`sudo service mongod start`
+`sudo service mongod status`
+`sudo service mongod stop`
+
+
+
+##
+
 **Создание сущности в бд (1 вариант)**  
 ```
 const User = sequelize.define("user", {
@@ -62,6 +71,6 @@ User.init({
 **Удалить сущность c именем myName**  
 `User.destroy({where: {name: myName}}).then((data)=> ...).catch((err)=> ...)`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNjU2NjE0NiwtMTU0Nzg3ODE1Niw0OT
-c4MTg4MTAsMTI4OTYxMjQyN119
+eyJoaXN0b3J5IjpbMTIxNjAzNzgwMiwtNTA2NTY2MTQ2LC0xNT
+Q3ODc4MTU2LDQ5NzgxODgxMCwxMjg5NjEyNDI3XX0=
 -->
