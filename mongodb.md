@@ -5,7 +5,15 @@
 `sudo service mongod restart`
 `mongo` - запуск оболочки
 
-`sudo apt-get purge mongodb-org*`
+**Удаление пакетов Mongodb**  
+```
+sudo apt-get purge mongodb-org*
+```
+**Удаление баз данных**  
+```
+sudo rm -r /var/log/mongodb
+sudo rm -r /var/lib/mongodb
+```
 
 ##
 
@@ -73,6 +81,6 @@ User.init({
 **Удалить сущность c именем myName**  
 `User.destroy({where: {name: myName}}).then((data)=> ...).catch((err)=> ...)`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTA2OTE2OTIsLTUwNjU2NjE0NiwtMT
-U0Nzg3ODE1Niw0OTc4MTg4MTAsMTI4OTYxMjQyN119
+eyJoaXN0b3J5IjpbMTM0OTI4MzU0MSwtNTA2NTY2MTQ2LC0xNT
+Q3ODc4MTU2LDQ5NzgxODgxMCwxMjg5NjEyNDI3XX0=
 -->
