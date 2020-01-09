@@ -12,8 +12,6 @@
 `db.users.find()` - вывод коллекции users  
 `db.users.deleteOne({id: 3})` - удаление пользователя с id = 3  
 `db.users.remove({})` - удалить все сущности users  
- 
-
 `db.users.updateOne({id: 3}, {$set: {"role":"admin"}}, false, true)` - обновление сущности  
 
 **Распаковка бэкапа**
@@ -36,7 +34,7 @@ sudo rm -r /var/lib/mongodb
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MDg4MjMxMCwtMTk1MDIzODM1NiwtNT
-A2NTY2MTQ2LC0xNTQ3ODc4MTU2LDQ5NzgxODgxMCwxMjg5NjEy
-NDI3XX0=
+eyJoaXN0b3J5IjpbODMyNTExNDIwLC0xOTUwMjM4MzU2LC01MD
+Y1NjYxNDYsLTE1NDc4NzgxNTYsNDk3ODE4ODEwLDEyODk2MTI0
+MjddfQ==
 -->
