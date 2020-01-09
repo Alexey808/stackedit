@@ -7,7 +7,13 @@
 `show dbs` - просмотр всех бд
 `use NAME_DATABASE` - выбрать бд
 `show collection` - просмотр коллекций
-`db.users.find()` - вывод коллекции
+`db.users.find()` - вывод коллекции users
+
+**Распаковка бэкапа**
+Если расположение распакованной бд след ~/develop/work/test/mongo/dump/testing_plan
+```
+sudo mongorestore --db testing_plan ~/develop/work/test-plan/mongo/dump/testing_plan/
+```
 
 
 **Удаление пакетов Mongodb**  
@@ -86,7 +92,7 @@ User.init({
 **Удалить сущность c именем myName**  
 `User.destroy({where: {name: myName}}).then((data)=> ...).catch((err)=> ...)`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODc4MTQ1ODYsLTE5NTAyMzgzNTYsLT
-UwNjU2NjE0NiwtMTU0Nzg3ODE1Niw0OTc4MTg4MTAsMTI4OTYx
-MjQyN119
+eyJoaXN0b3J5IjpbNDEyNDE5OTU1LC0xOTUwMjM4MzU2LC01MD
+Y1NjYxNDYsLTE1NDc4NzgxNTYsNDk3ODE4ODEwLDEyODk2MTI0
+MjddfQ==
 -->
