@@ -1,65 +1,45 @@
-/** Создание сущности в бд (1 вариант) */
+**Создание сущности в бд (1 вариант)**
 ```
-
 const User = sequelize.define("user", {
-id: {
-type: Sequelize.INTEGER,
-autoIncrement: true,
-primaryKey: true,
-allowNull: false
-},
-	name: {
-	type: Sequelize.STRING,
-	allowNull: false
-	},
-age: {
-type: Sequelize.INTEGER,
-allowNull: false
-}
+  id: {
+    type: Sequelize.INTEGER,
+    autoIncrement: true,
+    primaryKey: true,
+    allowNull: false
+  },
+  name: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  age: {
+    type: Sequelize.INTEGER,
+    allowNull: false
+  }
 });
 ```
-/** Создание сущности в бд (2 вариант) */
-
+**Создание сущности в бд (2 вариант)**
+```
 class User extends Model {}
-
 User.init({
-
 id: {
-
 type: Sequelize.INTEGER,
-
 autoIncrement: true,
-
 primaryKey: true,
-
 allowNull: false
-
 },
-
 name: {
-
 type: Sequelize.STRING,
-
 allowNull: false
-
 },
-
 age: {
-
 type: Sequelize.INTEGER,
-
 allowNull: false
-
 }
-
 }, {
-
 sequelize,
-
 modelName: "user"
-
 });
-
+``
 ** Синхронизация с бд **
 
 1) {force: true} - удалить сущность и создать заного
@@ -90,6 +70,6 @@ User.update({ age: 36 }, {where: {name: myName}}).then((data)=> ...).catch((err)
 
 User.destroy({where: {name: myName}}).then((data)=> ...).catch((err)=> ...)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODI1NDc1Niw0OTc4MTg4MTAsMTI4OT
+eyJoaXN0b3J5IjpbMTQ4NTE2MjMxOCw0OTc4MTg4MTAsMTI4OT
 YxMjQyN119
 -->
