@@ -15,11 +15,11 @@
 `db.users.updateOne({id: 3}, {$set: {"role":"admin"}}, false, true)` - обновление сущности  
 `db.sprintDayEntity.find({spDeferred: {$ne: null}})` - поиск сущности по полю  
 
-**Зайти в БД внутрь докер контейнера где докерскую бд смотреть через docker ps**
+**Зайти в БД внутрь докер контейнера где докерскую бд смотреть через docker ps**  
 ```
 docker exec -it 5e61ca6761d1 /bin/bash
 ```
-**Распаковка бэкапа**
+**Распаковка бэкапа**  
 Если расположение распакованной бд след   `~/develop/work/test/mongo/dump/testing`
 ```
 sudo mongorestore --db testing_plan ~/develop/work/test/mongo/dump/testing/
@@ -39,7 +39,7 @@ sudo rm -r /var/lib/mongodb
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA0MTUzNjY0LC0xOTUwMjM4MzU2LC01MD
-Y1NjYxNDYsLTE1NDc4NzgxNTYsNDk3ODE4ODEwLDEyODk2MTI0
-MjddfQ==
+eyJoaXN0b3J5IjpbLTEzOTAzOTk2MTYsLTE5NTAyMzgzNTYsLT
+UwNjU2NjE0NiwtMTU0Nzg3ODE1Niw0OTc4MTg4MTAsMTI4OTYx
+MjQyN119
 -->
