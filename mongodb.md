@@ -41,7 +41,7 @@ User.init({
 });
 ```
 **Синхронизация с бд**  
-1) {force: true} - удалить сущность и создать заного
+1) {force: true} - удалить сущность и создать заного  
 `sequelize.sync(параметр).then((result) => ...).catch((err)=> ...);`
 
 **Добавить сущность**  
@@ -62,6 +62,6 @@ User.init({
 **Удалить сущность c именем myName**  
 `User.destroy({where: {name: myName}}).then((data)=> ...).catch((err)=> ...)`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NDQ3NjQ2OCw0OTc4MTg4MTAsMTI4OT
-YxMjQyN119
+eyJoaXN0b3J5IjpbLTE1NDc4NzgxNTYsNDk3ODE4ODEwLDEyOD
+k2MTI0MjddfQ==
 -->
