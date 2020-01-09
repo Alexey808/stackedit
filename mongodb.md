@@ -5,8 +5,9 @@
 `sudo service mongod restart`
 `mongo` - запуск оболочки
 `show dbs` - просмотр всех бд
-`use testing_plan`
+`use NAME_DATABASE` - выбрать бд
 `show collection` - просмотр коллекций
+`db.users.find()` - вывод коллекции
 
 
 **Удаление пакетов Mongodb**  
@@ -85,7 +86,7 @@ User.init({
 **Удалить сущность c именем myName**  
 `User.destroy({where: {name: myName}}).then((data)=> ...).catch((err)=> ...)`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzQ2MTM2NzIsLTE5NTAyMzgzNTYsLT
+eyJoaXN0b3J5IjpbLTEzODc4MTQ1ODYsLTE5NTAyMzgzNTYsLT
 UwNjU2NjE0NiwtMTU0Nzg3ODE1Niw0OTc4MTg4MTAsMTI4OTYx
 MjQyN119
 -->
