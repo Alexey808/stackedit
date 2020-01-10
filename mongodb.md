@@ -10,6 +10,7 @@
 `use NAME_DATABASE` - выбрать бд  
 `show collection` - просмотр коллекций  
 `db.users.find()` - вывод коллекции users  
+`db.users.insertOne({name: 'test'})` - добавление сущности
 `db.users.deleteOne({id: 3})` - удаление пользователя с id = 3  
 `db.users.remove({})` - удалить все сущности users  
 `db.users.updateOne({id: 3}, {$set: {"role":"admin"}}, false, true)` - обновление сущности  
@@ -39,7 +40,7 @@ sudo rm -r /var/lib/mongodb
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTc1MDEzMTIsLTE5NTAyMzgzNTYsLT
-UwNjU2NjE0NiwtMTU0Nzg3ODE1Niw0OTc4MTg4MTAsMTI4OTYx
-MjQyN119
+eyJoaXN0b3J5IjpbNDczMTMxNjUwLC0xMjk3NTAxMzEyLC0xOT
+UwMjM4MzU2LC01MDY1NjYxNDYsLTE1NDc4NzgxNTYsNDk3ODE4
+ODEwLDEyODk2MTI0MjddfQ==
 -->
