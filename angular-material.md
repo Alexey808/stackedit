@@ -117,7 +117,7 @@ $theme-base: mat-light-theme($mat-palette-primary, $mat-lime, $mat-deep-orange);
 // Подключаем тему
 @include angular-material-theme($theme-base);
 ```
-**app/styles/material-palette.scss**
+**app/styles/material-palette.scss**  
 Генератор палитры по основному цвету: [http://mcg.mbitson.com/](http://mcg.mbitson.com/)  
 Готовые от angular-material: [https://material.io/archive/guidelines/style/color.html#color-color-palette](https://material.io/archive/guidelines/style/color.html#color-color-palette)  
 ```scss
@@ -177,5 +177,5 @@ $palette-primary: (
 <button mat-raised-button color="warn">warn</button>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4OTEwMjQwOV19
+eyJoaXN0b3J5IjpbLTY2MTQ5NzE2MSwtOTg5MTAyNDA5XX0=
 -->
