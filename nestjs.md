@@ -46,7 +46,7 @@ export class UsersController {
     return await this.usersService.deleteUser(query.id); 
   } 
   
-  // ..api/users?1 (остальное в body)
+  // ..api/users/1 (остальное в body)
   @Put(':id')  
   async updateUser(@Param('id') id: string, @Body()   updateUserDTO: UserDTO) {  
     return await this.usersService.updateUser(id, updateUserDTO);  
@@ -55,5 +55,5 @@ export class UsersController {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MTE0NDUyMCwxMjgwMDc4NjI3XX0=
+eyJoaXN0b3J5IjpbLTk3MjQ4NTE2MCwxMjgwMDc4NjI3XX0=
 -->
