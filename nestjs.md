@@ -32,7 +32,7 @@ export class UsersController {
   // ..api/users?userId=1
   /* *
    * Думаю другой ниже метод правильней, так как с "userId"
-   * а не просто "id" он превращается в query param? 
+   * а не просто "id" он превращается в query param.  
    * С другой стороны можно было обойтись просто парамом с "id"    
    * */
   // @Delete('/:userId')  
@@ -55,5 +55,5 @@ export class UsersController {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MDA3ODYyN119
+eyJoaXN0b3J5IjpbMTg2MTE0NDUyMCwxMjgwMDc4NjI3XX0=
 -->
