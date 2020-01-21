@@ -1,6 +1,15 @@
 Оффициальный туториал  [RxJS]([http://reactivex.io/rxjs/manual/tutorial.html](http://reactivex.io/rxjs/manual/tutorial.html))
 
-
+### Подкатегория операторов
+-   Создания (of, from, fromEvent, interval);
+-   Преобразования (map, scan, buffer);
+-   Фильтрации (filter, take, skip, distinct);
+-   Объединения (join, merge, zip);
+-   Обработки ошибок (catchError, retry, onErrorResumeNext);
+-   Условия (contains, skipUntil, skipWhile, takeUntil, takeWhile);
+-   Математические (min, max, count, average);
+-   Утилиты (tap, delay);
+-   Для Connectable Observable (share, shareReplay, publish).
 
 ```ts
 of('one', 'two').subscribe(v => console.log(v)); // one two
@@ -23,7 +32,7 @@ setTimeout(()  => inteval$.unsubscribe(),  1000);
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjAzODEyMTIsNTMyNTQ3OTQxLC0xNj
-Q3NDI0NjIxLC04MTMzNTgzNiwtMTU0MzEyNTY0NywxMDY4ODY1
-NDgzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1Mz
+I1NDc5NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMTI1
+NjQ3LDEwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
 -->
