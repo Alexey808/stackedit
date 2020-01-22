@@ -52,8 +52,18 @@ console.log(Sequence.getNextValue()); // 2
 console.log(Sequence.getCurrentValue()); // 2
 ```
 
+**Делает объект и его свойства не изменяемыми**
+```js
+Object.freeze(dataUser);
+```
+
+**Делает объект  не изменяемым но перезаписываемыми свойствами**
+```js
+Object.freeze(dataUser);
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTI0NTg3MSw3MjgzMjcxMTUsLTE2Mz
-I1NzI4MTddfQ==
+eyJoaXN0b3J5IjpbODgxNTk0OTYzLC0xMTEyNDU4NzEsNzI4Mz
+I3MTE1LC0xNjMyNTcyODE3XX0=
 -->
