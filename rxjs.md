@@ -43,12 +43,16 @@ result.subscribe((item) => {
 // 3
 // 4
 ```
+**Запихнуть стрим в массив | operators | #toArray**
+```ts
+addedUser$.pipe(toArray())
+```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMjQzOTAzNiwxNjAzNTg5MzU5LC0yMD
-YwMzgxMjEyLDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtODEzMzU4
-MzYsLTE1NDMxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbMjA5MzU5OTA5NiwtMzMyNDM5MDM2LDE2MD
+M1ODkzNTksLTIwNjAzODEyMTIsNTMyNTQ3OTQxLC0xNjQ3NDI0
+NjIxLC04MTMzNTgzNiwtMTU0MzEyNTY0NywxMDY4ODY1NDgzLD
+czMDk5ODExNl19
 -->
