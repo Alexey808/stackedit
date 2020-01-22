@@ -30,7 +30,7 @@ const inteval$ = interval(500)
 setTimeout(()  => inteval$.unsubscribe(),  1000);
 ```
 
-**Объеденить 2 стрима | #merge**
+**Объеденить 2 стрима | method | #merge**
 ```ts
 const one$ = from([1, 2]);  
 const two$ = from([3, 4]);  
@@ -38,12 +38,17 @@ const result = merge(one$, two$);
 result.subscribe((item) => {  
   console.log(item);  
 });
+// 1
+// 2
+// 3
+// 4
 ```
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjUwOTUxNDUsMTYwMzU4OTM1OSwtMj
-A2MDM4MTIxMiw1MzI1NDc5NDEsLTE2NDc0MjQ2MjEsLTgxMzM1
-ODM2LC0xNTQzMTI1NjQ3LDEwNjg4NjU0ODMsNzMwOTk4MTE2XX
-0=
+eyJoaXN0b3J5IjpbLTMzMjQzOTAzNiwxNjAzNTg5MzU5LC0yMD
+YwMzgxMjEyLDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtODEzMzU4
+MzYsLTE1NDMxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgxMTZdfQ
+==
 -->
