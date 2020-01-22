@@ -30,9 +30,20 @@ const inteval$ = interval(500)
 setTimeout(()  => inteval$.unsubscribe(),  1000);
 ```
 
+**Объеденить 2 стрима | #merge**
+```ts
+const one$ = from([1, 2]);  
+const two$ = from([3, 4]);  
+const result = merge(one$, two$);  
+result.subscribe((item) => {  
+  console.log(item);  
+});
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1Mz
-I1NDc5NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMTI1
-NjQ3LDEwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEyNjUwOTUxNDUsMTYwMzU4OTM1OSwtMj
+A2MDM4MTIxMiw1MzI1NDc5NDEsLTE2NDc0MjQ2MjEsLTgxMzM1
+ODM2LC0xNTQzMTI1NjQ3LDEwNjg4NjU0ODMsNzMwOTk4MTE2XX
+0=
 -->
