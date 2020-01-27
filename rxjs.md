@@ -49,7 +49,7 @@ addedUser$.pipe(toArray())
 ```
 
 **Отписки в Angular**
-```
+```ts
 subscription: Subscription = new Subscription();
 ...
 method() {
@@ -66,8 +66,8 @@ ngOnDestroy(): void {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MjgwNzUwOCwyMDkzNTk5MDk2LC0zMz
-I0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1MzI1NDc5
-NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMTI1NjQ3LD
-EwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbODAyODg1NTE3LDIwOTM1OTkwOTYsLTMzMj
+QzOTAzNiwxNjAzNTg5MzU5LC0yMDYwMzgxMjEyLDUzMjU0Nzk0
+MSwtMTY0NzQyNDYyMSwtODEzMzU4MzYsLTE1NDMxMjU2NDcsMT
+A2ODg2NTQ4Myw3MzA5OTgxMTZdfQ==
 -->
