@@ -8,6 +8,11 @@
 -   **OPTIONS**:  этот метод не используется для каких-либо манипуляций с ресурсами. Но он полезен, когда клиент не знает других методов, поддерживаемых для ресурса, и используя этот метод, клиент может получить различное представление ресурса.
 -   **HEAD**:  этот метод используется для запроса ресурса c сервера. Он очень похож на метод GET, но HEAD должен отправлять запрос и получать ответ только в заголовке. Согласно спецификации HTTP, этот метод не должен использовать тело для запроса и ответа.
 
+1.  Informational responses (`100`–`199`),
+2.  Successful responses (`200`–`299`),
+3.  Redirects (`300`–`399`),
+4.  Client errors (`400`–`499`),
+5.  and Server errors (`500`–`599`).
 # Nestjs example API
 
 ```ts
@@ -67,6 +72,6 @@ export class UsersController {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1OTI1NTExMCwtOTcyNDg1MTYwLDEyOD
-AwNzg2MjddfQ==
+eyJoaXN0b3J5IjpbLTIzMDI0MjMyLC0zNTkyNTUxMTAsLTk3Mj
+Q4NTE2MCwxMjgwMDc4NjI3XX0=
 -->
