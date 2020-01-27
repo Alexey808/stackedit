@@ -13,11 +13,11 @@
 
 ### Коды статуса ответа HTTP
 
-`Информационные ответы (100–199)
-Успешные ответы (200–299)
-Перенаправления (300–399)
-Ошибки клиента (400–499)
-Ошибки сервера (500–599)
+- Информационные ответы (100–199)  
+- Успешные ответы (200–299)  
+- Перенаправления (300–399)  
+- Ошибки клиента (400–499)  
+- Ошибки сервера (500–599)  
 
 [https://developer.mozilla.org/en-US/docs/Web/HTTP/Status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
@@ -80,6 +80,6 @@ export class UsersController {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODMxMzI0NzYsMzUwNjc2MDg0LC0zNT
-kyNTUxMTAsLTk3MjQ4NTE2MCwxMjgwMDc4NjI3XX0=
+eyJoaXN0b3J5IjpbMTkyOTcxNTU0OSwzNTA2NzYwODQsLTM1OT
+I1NTExMCwtOTcyNDg1MTYwLDEyODAwNzg2MjddfQ==
 -->
