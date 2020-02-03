@@ -166,9 +166,24 @@ export class CoreModule {
   }
 }
 ```
+
+****
+```ts
+@ViewChild('inputName', {static: false}) refInputName: ElementRef;
+@Output() eventEditUser = new EventEmitter();
+...
+ngAfterViewInit(): void {
+const refInputName$: Observable<ElementRef> = fromEvent(this.refInputName.nativeElement, 'input');
+refInputName$.subscribe((e: ElementRef<any>) => {
+    this.eventEditUser.emit({
+      name: e.refInputName.value
+    });
+  });
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzOTExMTI2NCwtNzEyODAxNzQzLDczNT
-YyNDU4NCwtNjAzNzU5NTI1LDE4ODI1NTM3MjcsMTk4MDU1NTY4
-NCwyMTM5NDIwNTAwLC0xNzg4ODA4MDIwLC0xNjQ3OTI5NDkzLC
-03OTY4NTgwNDNdfQ==
+eyJoaXN0b3J5IjpbLTExMTkwNDY0OCwxNTM5MTExMjY0LC03MT
+I4MDE3NDMsNzM1NjI0NTg0LC02MDM3NTk1MjUsMTg4MjU1Mzcy
+NywxOTgwNTU1Njg0LDIxMzk0MjA1MDAsLTE3ODg4MDgwMjAsLT
+E2NDc5Mjk0OTMsLTc5Njg1ODA0M119
 -->
