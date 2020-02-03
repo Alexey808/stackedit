@@ -11,7 +11,7 @@
 -   Утилиты (tap, delay);
 -   Для Connectable Observable (share, shareReplay, publish).
 
-## Разновидность Observable
+## Разновидности Observable
 
 **Subject - доставляет данные сразу нескольким подписчикам**
 ```ts
@@ -53,8 +53,22 @@ replaySubject.subscribe(
   value => {console.log('ReplaySubject: ' + value);}
 );
 ```
+**AsyncSubject - передает новому подписчику последнее значение, но только после того, как будет вызван метод complete()**
+```ts
+let asyncSubject = new AsyncSubject<Number>(3);
+    
+asyncSubject.subscribe(
+  value => {console.log('AsyncSubject: ' + value);}
+);
 
+asyncSubject.next(3);
+asyncSubject.next(6);
+asyncSubject.next(9);
 
+asyncSubject.complete();
+```
+
+## Методы создающие Observable
 ```ts
 of('one', 'two').subscribe(v => console.log(v)); // one two
 ```
@@ -110,8 +124,8 @@ ngOnDestroy(): void {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNzczNjU2Miw4MDI4ODU1MTcsMjA5Mz
-U5OTA5NiwtMzMyNDM5MDM2LDE2MDM1ODkzNTksLTIwNjAzODEy
-MTIsNTMyNTQ3OTQxLC0xNjQ3NDI0NjIxLC04MTMzNTgzNiwtMT
-U0MzEyNTY0NywxMDY4ODY1NDgzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTM4MjEyLDgwMjg4NTUxNywyMDkzNTk5MD
+k2LC0zMzI0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1
+MzI1NDc5NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMT
+I1NjQ3LDEwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
 -->
