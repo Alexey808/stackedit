@@ -167,7 +167,7 @@ export class CoreModule {
 }
 ```
 
-****
+**Подписка на исходящи события инпута**
 ```ts
 <input type="text" #inputName>
 ...
@@ -184,8 +184,8 @@ refInputName$.subscribe((e: ElementRef<any>) => {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4OTQ3MDkyMCwxNTM5MTExMjY0LC03MT
-I4MDE3NDMsNzM1NjI0NTg0LC02MDM3NTk1MjUsMTg4MjU1Mzcy
-NywxOTgwNTU1Njg0LDIxMzk0MjA1MDAsLTE3ODg4MDgwMjAsLT
-E2NDc5Mjk0OTMsLTc5Njg1ODA0M119
+eyJoaXN0b3J5IjpbODU4MTEzNTA1LDE1MzkxMTEyNjQsLTcxMj
+gwMTc0Myw3MzU2MjQ1ODQsLTYwMzc1OTUyNSwxODgyNTUzNzI3
+LDE5ODA1NTU2ODQsMjEzOTQyMDUwMCwtMTc4ODgwODAyMCwtMT
+Y0NzkyOTQ5MywtNzk2ODU4MDQzXX0=
 -->
