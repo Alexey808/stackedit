@@ -126,7 +126,7 @@ ngOnDestroy(): void {
 ```
 ## Отписки
 
-
+**Кастомный (@AutoUnsub) декаратор отписки**
 ```ts
 function AutoUnsub() {
   return function(constructor) {
@@ -142,9 +142,11 @@ function AutoUnsub() {
     }
   }
 }
+/* use */
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTY4NDQ0OTYsMTY4MTU0NjEsODAyOD
+eyJoaXN0b3J5IjpbLTE2NTUzNDUyMjMsMTY4MTU0NjEsODAyOD
 g1NTE3LDIwOTM1OTkwOTYsLTMzMjQzOTAzNiwxNjAzNTg5MzU5
 LC0yMDYwMzgxMjEyLDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtOD
 EzMzU4MzYsLTE1NDMxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgx
