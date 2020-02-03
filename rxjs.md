@@ -124,7 +124,13 @@ ngOnDestroy(): void {
   }
 }
 ```
-## Отписки
+## Отписки | #unsubscribe
+Операторы которые отписываются при определённых условиях
+- take(n)
+- asyncPipe
+- takeUntil
+- takeWhile
+- first
 
 **Кастомный (@AutoUnsub) декаратор отписки**
 ```ts
@@ -149,7 +155,7 @@ function AutoUnsub() {
 export class AppComponent implements OnInit { ... }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjU2MTYxNCwxNjgxNTQ2MSw4MDI4OD
+eyJoaXN0b3J5IjpbMTg3Mjc1MzYxMSwxNjgxNTQ2MSw4MDI4OD
 U1MTcsMjA5MzU5OTA5NiwtMzMyNDM5MDM2LDE2MDM1ODkzNTks
 LTIwNjAzODEyMTIsNTMyNTQ3OTQxLC0xNjQ3NDI0NjIxLC04MT
 MzNTgzNiwtMTU0MzEyNTY0NywxMDY4ODY1NDgzLDczMDk5ODEx
