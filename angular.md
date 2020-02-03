@@ -148,9 +148,14 @@ ngOnChanges(changes: SimpleChanges): void {
   }   
 }
 ```
+
+**Общепринятые core.module.ts и shared.module.ts**
+```ts
+@NgModule({imports:[], declarations:[], providers:[] })  export  class  CoreModule  {  static forRoot():  ModuleWithProviders  {  return  { ngModule:  CoreModule, providers:  [  AuthService,  LoggerService,  SettingsService  ]  };  }  }
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjgwMTc0Myw3MzU2MjQ1ODQsLTYwMz
-c1OTUyNSwxODgyNTUzNzI3LDE5ODA1NTU2ODQsMjEzOTQyMDUw
-MCwtMTc4ODgwODAyMCwtMTY0NzkyOTQ5MywtNzk2ODU4MDQzXX
-0=
+eyJoaXN0b3J5IjpbODA0Mzg1MzIzLC03MTI4MDE3NDMsNzM1Nj
+I0NTg0LC02MDM3NTk1MjUsMTg4MjU1MzcyNywxOTgwNTU1Njg0
+LDIxMzk0MjA1MDAsLTE3ODg4MDgwMjAsLTE2NDc5Mjk0OTMsLT
+c5Njg1ODA0M119
 -->
