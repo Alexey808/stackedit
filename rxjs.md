@@ -12,7 +12,23 @@
 -   Для Connectable Observable (share, shareReplay, publish).
 
 ## Разновидность Observable
-- Subject - доставляет данны
+
+**Subject - доставляет данные сразу нескольким подписчикам**
+```ts
+let subject = new Subject();
+
+subject.subscribe(
+  v => {console.log('Observer 1: ' + v);}
+);
+subject.subscribe(
+  v => {console.log('Observer 2: ' + v);}
+);
+
+subject.next(9);
+
+//Observer 1: 9
+//Observer 2: 9
+```
 
 ```ts
 of('one', 'two').subscribe(v => console.log(v)); // one two
@@ -69,7 +85,7 @@ ngOnDestroy(): void {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MzQ2OTI4OSw4MDI4ODU1MTcsMjA5Mz
+eyJoaXN0b3J5IjpbMTgyMjg2ODUzMyw4MDI4ODU1MTcsMjA5Mz
 U5OTA5NiwtMzMyNDM5MDM2LDE2MDM1ODkzNTksLTIwNjAzODEy
 MTIsNTMyNTQ3OTQxLC0xNjQ3NDI0NjIxLC04MTMzNTgzNiwtMT
 U0MzEyNTY0NywxMDY4ODY1NDgzLDczMDk5ODExNl19
