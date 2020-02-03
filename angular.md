@@ -123,6 +123,7 @@ export class AppModule {}
 ```
 
 **Подписка на свойства stora(селектор)**
+По задаче, надо изменить значения control form у ангуляр материал во время изменения выбранного пользова
 ```ts
 this.subscription.add(  
   this.store.pipe(  
@@ -134,10 +135,11 @@ this.subscription.add(
     });  
   })  
 );
+// Или 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjkzNzg1NTUsNzM1NjI0NTg0LC02MD
-M3NTk1MjUsMTg4MjU1MzcyNywxOTgwNTU1Njg0LDIxMzk0MjA1
-MDAsLTE3ODg4MDgwMjAsLTE2NDc5Mjk0OTMsLTc5Njg1ODA0M1
-19
+eyJoaXN0b3J5IjpbNzc5NzY2Nzg1LDczNTYyNDU4NCwtNjAzNz
+U5NTI1LDE4ODI1NTM3MjcsMTk4MDU1NTY4NCwyMTM5NDIwNTAw
+LC0xNzg4ODA4MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ
+==
 -->
