@@ -28,8 +28,33 @@ subject.next(9);
 ```
 **BehaviorSubject - передает новому подписчику последнее значение, в качестве аргумента принимает начальное значение**
 ```ts
+let behaviorSubject = new BehaviorSubject<Number>(3);
 
+behaviorSubject.subscribe(
+  v => {console.log('Observer with value of 3: ' + v);}
+);
+
+behaviorSubject.next(9);
+
+behaviorSubject.subscribe(
+  v => {console.log('Observer with value of 9: ' + v);}
+);
 ```
+**ReplaySubject - передает новому подписчику все предыдущие значения, принимаемый параметр - количество предыдущих значений**
+```ts
+let replaySubject = new ReplaySubject<Number>(2);
+
+replaySubject.next(3);
+replaySubject.next(6);
+replaySubject.next(9);
+replaySubject.next(12);
+
+replaySubject.subscribe(
+  value => {console.log('ReplaySubject: ' + value);}
+);
+```
+
+
 ```ts
 of('one', 'two').subscribe(v => console.log(v)); // one two
 ```
@@ -85,7 +110,7 @@ ngOnDestroy(): void {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDExMjA5MSw4MDI4ODU1MTcsMjA5Mz
+eyJoaXN0b3J5IjpbMTUyNzczNjU2Miw4MDI4ODU1MTcsMjA5Mz
 U5OTA5NiwtMzMyNDM5MDM2LDE2MDM1ODkzNTksLTIwNjAzODEy
 MTIsNTMyNTQ3OTQxLC0xNjQ3NDI0NjIxLC04MTMzNTgzNiwtMT
 U0MzEyNTY0NywxMDY4ODY1NDgzLDczMDk5ODExNl19
