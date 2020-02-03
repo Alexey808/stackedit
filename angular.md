@@ -169,7 +169,9 @@ export class CoreModule {
 
 ****
 ```ts
-@ViewChild('inputName', {static: false}) refInputName: ElementRef;
+<input type="text" #inputName>
+...
+@ViewChild('inputName', {static: false}) refInputName: ElementRef<any>;
 @Output() eventEditUser = new EventEmitter();
 ...
 ngAfterViewInit(): void {
@@ -182,7 +184,7 @@ refInputName$.subscribe((e: ElementRef<any>) => {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTkwNDY0OCwxNTM5MTExMjY0LC03MT
+eyJoaXN0b3J5IjpbLTU4OTQ3MDkyMCwxNTM5MTExMjY0LC03MT
 I4MDE3NDMsNzM1NjI0NTg0LC02MDM3NTk1MjUsMTg4MjU1Mzcy
 NywxOTgwNTU1Njg0LDIxMzk0MjA1MDAsLTE3ODg4MDgwMjAsLT
 E2NDc5Mjk0OTMsLTc5Njg1ODA0M119
