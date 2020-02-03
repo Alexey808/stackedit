@@ -122,7 +122,7 @@ export class AppModule {}
 </p>
 ```
 
-**Подписка на свойства stora(селектор)**
+**Подписка на свойства store(селектор)**
 По задаче, надо изменить значения control form у ангуляр материал во время изменения выбранного пользователя
 ```ts
 // Пример 1. подписка на свойства стора по селекту sGetSelectUser
@@ -149,8 +149,8 @@ ngOnChanges(changes: SimpleChanges): void {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA1NTE1NTY1LDczNTYyNDU4NCwtNjAzNz
-U5NTI1LDE4ODI1NTM3MjcsMTk4MDU1NTY4NCwyMTM5NDIwNTAw
-LC0xNzg4ODA4MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ
-==
+eyJoaXN0b3J5IjpbLTcxMjgwMTc0Myw3MzU2MjQ1ODQsLTYwMz
+c1OTUyNSwxODgyNTUzNzI3LDE5ODA1NTU2ODQsMjEzOTQyMDUw
+MCwtMTc4ODgwODAyMCwtMTY0NzkyOTQ5MywtNzk2ODU4MDQzXX
+0=
 -->
