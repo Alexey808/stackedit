@@ -123,22 +123,33 @@ export class AppModule {}
 ```
 
 **Подписка на свойства stora(селектор)**
-По задаче, надо изменить значения control form у ангуляр материал во время изменения выбранного пользова
+По задаче, надо изменить значения control form у ангуляр материал во время изменения выбранного пользователя
 ```ts
-this.subscription.add(  
-  this.store.pipe(  
-    select(sGetSelectUser)  
-  ).subscribe((user) => {  
+// Пример 1. подписка на свойства стора по селекту sGetSelectUser
+ngOnInit(): void {
+  this.subscription.add(  
+    this.store.pipe(  
+      select(sGetSelectUser)  
+    ).subscribe((user) => {  
+      this.userForm.get('baseInfo').setValue({  
+        userId: user.id,  
+        userName: user.name  
+      });  
+    })  
+  );
+}
+// Пример 2. Ловим изменения в @input и отслеживаем в ngOnChanges
+ngOnChanges(changes: SimpleChanges): void {  
+  if (changes.selectUser) {  
     this.userForm.get('baseInfo').setValue({  
-      userId: user.id,  
-      userName: user.name  
+      userId: changes.selectUser.currentValue.id,  
+      userName: changes.selectUser.currentValue.name  
     });  
-  })  
-);
-// Или 
+  }   
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc5NzY2Nzg1LDczNTYyNDU4NCwtNjAzNz
+eyJoaXN0b3J5IjpbNDA1NTE1NTY1LDczNTYyNDU4NCwtNjAzNz
 U5NTI1LDE4ODI1NTM3MjcsMTk4MDU1NTY4NCwyMTM5NDIwNTAw
 LC0xNzg4ODA4MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ
 ==
