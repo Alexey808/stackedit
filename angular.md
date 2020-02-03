@@ -121,8 +121,23 @@ export class AppModule {}
   <ng-template ngPluralCase=">1">{{components}} components removed </ng-template>  
 </p>
 ```
+
+**Подписка на свойства stora(селектор)**
+```ts
+this.subscription.add(  
+  this.store.pipe(  
+    select(sGetSelectUser)  
+  ).subscribe((user) => {  
+    this.userForm.get('baseInfo').setValue({  
+      userId: user.id,  
+      userName: user.name  
+    });  
+  })  
+);
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1NjI0NTg0LC02MDM3NTk1MjUsMTg4Mj
-U1MzcyNywxOTgwNTU1Njg0LDIxMzk0MjA1MDAsLTE3ODg4MDgw
-MjAsLTE2NDc5Mjk0OTMsLTc5Njg1ODA0M119
+eyJoaXN0b3J5IjpbLTE1NjkzNzg1NTUsNzM1NjI0NTg0LC02MD
+M3NTk1MjUsMTg4MjU1MzcyNywxOTgwNTU1Njg0LDIxMzk0MjA1
+MDAsLTE3ODg4MDgwMjAsLTE2NDc5Mjk0OTMsLTc5Njg1ODA0M1
+19
 -->
