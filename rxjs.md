@@ -124,10 +124,29 @@ ngOnDestroy(): void {
   }
 }
 ```
+## Отписки
 
+
+```ts
+function AutoUnsub() {
+  return function(constructor) {
+    const orig = constructor.prototype.ngOnDestroy
+    constructor.prototype.ngOnDestroy = function() {
+      for(const prop in this) {
+        const property = this[prop]
+        if(typeof property.subscribe === "function") {
+          property.unsubscribe()
+        }
+      }
+      orig.apply()
+    }
+  }
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MTU0NjEsODAyODg1NTE3LDIwOTM1OT
-kwOTYsLTMzMjQzOTAzNiwxNjAzNTg5MzU5LC0yMDYwMzgxMjEy
-LDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtODEzMzU4MzYsLTE1ND
-MxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE4MTY4NDQ0OTYsMTY4MTU0NjEsODAyOD
+g1NTE3LDIwOTM1OTkwOTYsLTMzMjQzOTAzNiwxNjAzNTg5MzU5
+LC0yMDYwMzgxMjEyLDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtOD
+EzMzU4MzYsLTE1NDMxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgx
+MTZdfQ==
 -->
