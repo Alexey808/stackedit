@@ -142,13 +142,16 @@ function AutoUnsub() {
     }
   }
 }
-/* use */
 
+/* use */
+@Component({ ... })  
+@AutoUnsub  
+export class AppComponent implements OnInit { ... }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTUzNDUyMjMsMTY4MTU0NjEsODAyOD
-g1NTE3LDIwOTM1OTkwOTYsLTMzMjQzOTAzNiwxNjAzNTg5MzU5
-LC0yMDYwMzgxMjEyLDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtOD
-EzMzU4MzYsLTE1NDMxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgx
-MTZdfQ==
+eyJoaXN0b3J5IjpbLTkxMjU2MTYxNCwxNjgxNTQ2MSw4MDI4OD
+U1MTcsMjA5MzU5OTA5NiwtMzMyNDM5MDM2LDE2MDM1ODkzNTks
+LTIwNjAzODEyMTIsNTMyNTQ3OTQxLC0xNjQ3NDI0NjIxLC04MT
+MzNTgzNiwtMTU0MzEyNTY0NywxMDY4ODY1NDgzLDczMDk5ODEx
+Nl19
 -->
