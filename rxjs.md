@@ -11,6 +11,9 @@
 -   Утилиты (tap, delay);
 -   Для Connectable Observable (share, shareReplay, publish).
 
+## Разновидность Observable
+- Subject - доставляет данны
+
 ```ts
 of('one', 'two').subscribe(v => console.log(v)); // one two
 ```
@@ -66,8 +69,8 @@ ngOnDestroy(): void {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAyODg1NTE3LDIwOTM1OTkwOTYsLTMzMj
-QzOTAzNiwxNjAzNTg5MzU5LC0yMDYwMzgxMjEyLDUzMjU0Nzk0
-MSwtMTY0NzQyNDYyMSwtODEzMzU4MzYsLTE1NDMxMjU2NDcsMT
-A2ODg2NTQ4Myw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTQ3MzQ2OTI4OSw4MDI4ODU1MTcsMjA5Mz
+U5OTA5NiwtMzMyNDM5MDM2LDE2MDM1ODkzNTksLTIwNjAzODEy
+MTIsNTMyNTQ3OTQxLC0xNjQ3NDI0NjIxLC04MTMzNTgzNiwtMT
+U0MzEyNTY0NywxMDY4ODY1NDgzLDczMDk5ODExNl19
 -->
