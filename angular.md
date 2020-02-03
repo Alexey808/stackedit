@@ -167,7 +167,7 @@ export class CoreModule {
 }
 ```
 
-**Подписка на исходящи события инпута**
+**Подписка на исходящи события инпута | subscribe**
 ```ts
 <input type="text" #inputName>
 ...
@@ -184,7 +184,7 @@ refInputName$.subscribe((e: ElementRef<any>) => {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4MTEzNTA1LDE1MzkxMTEyNjQsLTcxMj
+eyJoaXN0b3J5IjpbOTYwMTk1NzM5LDE1MzkxMTEyNjQsLTcxMj
 gwMTc0Myw3MzU2MjQ1ODQsLTYwMzc1OTUyNSwxODgyNTUzNzI3
 LDE5ODA1NTU2ODQsMjEzOTQyMDUwMCwtMTc4ODgwODAyMCwtMT
 Y0NzkyOTQ5MywtNzk2ODU4MDQzXX0=
