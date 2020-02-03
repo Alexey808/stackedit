@@ -150,16 +150,24 @@ ngOnChanges(changes: SimpleChanges): void {
 ```
 
 **Общепринятые core.module.ts и shared.module.ts**
+Общий модуль расшаривающий сервисы подобно общему компоненту shared.module
 ```ts
 @NgModule({imports:[], declarations:[], providers:[]})
 export class CoreModule {
   static forRoot(): ModuleWithProviders  {  
-    return { ngModule: CoreModule, providers: [ AuthService, LoggerService, SettingsService ]};
-}
+    return { 
+      ngModule: CoreModule,
+      providers: [ 
+        AuthService,
+        LoggerService,
+        SettingsService
+      ]
+    };
+  }
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2Njc3Nzg4NywtNzEyODAxNzQzLDczNT
+eyJoaXN0b3J5IjpbMTUzOTExMTI2NCwtNzEyODAxNzQzLDczNT
 YyNDU4NCwtNjAzNzU5NTI1LDE4ODI1NTM3MjcsMTk4MDU1NTY4
 NCwyMTM5NDIwNTAwLC0xNzg4ODA4MDIwLC0xNjQ3OTI5NDkzLC
 03OTY4NTgwNDNdfQ==
