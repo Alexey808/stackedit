@@ -75,6 +75,8 @@ of('one', 'two').subscribe(v => console.log(v)); // one two
 ```ts
 from([1,2,3]).subscribe(v => console.log(v)); // 1 2 3
 ```
+
+## Прочие методы
 ```ts
 timer(2000).subscribe(v => console.log(v)); //0
 ```
@@ -124,8 +126,8 @@ ngOnDestroy(): void {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MjEyLDgwMjg4NTUxNywyMDkzNTk5MD
-k2LC0zMzI0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1
-MzI1NDc5NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMT
-I1NjQ3LDEwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTY4MTU0NjEsODAyODg1NTE3LDIwOTM1OT
+kwOTYsLTMzMjQzOTAzNiwxNjAzNTg5MzU5LC0yMDYwMzgxMjEy
+LDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtODEzMzU4MzYsLTE1ND
+MxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgxMTZdfQ==
 -->
