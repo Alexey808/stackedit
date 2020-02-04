@@ -186,12 +186,12 @@ refInputName$.subscribe((e: ElementRef<any>) => {
 **Ссылки на элемент | @ViewChild**
 ```ts
  
-<input  type="text" #title>
+<input  type="text" #myInput>
 ...
-@ViewChild('title') private elTitle: ElementRef;
+@ViewChild('myInput') private refMyInput: ElementRef;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NTE2MTU3MCw5NjAxOTU3MzksMTUzOT
+eyJoaXN0b3J5IjpbLTgxMzcyMDc0Miw5NjAxOTU3MzksMTUzOT
 ExMTI2NCwtNzEyODAxNzQzLDczNTYyNDU4NCwtNjAzNzU5NTI1
 LDE4ODI1NTM3MjcsMTk4MDU1NTY4NCwyMTM5NDIwNTAwLC0xNz
 g4ODA4MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ==
