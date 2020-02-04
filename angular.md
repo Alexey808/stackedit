@@ -183,9 +183,16 @@ refInputName$.subscribe((e: ElementRef<any>) => {
   });
 }
 ```
+**Ссылки на элемент | @ViewChild**
+```ts
+ 
+<input  type="text" #title>
+...
+@ViewChild('title') private elTitle: ElementRef;
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwMTk1NzM5LDE1MzkxMTEyNjQsLTcxMj
-gwMTc0Myw3MzU2MjQ1ODQsLTYwMzc1OTUyNSwxODgyNTUzNzI3
-LDE5ODA1NTU2ODQsMjEzOTQyMDUwMCwtMTc4ODgwODAyMCwtMT
-Y0NzkyOTQ5MywtNzk2ODU4MDQzXX0=
+eyJoaXN0b3J5IjpbLTQ2NTE2MTU3MCw5NjAxOTU3MzksMTUzOT
+ExMTI2NCwtNzEyODAxNzQzLDczNTYyNDU4NCwtNjAzNzU5NTI1
+LDE4ODI1NTM3MjcsMTk4MDU1NTY4NCwyMTM5NDIwNTAwLC0xNz
+g4ODA4MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ==
 -->
