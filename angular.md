@@ -190,9 +190,164 @@ refInputName$.subscribe((e: ElementRef<any>) => {
 ...
 @ViewChild('myInput') private refMyInput: ElementRef;
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMzcyMDc0Miw5NjAxOTU3MzksMTUzOT
-ExMTI2NCwtNzEyODAxNzQzLDczNTYyNDU4NCwtNjAzNzU5NTI1
-LDE4ODI1NTM3MjcsMTk4MDU1NTY4NCwyMTM5NDIwNTAwLC0xNz
-g4ODA4MDIwLC0xNjQ3OTI5NDkzLC03OTY4NTgwNDNdfQ==
--->
+**Пример input с типизацией и обработкой enter и blur | #шаблонные_ссылки, #keyup, #blur**  
+```html template
+<input type="text" 
+       (keyup.enter)="onInput($event)" 
+       (blur)="onBlur(myInput.value)"
+       #myInput/>
+<h2>{title}</h2>
+```
+```ts component
+title: string = '';
+// ...
+onInput(event: KeyboardEvent) {
+  // this.title = (<HTMLInputElement>event.target).value;
+  this.title = (event.target as HTMLInputElement).value;
+}
+
+onBlur(value: string) {
+  this.title = value;
+}
+```
+
+**Динамические стили/классы | #ngStyle, #ngClass**
+```html
+<div [ngStyle]="{
+        width: '200px',
+        height: '200px',
+        margin: '10px',
+        backgroundColor: bool ? '#ccc' : '#333'
+}"></div>
+...
+<div [ngClass]="{
+        color1: !bool,
+        color2: bool
+}"></div>
+...
+<div [class.color1]="!bool"
+     [class.color2]="bool"
+></div>
+```
+
+**Структурная директива ngIf, шаблоны ng-template | #ngIf, #ngTemplate**
+```html
+<div *ngIf="!bool; else myElse">ngIf</div>
+<ng-template #myElse>
+  <div>myElse</div>
+</ng-template>
+```
+
+**Структурная директива ngSwitch| #ngSwitch, #ngSwitchCase, #ngSwitchDefault**
+```html
+<div [ngSwitch]="bool" (click)="bool = !bool">
+  <p *ngSwitchCase="true">ngSwitchCase-1</p>
+  <p *ngSwitchCase="false">ngSwitchCase-2</p>
+  <p *ngSwitchDefault>ngSwitchDefault-0</p>
+</div>
+```
+**Структурная директива ngFor| #ngFor**
+```html
+<ul *ngFor="let n of arr; let inx = index">
+  <li>{{inx + 1}}: {{n}}</li>
+</ul>
+```
+**Ng-content | #ng-content**
+```html
+// Родительский компонент app-test
+// items = [{name: 'test-1'}, {name: 'test-2'}, ... ]
+<div *ngFor="let item of items; let i = index">
+  <app-content-test [itemName]="item.name">
+    <div>num: {{i + 1}}</div>
+  </app-content-test>
+</div>
+```
+```html
+// Дочерний компонент app-content-test
+<div>
+  <ng-content></ng-content>
+  <div>name: {{itemName}}</div>
+</div>
+```
+```ts
+// Дочерний компонент app-content-test, доступ к коненту
+@ContentChild('info', {static: true}) infoRef: ElementRef;
+ngOnInit(): void {
+  console.log(this.infoRef.nativeElement);
+}
+```
+**Стратегии компонента | #ChangeDetectionStrategy, #ViewEncapsulation**
+```ts
+import { Component, ChangeDetectionStrategy, ViewEncapsulation} from '@angular/core';
+
+@Component({
+  selector: 'app-mycmp',
+  templateUrl: './content.mycmp.html',
+  styleUrls: ['./content.mycmp.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush, // ререндер только при изменении инпутов
+  encapsulation: ViewEncapsulation.None // сделать стили глобальными
+})
+export class ContentComponent {
+  // ...
+}
+```
+
+**Атрибутная дирректива, пример передачи параметров | #@Directive, #@HostBinding #@HostListener**
+```html
+<div appTestDirective color="green">test content</div>
+```
+```ts
+import {Directive, ElementRef, HostBinding, HostListener, Input, Renderer2} from '@angular/core';
+
+@Directive({
+  selector: '[appTestDirective]'
+})
+export class TestDirectiveDirective {
+  @Input() color = 'red';
+  @HostBinding('style.color') elColor = null;
+
+  constructor(
+    // private elRef: ElementRef,
+    // private renderer: Renderer2
+  ) {}
+
+  @HostListener('click', ['$event.target']) onCLick(event: Event) {
+      console.log(event);
+  }
+
+  @HostListener('mouseenter') onEnter() {
+    // this.renderer.setStyle(this.elRef.nativeElement, 'color', this.color); // 1 вариант
+    this.elColor = this.color; // 2 вариант
+  }
+
+  @HostListener('mouseleave') onLeave() {
+    // this.renderer.setStyle(this.elRef.nativeElement, 'color', null); // 1 вариант
+    this.elColor = null; // 2 вариант
+  }
+}
+```
+**Структурная дирректива | #@Directive**
+```html
+<div *appMyIf="bool">test content</div>
+```
+```ts
+import {Directive, Input, TemplateRef, ViewContainerRef} from '@angular/core';
+
+@Directive({
+  selector: '[appMyIf]'
+})
+export class MyIfDirective {
+  @Input('appMyIf') set myIf(condition: boolean) {
+    if (!condition) {
+      this.viewContainer.createEmbeddedView(this.templateRef);
+    } else {
+      this.viewContainer.clear();
+    }
+  }
+  constructor(
+    private templateRef: TemplateRef<any>,
+    private viewContainer: ViewContainerRef
+  ) { }
+}
+```
+
