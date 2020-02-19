@@ -350,4 +350,51 @@ export class MyIfDirective {
   ) { }
 }
 ```
+**Кастомный пайп фильтр | #@Pipe**
+search-filter.pipe.ts
+```ts
+import { Pipe, PipeTransform } from '@angular/core';
+import { Item } from '../../app.component'; // { title: string }
+
+@Pipe({
+  name: 'searchFilter',
+  pure: false // отключает оптимизация detec-changes
+})
+export class SearchFilterPipe implements PipeTransform {
+
+  transform(items: Item[], search: string = ''): Item[] {
+    if (!search.trim()) {
+      return items;
+    }
+
+    return items.filter((item: Item) => {
+      return item.title.includes(search);
+    });
+  }
+}
+```
+Шаблон компонента использующий пайп
+```html
+<!-- 
+  search = '';
+  items: Item = [{titile: abc},{titile: xyz}];
+-->
+<div>
+  <input type="text" [(ngModel)]="search" />
+  <div *ngFor="let item of items | searchFilter:search">
+    <p>{{item.title}}</p>
+  </div>
+</div>
+```
+Модуль компонента использующий пайп
+```ts
+@NgModule({
+  declarations: [
+    // ...
+    SearchFilterPipe
+    // ...
+  ],
+  // ...
+})
+```
 
