@@ -398,7 +398,37 @@ export class SearchFilterPipe implements PipeTransform {
   // ...
 })
 ```
+**Тесты**
+Базовое в юнит тестах
+```ts
+/* base unit tests */
+describe('myMethod', () => {
+	it('should ...', () => {
+		expect(myFunc(1)).toBe(2); // toBe жёсткое соответствие
+		expect(getMyStr('test')).toContain('test'); // toContain частич соответств, прим к строкам массивам
+		expect(getMyArray()).toContain('test3'); // toContain частич соответств
+	})
+})
+```
+Базовое в тес
+```ts
+/* base testing component */
+describe('myComponent', () => {
+	let myComponent: MyComponent;
+
+	beforeEach(() => { // вызывается перед каждый тестом it-ом
+		component = new MyComponent();
+	});
+	beforeAll(() => {}); // вызывается перед всеми "it"
+	afterEach(() => {}); // вызывается после завершения каждого "it"
+	afterAll(() => {}); // вызывается после завершения всех "it"
+
+	it('should ...', () => {
+		expect(myFunc(1)).toBe(2); // toBe жёсткое соответствие
+	})
+})
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDEwMTMzOTddfQ==
+eyJoaXN0b3J5IjpbLTExNDIzNzU3NDNdfQ==
 -->
