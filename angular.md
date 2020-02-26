@@ -183,13 +183,14 @@ refInputName$.subscribe((e: ElementRef<any>) => {
   });
 }
 ```
-**Ссылки на элемент | @ViewChild**
+**Ссылки на элемент | @ViewChild, #шаблонные_ссылки**
 ```ts
  
 <input  type="text" #myInput>
 ...
 @ViewChild('myInput') private refMyInput: ElementRef;
 ```
+
 **Пример input с типизацией и обработкой enter и blur | #шаблонные_ссылки, #keyup, #blur**  
 ```html template
 <input type="text" 
@@ -398,3 +399,6 @@ export class SearchFilterPipe implements PipeTransform {
 })
 ```
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzMDEwMTMzOTddfQ==
+-->
