@@ -398,7 +398,7 @@ export class SearchFilterPipe implements PipeTransform {
   // ...
 })
 ```
-**Тесты**
+**Тесты | #toBe, #toContain, #beforeEach, #beforeAll, #afterEach, #afterAll**
 Базовое в юнит тестах
 ```ts
 /* base unit tests */
@@ -410,7 +410,7 @@ describe('myMethod', () => {
 	})
 })
 ```
-Базовое в тес
+Базовое в тестировании компонентов
 ```ts
 /* base testing component */
 describe('myComponent', () => {
@@ -430,5 +430,5 @@ describe('myComponent', () => {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDIzNzU3NDNdfQ==
+eyJoaXN0b3J5IjpbMTA4MTA2MTU1XX0=
 -->
