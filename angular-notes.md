@@ -86,8 +86,15 @@ export const environment: IEnvironment = {
 ```
 **package.json**
 ```json
-
+{
+  scripts: {
+     /* ... */
+     "start-myenv": "ng serve --configuration=myenv",
+     "build-myenv": "ng build --configuration=myenv-prod", 
+     /* ... */
+  }
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNjA4NjA5N119
+eyJoaXN0b3J5IjpbLTE1MjQ2NjUzMDJdfQ==
 -->
