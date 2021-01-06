@@ -37,8 +37,8 @@ export const environment: IEnvironment = {
 За основу можно сопировать параметры с `production`
 ```json
 
-
-
+// вложенность: architect > configurations
+"production": { /* ... */ },
 "myenv": {  
   "fileReplacements": [  
     {  
@@ -76,8 +76,8 @@ export const environment: IEnvironment = {
   ]  
 }
 
-//...
-
+// вложенность: architect > configurations
+"production": { /* ... */ },
 "myenv": {  
   "browserTarget": "angular-base:build:myenv"  
 },  
@@ -86,5 +86,5 @@ export const environment: IEnvironment = {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MjEyNzg0Ml19
+eyJoaXN0b3J5IjpbLTk4Nzg4MTc5Ml19
 -->
