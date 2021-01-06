@@ -34,8 +34,11 @@ export const environment: IEnvironment = {
 };
 ```
 **angular.json**
-Параметры 
+За основу можно сопировать параметры с `production`
 ```json
+
+
+
 "myenv": {  
   "fileReplacements": [  
     {  
@@ -74,5 +77,5 @@ export const environment: IEnvironment = {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTkwMTEzNDddfQ==
+eyJoaXN0b3J5IjpbLTEzODM5OTE3Ml19
 -->
