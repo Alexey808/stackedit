@@ -37,7 +37,7 @@ export const environment: IEnvironment = {
 За основу для prod версии можно сопировать параметры с `production`
 ```json
 // вложенность: architect > build > configurations
-"production": { ... },
+"production": { },
 "myenv": {  
   "fileReplacements": [  
     {  
@@ -76,7 +76,7 @@ export const environment: IEnvironment = {
 }
 
 // вложенность: architect > configurations
-"production": { ... },
+"production": { },
 "myenv": {  
   "browserTarget": "angular-base:build:myenv"  
 },  
@@ -87,14 +87,13 @@ export const environment: IEnvironment = {
 **package.json**
 ```json
 {
-  scripts: {
-     ...
+  "scripts": {
      "start-myenv": "ng serve --configuration=myenv",
      "build-myenv": "ng build --configuration=myenv-prod", 
   }
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjUyMzM1MjYsLTE1MjQ2NjUzMDJdfQ
+eyJoaXN0b3J5IjpbLTE3MzkwODI1NTQsLTE1MjQ2NjUzMDJdfQ
 ==
 -->
