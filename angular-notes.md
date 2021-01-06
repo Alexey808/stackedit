@@ -100,12 +100,13 @@ export const environment: IEnvironment = {
 
 ## Подключение stylelint
 
-1) npm install --save-dev stylelint stylelint-config-standard
+1) `npm install --save-dev stylelint stylelint-config-standard`
 2) Создаём правила. Генератор правил: https://maximgatilin.github.io/stylelint-config/
 3) Конфиг файл
 
-**.stylelintrc.json**
-Понравились мне
+**корень_проекта/.stylelintrc.json**  
+
+Понравились мне  
 ```
 {
     "extends": "stylelint-config-standard",
@@ -137,19 +138,9 @@ export const environment: IEnvironment = {
     }
 }
 ```
-2) Settings/Preferences > Languages and Frameworks > Style Sheets > Stylelint ставим галочку Enable. 
 
-Генератор правил: https://maximgatilin.github.io/stylelint-config/
-
-~/dev/angular-base/node_modules/stylelint
-
-
-
-
-architect > build > configurations
-
-architect > configurations
+4) Settings/Preferences > Languages and Frameworks > Style Sheets > Stylelint ставим галочку Enable. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDk4OTk4OTEsLTIwOTA3MjYyMCwtMT
-UyNDY2NTMwMl19
+eyJoaXN0b3J5IjpbLTk4MjIwNTIzMywtMjA5MDcyNjIwLC0xNT
+I0NjY1MzAyXX0=
 -->
