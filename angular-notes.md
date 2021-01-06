@@ -37,7 +37,7 @@ export const environment: IEnvironment = {
 За основу для prod версии можно сопировать параметры с `production`
 ```json
 // вложенность: architect > build > configurations
-"production": { /* ... */ },
+"production": { ... },
 "myenv": {  
   "fileReplacements": [  
     {  
@@ -95,6 +95,6 @@ export const environment: IEnvironment = {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTg5MjM3NDgsLTE1MjQ2NjUzMDJdfQ
+eyJoaXN0b3J5IjpbLTEzMjUyMzM1MjYsLTE1MjQ2NjUzMDJdfQ
 ==
 -->
