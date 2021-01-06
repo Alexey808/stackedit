@@ -34,6 +34,7 @@ export const environment: IEnvironment = {
 };
 ```
 **angular.json**  
+
 За основу для prod версии можно сопировать параметры с `production`
 ```json
 // вложенность: architect > build > configurations
@@ -96,5 +97,6 @@ export const environment: IEnvironment = {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MzIxMzcxOCwtMTUyNDY2NTMwMl19
+eyJoaXN0b3J5IjpbLTEwOTA4NDc0OTIsLTE1MjQ2NjUzMDJdfQ
+==
 -->
