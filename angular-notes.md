@@ -34,16 +34,15 @@ export const environment: IEnvironment = {
 };
 ```
 **angular.json**
-За основу можно сопировать параметры с `production`
+За основу для prod версии можно сопировать параметры с `production`
 ```json
-
-// вложенность: architect > configurations
+// вложенность: architect > build > configurations
 "production": { /* ... */ },
 "myenv": {  
   "fileReplacements": [  
     {  
       "replace": "src/environments/environment.ts",  
-      "with": "src/environments/environment-my.ts"  
+      "with": "src/environments/environment-myenv.ts"  
     }  
   ]  
 },  
@@ -51,7 +50,7 @@ export const environment: IEnvironment = {
   "fileReplacements": [  
     {  
       "replace": "src/environments/environment.ts",  
-      "with": "src/environments/environment-my.prod.ts"  
+      "with": "src/environments/environment-myenv.prod.ts"  
     }  
   ],  
   "optimization": true,  
@@ -86,5 +85,5 @@ export const environment: IEnvironment = {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4Nzg4MTc5Ml19
+eyJoaXN0b3J5IjpbMTE0MzkyNjg0MV19
 -->
