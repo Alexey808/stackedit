@@ -84,6 +84,10 @@ export const environment: IEnvironment = {
   "browserTarget": "angular-base:build:myenv-prod"  
 }
 ```
+**package.json**
+```json
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MzkyNjg0MV19
+eyJoaXN0b3J5IjpbMTUwNjA4NjA5N119
 -->
