@@ -33,10 +33,45 @@ export const environment: IEnvironment = {
   theme: 'my-theme', 
 };
 ```
-****
-```ts
-
+**angular.json**
+```json
+"myenv": {  
+  "fileReplacements": [  
+    {  
+      "replace": "src/environments/environment.ts",  
+      "with": "src/environments/environment-my.ts"  
+    }  
+  ]  
+},  
+"myenv-prod": {  
+  "fileReplacements": [  
+    {  
+      "replace": "src/environments/environment.ts",  
+  "with": "src/environments/environment-my.prod.ts"  
+  }  
+  ],  
+  "optimization": true,  
+  "outputHashing": "all",  
+  "sourceMap": false,  
+  "extractCss": true,  
+  "namedChunks": false,  
+  "extractLicenses": true,  
+  "vendorChunk": false,  
+  "buildOptimizer": true,  
+  "budgets": [  
+    {  
+      "type": "initial",  
+  "maximumWarning": "2mb",  
+  "maximumError": "5mb"  
+  },  
+  {  
+      "type": "anyComponentStyle",  
+  "maximumWarning": "6kb",  
+  "maximumError": "10kb"  
+  }  
+  ]  
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODU3MjQ4ODldfQ==
+eyJoaXN0b3J5IjpbLTExNTQ4NjgxODBdfQ==
 -->
