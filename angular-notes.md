@@ -76,7 +76,7 @@ export const environment: IEnvironment = {
 }
 
 // вложенность: architect > configurations
-"production": { /* ... */ },
+"production": { ... },
 "myenv": {  
   "browserTarget": "angular-base:build:myenv"  
 },  
@@ -88,13 +88,13 @@ export const environment: IEnvironment = {
 ```json
 {
   scripts: {
-     /* ... */
+     ...
      "start-myenv": "ng serve --configuration=myenv",
      "build-myenv": "ng build --configuration=myenv-prod", 
-     /* ... */
   }
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjQ2NjUzMDJdfQ==
+eyJoaXN0b3J5IjpbLTE0OTg5MjM3NDgsLTE1MjQ2NjUzMDJdfQ
+==
 -->
