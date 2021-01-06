@@ -1,6 +1,6 @@
 
 ## Добавление env
-Добавленные здесь "channel" и "theme" опционально. Как пример для изменения api или темы в зависимости от окружения. И подобные изменения нужно применить и к дефолтным `утмшкщ` и `` соответственно.
+Добавленные здесь `channel` и `theme` опционально. Как пример для изменения api или темы в зависимости от окружения. И подобные изменения нужно применить и к дефолтным `environment.ts` и `environment.prod.ts` соответственно.
 
 **src/environments/types**
 ```ts
@@ -33,7 +33,10 @@ export const environment: IEnvironment = {
   theme: 'my-theme', 
 };
 ```
-> Written with [StackEdit](https://stackedit.io/).
+****
+```ts
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMjc0NzkyN119
+eyJoaXN0b3J5IjpbLTExODU3MjQ4ODldfQ==
 -->
