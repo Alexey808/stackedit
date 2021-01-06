@@ -144,8 +144,12 @@ export const environment: IEnvironment = {
 a {}
 /* stylelint-enable */
 ```
+```css
+/* stylelint-disable-next-line declaration-no-important */
+color: pink !important;
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDY2MTEzMDYsLTc5MjI0OTE0MSwtMj
-A5MDcyNjIwLC0xNTI0NjY1MzAyXX0=
+eyJoaXN0b3J5IjpbMTY1OTI2MDg5NywtNzkyMjQ5MTQxLC0yMD
+kwNzI2MjAsLTE1MjQ2NjUzMDJdfQ==
 -->
