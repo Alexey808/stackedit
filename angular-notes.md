@@ -101,9 +101,8 @@ export const environment: IEnvironment = {
 ## Подключение stylelint
 
 1) `npm install --save-dev stylelint stylelint-config-standard`
-2) Создаём правила для `.stylelintrc.json`. Генератор правил: https://maximgatilin.github.io/stylelint-config/
-3) Конфиг файл
-4) Настройка подсветки в WebStorm: Settings/Preferences > Languages and Frameworks > Style Sheets > Stylelint ставим галочку Enable. 
+2) Создаём `.stylelintrc.json` в корне проекта и генериру пользовательские правила. Генератор: https://maximgatilin.github.io/stylelint-config/
+3) Настройка подсветки в WebStorm: Settings/Preferences > Languages and Frameworks > Style Sheets > Stylelint ставим галочку Enable. 
 
 **корень_проекта/.stylelintrc.json**  
 
@@ -142,6 +141,6 @@ export const environment: IEnvironment = {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQxNjg1NzgzLC0yMDkwNzI2MjAsLTE1Mj
-Q2NjUzMDJdfQ==
+eyJoaXN0b3J5IjpbMTYyMTM4NTIzNCwtMjA5MDcyNjIwLC0xNT
+I0NjY1MzAyXX0=
 -->
