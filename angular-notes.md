@@ -34,6 +34,7 @@ export const environment: IEnvironment = {
 };
 ```
 **angular.json**
+Параметры 
 ```json
 "myenv": {  
   "fileReplacements": [  
@@ -47,8 +48,8 @@ export const environment: IEnvironment = {
   "fileReplacements": [  
     {  
       "replace": "src/environments/environment.ts",  
-  "with": "src/environments/environment-my.prod.ts"  
-  }  
+      "with": "src/environments/environment-my.prod.ts"  
+    }  
   ],  
   "optimization": true,  
   "outputHashing": "all",  
@@ -61,17 +62,17 @@ export const environment: IEnvironment = {
   "budgets": [  
     {  
       "type": "initial",  
-  "maximumWarning": "2mb",  
-  "maximumError": "5mb"  
-  },  
-  {  
+      "maximumWarning": "2mb",  
+      "maximumError": "5mb"  
+    },  
+    {  
       "type": "anyComponentStyle",  
-  "maximumWarning": "6kb",  
-  "maximumError": "10kb"  
-  }  
+      "maximumWarning": "6kb",  
+      "maximumError": "10kb"  
+    }  
   ]  
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTQ4NjgxODBdfQ==
+eyJoaXN0b3J5IjpbLTEzOTkwMTEzNDddfQ==
 -->
