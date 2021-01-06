@@ -138,9 +138,14 @@ export const environment: IEnvironment = {
     }
 }
 ```
-
+**Отключение линтеров**
+```css
+/* stylelint-disable */
+a {}
+/* stylelint-enable */
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MjI0OTE0MSwtMjA5MDcyNjIwLC0xNT
-I0NjY1MzAyXX0=
+eyJoaXN0b3J5IjpbLTE2NDY2MTEzMDYsLTc5MjI0OTE0MSwtMj
+A5MDcyNjIwLC0xNTI0NjY1MzAyXX0=
 -->
