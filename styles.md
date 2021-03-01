@@ -14,9 +14,13 @@
   font-style: normal  
 }
 ```
+## Синтакс обращения к селекторам  
 
-**Синтакс обращения к селекторам**  
-`[class^="icon-"] {}` - ко всем классам начинающиеся с "icon-"  
+**Ко всем классам начинающиеся с "icon-"**
+```css
+[class^="icon-"] {}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE5OTIyODkwLC0xMzYwOTY2OTQ1XX0=
+eyJoaXN0b3J5IjpbLTIwNzcwOTI0ODQsLTEzNjA5NjY5NDVdfQ
+==
 -->
