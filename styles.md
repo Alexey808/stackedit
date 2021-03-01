@@ -14,6 +14,9 @@
   font-style: normal  
 }
 ```
+**Синтакс обращения к селекторам**  
+`[class^="icon-"]:before {}` - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjA5NjY5NDVdfQ==
+eyJoaXN0b3J5IjpbLTE4OTk5MDI4MTQsLTEzNjA5NjY5NDVdfQ
+==
 -->
