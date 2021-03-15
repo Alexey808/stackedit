@@ -14,7 +14,6 @@
   font-style: normal  
 }
 ```
-## Синтакс обращения к селекторам  
 
 **Ко всем классам начинающиеся с "icon-"**
 ```css
@@ -67,6 +66,6 @@ box-shadow: inset 0 0 2px 0px red, 0 0 2px 0px red;
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNDA4MDA2MSwtNTg5MzM3NjIyLC0yMD
-c3MDkyNDg0LC0xMzYwOTY2OTQ1XX0=
+eyJoaXN0b3J5IjpbLTY2MzQ4NjUyNywtNjM0MDgwMDYxLC01OD
+kzMzc2MjIsLTIwNzcwOTI0ODQsLTEzNjA5NjY5NDVdfQ==
 -->
