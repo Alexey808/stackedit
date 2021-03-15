@@ -35,12 +35,19 @@ border-top: 1px solid rgba($orange, .25);
 ```css
 width: auto;
 height: auto;
-max-height: 100%; max-width: 100%
+max-height: 100%;
+max-width: 100%;
 ```
 
 **Внутренняя тень, вместе с внешней | inset**
 ```css
 box-shadow: inset 0 0 2px 0px red, 0 0 2px 0px red;
+```
+
+**Простейшая анимация**
+```css
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
 ```
 
 **Медиа запросы**
@@ -60,6 +67,6 @@ box-shadow: inset 0 0 2px 0px red, 0 0 2px 0px red;
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDM2MDcyMjEsLTU4OTMzNzYyMiwtMj
-A3NzA5MjQ4NCwtMTM2MDk2Njk0NV19
+eyJoaXN0b3J5IjpbLTYzNDA4MDA2MSwtNTg5MzM3NjIyLC0yMD
+c3MDkyNDg0LC0xMzYwOTY2OTQ1XX0=
 -->
