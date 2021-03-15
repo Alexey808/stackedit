@@ -26,6 +26,13 @@
 height: calc(#{$headerHeight} / 2 - #{$paddingWidth});
 ```
 
+**П
+
+**Внутренняя тень, вместе с внешней | inset**
+```css
+box-shadow: inset 0 0 2px 0px red, 0 0 2px 0px red;
+```
+
 **Медиа запросы**
 ```css
 @media screen and (max-width: 960px) { /* разрешение экрана */ }
@@ -43,6 +50,6 @@ height: calc(#{$headerHeight} / 2 - #{$paddingWidth});
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk2MjgxMDA4LC01ODkzMzc2MjIsLTIwNz
+eyJoaXN0b3J5IjpbNDkxMTc2ODMzLC01ODkzMzc2MjIsLTIwNz
 cwOTI0ODQsLTEzNjA5NjY5NDVdfQ==
 -->
