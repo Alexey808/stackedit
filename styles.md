@@ -25,19 +25,19 @@
 ```css
 @media screen and (max-width: 960px) { /* разрешение экрана */ }
 @media screen and (orientation: landscape) { /* ориентация экрана */
-   portrait: портретная ориентация
-   landscape: альбомная оринетация
+   portrait - портретная ориентация
+   landscape - альбомная оринетация
 }
 @media streen and (aspect-ratio: 16/9) { /* соотношение сторон */ }
 @media streen and (hover: hover) { /* механизм ввода может наводиться на элемент */ }
 @media streen and (hover: none) and (pointer: fine) { /* механизм ввода не может наводиться на элемент */ 
-   pointer: coarse, включает в себя указательно ограниченной точности
-   pointer: fine, включает в себя точное указатель
-   pointer: none, не включает в себя указатель
+   pointer: coarse - включает в себя указательно ограниченной точности
+   pointer: fine - включает в себя точное указатель
+   pointer: none - не включает в себя указатель
 }
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2ODk4NTE2OCwtNTg5MzM3NjIyLC0yMD
+eyJoaXN0b3J5IjpbLTY5NzQ5Nzk0OSwtNTg5MzM3NjIyLC0yMD
 c3MDkyNDg0LC0xMzYwOTY2OTQ1XX0=
 -->
