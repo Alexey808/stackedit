@@ -22,11 +22,21 @@
 ```
 
 **Calc с переменными | SCSS**
-```css
+```scss
 height: calc(#{$headerHeight} / 2 - #{$paddingWidth});
 ```
 
-**П
+**Прозрачность переменной через RGBA | SCSS**
+```scss
+border-top: 1px solid rgba($orange, .25);
+```
+
+**Масштабирование картинок**
+```css
+width: auto;
+height: auto;
+max-height: 100%; max-width: 100%
+```
 
 **Внутренняя тень, вместе с внешней | inset**
 ```css
@@ -50,6 +60,6 @@ box-shadow: inset 0 0 2px 0px red, 0 0 2px 0px red;
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkxMTc2ODMzLC01ODkzMzc2MjIsLTIwNz
-cwOTI0ODQsLTEzNjA5NjY5NDVdfQ==
+eyJoaXN0b3J5IjpbLTE4NDM2MDcyMjEsLTU4OTMzNzYyMiwtMj
+A3NzA5MjQ4NCwtMTM2MDk2Njk0NV19
 -->
