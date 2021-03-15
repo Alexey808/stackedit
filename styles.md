@@ -24,7 +24,9 @@
 **Медиа запросы**
 ```css
 @media screen and (max-width: 960px) { /* разрешение экрана */ }
-@media screen and (orientation: landscape) { /* ориентация экрана */ }
+@media screen and (orientation: landscape) { /* ориентация экрана */
+	portrait: портретная 
+}
 @media streen and (aspect-ratio: 16/9) { /* соотношение сторон */ }
 
 
@@ -35,6 +37,6 @@ pointer: fine, включает в себя точное указатель
 pointer: none, не включает в себя указатель
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4OTMzNzYyMiwtMjA3NzA5MjQ4NCwtMT
-M2MDk2Njk0NV19
+eyJoaXN0b3J5IjpbLTE0MzM2MDY2NTUsLTU4OTMzNzYyMiwtMj
+A3NzA5MjQ4NCwtMTM2MDk2Njk0NV19
 -->
