@@ -21,6 +21,11 @@
 [class^="icon-"] {}
 ```
 
+**Calc с переменными | SCSS**
+```css
+height: calc(#{$headerHeight} / 2 - #{$paddingWidth});
+```
+
 **Медиа запросы**
 ```css
 @media screen and (max-width: 960px) { /* разрешение экрана */ }
@@ -38,6 +43,6 @@
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NzQ5Nzk0OSwtNTg5MzM3NjIyLC0yMD
-c3MDkyNDg0LC0xMzYwOTY2OTQ1XX0=
+eyJoaXN0b3J5IjpbMzk2MjgxMDA4LC01ODkzMzc2MjIsLTIwNz
+cwOTI0ODQsLTEzNjA5NjY5NDVdfQ==
 -->
