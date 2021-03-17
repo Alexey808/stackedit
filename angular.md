@@ -428,7 +428,8 @@ describe('myComponent', () => {
 	})
 })
 ```
+## Events
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MTA2MTU1XX0=
+eyJoaXN0b3J5IjpbLTU0MDAzMzU3MCwxMDgxMDYxNTVdfQ==
 -->
