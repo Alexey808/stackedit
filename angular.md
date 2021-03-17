@@ -398,6 +398,7 @@ export class SearchFilterPipe implements PipeTransform {
   // ...
 })
 ```
+## Test
 **Тесты | #toBe, #toContain, #beforeEach, #beforeAll, #afterEach, #afterAll**
 Базовое в юнит тестах
 ```ts
@@ -430,6 +431,10 @@ describe('myComponent', () => {
 ```
 ## Events
 
+**Отлавливаем событие resize**
+```html
+<div (window:resize)="onResize$.next()"></div>
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MDAzMzU3MCwxMDgxMDYxNTVdfQ==
+eyJoaXN0b3J5IjpbMTI3MDg0Nzk2NiwxMDgxMDYxNTVdfQ==
 -->
