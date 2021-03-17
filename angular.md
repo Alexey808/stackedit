@@ -436,6 +436,14 @@ describe('myComponent', () => {
 ```html
 <div (window:resize)="onResize$.next()"></div>
 ```
+или
+```ts
+@HostListener('window:resize', ['$event'])
+onResize(event) {
+  event.target.innerWidth;
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjI3NTY4NjcsMTA4MTA2MTU1XX0=
+eyJoaXN0b3J5IjpbLTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMT
+A4MTA2MTU1XX0=
 -->
