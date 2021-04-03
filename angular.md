@@ -398,6 +398,16 @@ export class SearchFilterPipe implements PipeTransform {
   // ...
 })
 ```
+
+**Проверка доступа к камере**  
+```html
+<iframe src="https://webrtc.github.io/samples/src/content/getusermedia/gum/"
+        allow="camera"
+        width="100%"
+        height="700px"
+></iframe>
+```
+
 ## Tests  
 
 **Тесты | #toBe, #toContain, #beforeEach, #beforeAll, #afterEach, #afterAll**
@@ -443,7 +453,9 @@ onResize(event) {
   event.target.innerWidth;
 }
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMT
-A4MTA2MTU1XX0=
+eyJoaXN0b3J5IjpbLTEwODY5OTI3NjYsLTExNzQyNzc0OTYsLT
+EyNjI3NTY4NjcsMTA4MTA2MTU1XX0=
 -->
