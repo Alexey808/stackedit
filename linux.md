@@ -75,9 +75,33 @@ Type=oneshot
 # Запуск при загрузке системы
 WantedBy=multi-user.target
 ```
+## Nginx
 
+**удаление nginx**   
+
+`sudo netstat -ntlp | grep 80`
+
+`sudo service nginx stop`
+
+sudo apt-get remove nginx*
+
+sudo apt-get purge nginx*
+
+sudo apt-get --purge autoremove
+
+sudo rm -rf /etc/nginx/ /usr/sbin/nginx /usr/share/man/man1/nginx.1.gz
+
+**старт**  
+
+service nginx status
+
+service nginx start
+
+service nginx restart
+
+sudo nginx -s reload
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NjEyNTI5OCwxNzUyNzIxOTE3LDI5NT
-IwNDg0LDc1MzMzNDM3Ml19
+eyJoaXN0b3J5IjpbLTI5OTkzMjc1LDEyNTYxMjUyOTgsMTc1Mj
+cyMTkxNywyOTUyMDQ4NCw3NTMzMzQzNzJdfQ==
 -->
