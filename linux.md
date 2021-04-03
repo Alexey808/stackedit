@@ -11,7 +11,7 @@ Description=TEST-DEMON
 # тест комментария на русском
 [Service]
 RemainAfterExit=true
-ExecStart=/home/alexey/init/test-demon-start.service
+ExecStart=/home/alexey/alexey/init/test-demon-start.service
 Type=oneshot
 
 [Install]
@@ -62,6 +62,6 @@ WantedBy=multi-user.target
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDI4NzI2ODYsMjk1MjA0ODQsNzUzMz
-M0MzcyXX0=
+eyJoaXN0b3J5IjpbMTc1MjcyMTkxNywyOTUyMDQ4NCw3NTMzMz
+QzNzJdfQ==
 -->
