@@ -1,4 +1,4 @@
-
+# Angular testing
 
 **Тестирование метода сервиса возвращающего простые элементы**   
 ```ts
@@ -28,5 +28,5 @@ describe('AppService', () => {
 });
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODU3NjE0MDddfQ==
+eyJoaXN0b3J5IjpbMTE5MTAxNDMzMF19
 -->
