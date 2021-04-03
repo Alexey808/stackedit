@@ -1,8 +1,9 @@
 **Установка deb пакетов**  
 `sudo dpkg -i имя_пакета.deb`
 
+## Наброски демонов
 
-**jl**
+**
 ```bash
 [Unit]
 Description=TEST-DEMON
@@ -28,13 +29,10 @@ WantedBy=multi-user.target
 # journalctl -u НАЗВАНИЕ_ДЕМОНА - логи
 
 
-
 ### Дополнительные сведенья
 
 # сам демон должен лежать в /etc/systemd/system/НАЗВАНИЕ_ДЕМОНА
 # /usr/local/bin/НАЗВАНИЕ_СКРИПТА			test-script-for-demon.sh
-
-
 
 ### Сервис
 [Unit]
@@ -64,6 +62,6 @@ WantedBy=multi-user.target
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjk1NDM1MDAsMjk1MjA0ODQsNzUzMz
-M0MzcyXX0=
+eyJoaXN0b3J5IjpbMjAwNjMyODI3NSwyOTUyMDQ4NCw3NTMzMz
+QzNzJdfQ==
 -->
