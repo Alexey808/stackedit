@@ -1,6 +1,5 @@
 # Angular testing
 
-## Info
 `spyOn()` - отслеживает состояния и использование методов объекта;  
 `spyOnProperty()` - используется для отслеживания состояния и использования свойств объекта;  
 `jasmine.createSpy` - создает функцию, у которой нет определения;  
@@ -36,5 +35,5 @@ describe('AppService', () => {
 });
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk0MDMwODk0XX0=
+eyJoaXN0b3J5IjpbMTAyMjM2MzQ0OF19
 -->
