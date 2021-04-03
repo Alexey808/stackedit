@@ -71,11 +71,49 @@ function onConsole(val) {
 }
 onConsole({name: 'test'}); // {name: 'test'}
 onConsole({nameee: 'it is fail'}); // undefined
+```
 
+**JSON и Base64**
+```js
+{
+	amount: 10.00,
+	description: 'test_payment',
+	issuer_id: '0.160102105757055',
+	ts: 1607028732,
+	user_info: {user_id: 'test_user111'},
+	view: {skin: 'checkout'},
+	scenario: 'item',
+	pay_method: 'cpgtest',
+	currency: 'RUB',
+};
+
+
+var obj =  {
+	amount: 10.00,
+	description: 'test_payment',
+	issuer_id: '0.160102105757055',
+	ts: 1607028732,
+	user_info: {user_id: 'test_user111'},
+	view: {skin: 'checkout'},
+	scenario: 'item',
+	pay_method: 'cpgtest',
+	currency: 'RUB',
+};
+
+var obj = { prop1: 'test1', prop2: { value: 'test2' } };
+
+var obj_json = JSON.stringify(obj); // object -> json
+
+var json_base64 = btoa(obj_json); // json -> base64
+
+var base64_json = atob(json_base64); // base64 -> json
+
+var json_obj = JSON.parse(base64_json); // json -> object
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5ODg3MTM1MCwtMjA5NjM3NDc5NSwtMT
-ExMjQ1ODcxLDcyODMyNzExNSwtMTYzMjU3MjgxN119
+eyJoaXN0b3J5IjpbNzkxMDc0Nzc3LC02OTg4NzEzNTAsLTIwOT
+YzNzQ3OTUsLTExMTI0NTg3MSw3MjgzMjcxMTUsLTE2MzI1NzI4
+MTddfQ==
 -->
