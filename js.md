@@ -62,8 +62,20 @@ Object.freeze(myObject);
 Object.seal(myObject);
 ```
 
+**Проверка свойства**  
+```js
+function onConsole(val) {
+	if ('name' in val) {
+	    console.log(val);
+	}
+}
+onConsole({name: 'test'}); // {name: 'test'}
+onConsole({nameee: 'it is fail'}); // undefined
+
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTYzNzQ3OTUsLTExMTI0NTg3MSw3Mj
-gzMjcxMTUsLTE2MzI1NzI4MTddfQ==
+eyJoaXN0b3J5IjpbLTY5ODg3MTM1MCwtMjA5NjM3NDc5NSwtMT
+ExMjQ1ODcxLDcyODMyNzExNSwtMTYzMjU3MjgxN119
 -->
