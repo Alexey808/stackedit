@@ -1,7 +1,7 @@
 **Установка deb пакетов**  
 `sudo dpkg -i имя_пакета.deb`
 
-## Наброски демонов
+## Наброски _daemon_ (фоновых процессов
 
 **
 ```bash
@@ -62,6 +62,6 @@ WantedBy=multi-user.target
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNjMyODI3NSwyOTUyMDQ4NCw3NTMzMz
-QzNzJdfQ==
+eyJoaXN0b3J5IjpbLTEyMDI4NzI2ODYsMjk1MjA0ODQsNzUzMz
+M0MzcyXX0=
 -->
