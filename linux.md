@@ -2,7 +2,23 @@
 `sudo dpkg -i имя_пакета.deb`
 
 ## Наброски _daemon_ (фоновых процессов
+**
+```bash
+#!/bin/bash
 
+echo Hello!!!111!!!!
+
+gnome-terminal
+#setxkbmap us
+
+#/usr/systemd/system/test-daemon.service
+#/home/alexey/scripts/test-daemon-service.sh
+
+#sudo chmod +x /home/alexey/scripts/test-daemon-service.sh
+#sudo systemctl start test-daemon.service
+#sudo systemctl stop test-daemon.service
+#sudo systemctl status test-daemon.service
+```
 **
 ```bash
 [Unit]
@@ -62,6 +78,6 @@ WantedBy=multi-user.target
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjcyMTkxNywyOTUyMDQ4NCw3NTMzMz
-QzNzJdfQ==
+eyJoaXN0b3J5IjpbMTI1NjEyNTI5OCwxNzUyNzIxOTE3LDI5NT
+IwNDg0LDc1MzMzNDM3Ml19
 -->
