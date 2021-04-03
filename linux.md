@@ -83,25 +83,22 @@ WantedBy=multi-user.target
 
 `sudo service nginx stop`
 
-sudo apt-get remove nginx*
+`sudo apt-get remove nginx*`
 
-sudo apt-get purge nginx*
+`sudo apt-get purge nginx*`
 
-sudo apt-get --purge autoremove
+`sudo apt-get --purge autoremove`
 
-sudo rm -rf /etc/nginx/ /usr/sbin/nginx /usr/share/man/man1/nginx.1.gz
+`sudo rm -rf /etc/nginx/ /usr/sbin/nginx /usr/share/man/man1/nginx.1.gz`
 
 **старт**  
 
-service nginx status
-
-service nginx start
-
-service nginx restart
-
-sudo nginx -s reload
+`service nginx status`
+`service nginx start`
+`service nginx restart`
+`sudo nginx -s reload`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5OTkzMjc1LDEyNTYxMjUyOTgsMTc1Mj
-cyMTkxNywyOTUyMDQ4NCw3NTMzMzQzNzJdfQ==
+eyJoaXN0b3J5IjpbLTI2Mzg2MzYzNywxMjU2MTI1Mjk4LDE3NT
+I3MjE5MTcsMjk1MjA0ODQsNzUzMzM0MzcyXX0=
 -->
