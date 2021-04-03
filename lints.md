@@ -1,6 +1,7 @@
 
 
-## Подключение stylelint
+## Подключение stylelint  
+
 1) `npm install --save-dev stylelint stylelint-config-standard`
 2) Создаём правила. Генератор правил: https://maximgatilin.github.io/stylelint-config/
 3) Конфиг файл
@@ -46,5 +47,5 @@ architect > build > configurations
 
 architect > configurations
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ5NzQxMTldfQ==
+eyJoaXN0b3J5IjpbMjQyNTIwNjYxLDY0OTc0MTE5XX0=
 -->
