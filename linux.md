@@ -1,8 +1,23 @@
 **Установка deb пакетов**  
 `sudo dpkg -i имя_пакета.deb`
 
-**
+
+**jl**
+```bash
+[Unit]
+Description=TEST-DEMON
+
+# тест комментария на русском
+[Service]
+RemainAfterExit=true
+ExecStart=/home/alexey/init/test-demon-start.service
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
 ```
+**
+```bash
 ### Команды
 
 # sudo systemctl enable НАЗВАНИЕ_ДЕМОНА - включить в автозагрузку
@@ -46,7 +61,9 @@ Type=oneshot
 # Запуск при загрузке системы
 WantedBy=multi-user.target
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTY1ODIzNjUsMjk1MjA0ODQsNzUzMz
+eyJoaXN0b3J5IjpbLTEzMjk1NDM1MDAsMjk1MjA0ODQsNzUzMz
 M0MzcyXX0=
 -->
