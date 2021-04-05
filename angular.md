@@ -374,7 +374,7 @@ export class SearchFilterPipe implements PipeTransform {
   }
 }
 ```
-Шаблон компонента использующий пайп
+**Шаблон компонента использующий пайп**
 ```html
 <!-- 
   search = '';
@@ -387,7 +387,7 @@ export class SearchFilterPipe implements PipeTransform {
   </div>
 </div>
 ```
-Модуль компонента использующий пайп
+**Модуль компонента использующий пайп**
 ```ts
 @NgModule({
   declarations: [
@@ -429,7 +429,7 @@ describe('myMethod', () => {
 	})
 })
 ```
-Базовое в тестировании компонентов
+**Базовое в тестировании компонентов**
 ```ts
 /* base testing component */
 describe('myComponent', () => {
@@ -463,6 +463,7 @@ onResize(event) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzMzNjU4NiwtMTA4Njk5Mjc2NiwtMT
-E3NDI3NzQ5NiwtMTI2Mjc1Njg2NywxMDgxMDYxNTVdfQ==
+eyJoaXN0b3J5IjpbLTExMjM5MDAzNDIsMTAwNzMzNjU4NiwtMT
+A4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMTI2Mjc1Njg2NywxMDgx
+MDYxNTVdfQ==
 -->
