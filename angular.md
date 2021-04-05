@@ -408,6 +408,13 @@ export class SearchFilterPipe implements PipeTransform {
 ></iframe>
 ```
 
+**runOutsideAngular**
+```ts
+this.ngZone.runOutsideAngular(() => {  
+   // .... 
+});
+```
+
 ## Tests  
 
 **Тесты | #toBe, #toContain, #beforeEach, #beforeAll, #afterEach, #afterAll**
@@ -456,6 +463,6 @@ onResize(event) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODY5OTI3NjYsLTExNzQyNzc0OTYsLT
-EyNjI3NTY4NjcsMTA4MTA2MTU1XX0=
+eyJoaXN0b3J5IjpbMTAwNzMzNjU4NiwtMTA4Njk5Mjc2NiwtMT
+E3NDI3NzQ5NiwtMTI2Mjc1Njg2NywxMDgxMDYxNTVdfQ==
 -->
