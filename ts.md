@@ -78,7 +78,12 @@ const myClass: C1 = new C();
 
 console.log(myClass.getName());
 ```
-  
+
+## Examples
+ 
+ ```ts
+ interface IObject { [key: string]: any; }
+ ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTIyNDg5Ml19
+eyJoaXN0b3J5IjpbLTE3NzI2NDQ1NjgsLTI3OTIyNDg5Ml19
 -->
