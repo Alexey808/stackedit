@@ -84,6 +84,16 @@ console.log(myClass.getName());
  ```ts
  interface IObject { [key: string]: any; }
  ```
+
+**Исключение типов**   
+```ts
+type PassportForm = Omit<EmployeeSubmitResponse, 'patronymicName' | 'registrationAddress'>;  
+export interface IPassportForm extends PassportForm {  
+   middleName: string;  
+   reg_add: IAddressInfo;  
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzI2NDQ1NjgsLTI3OTIyNDg5Ml19
+eyJoaXN0b3J5IjpbNDEyNTM0MTc3LC0xNzcyNjQ0NTY4LC0yNz
+kyMjQ4OTJdfQ==
 -->
