@@ -67,7 +67,7 @@ box-shadow: inset 0 0 2px 0px red, 0 0 2px 0px red;
 ```
 **Скрыть стрелки у input с type=number**  
 ```scss
-input {  
+input { 
   &::-webkit-outer-spin-button,  
   &::-webkit-inner-spin-button {  
     -webkit-appearance: none;  
@@ -75,8 +75,9 @@ input {
   -moz-appearance: textfield;  
 }
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzg4ODA0MDgsLTY2MzQ4NjUyNywtNj
-M0MDgwMDYxLC01ODkzMzc2MjIsLTIwNzcwOTI0ODQsLTEzNjA5
-NjY5NDVdfQ==
+eyJoaXN0b3J5IjpbNTQ3MTc5OTE2LC02NjM0ODY1MjcsLTYzND
+A4MDA2MSwtNTg5MzM3NjIyLC0yMDc3MDkyNDg0LC0xMzYwOTY2
+OTQ1XX0=
 -->
