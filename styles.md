@@ -65,7 +65,18 @@ box-shadow: inset 0 0 2px 0px red, 0 0 2px 0px red;
 }
 
 ```
+**Скрыть стрелки у input с type=number**
+```scss
+input {  
+  &::-webkit-outer-spin-button,  
+  &::-webkit-inner-spin-button {  
+    -webkit-appearance: none;  
+  }  
+  -moz-appearance: textfield;  
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MzQ4NjUyNywtNjM0MDgwMDYxLC01OD
-kzMzc2MjIsLTIwNzcwOTI0ODQsLTEzNjA5NjY5NDVdfQ==
+eyJoaXN0b3J5IjpbMTY3NTY5MTI0MCwtNjYzNDg2NTI3LC02Mz
+QwODAwNjEsLTU4OTMzNzYyMiwtMjA3NzA5MjQ4NCwtMTM2MDk2
+Njk0NV19
 -->
