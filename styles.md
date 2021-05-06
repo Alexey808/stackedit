@@ -65,7 +65,7 @@ box-shadow: inset 0 0 2px 0px red, 0 0 2px 0px red;
 }
 
 ```
-**Скрыть стрелки у input с type=number**
+**Скрыть стрелки у input с type=number**  
 ```scss
 input {  
   &::-webkit-outer-spin-button,  
@@ -76,7 +76,7 @@ input {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTY5MTI0MCwtNjYzNDg2NTI3LC02Mz
-QwODAwNjEsLTU4OTMzNzYyMiwtMjA3NzA5MjQ4NCwtMTM2MDk2
-Njk0NV19
+eyJoaXN0b3J5IjpbLTE1Nzg4ODA0MDgsLTY2MzQ4NjUyNywtNj
+M0MDgwMDYxLC01ODkzMzc2MjIsLTIwNzcwOTI0ODQsLTEzNjA5
+NjY5NDVdfQ==
 -->
