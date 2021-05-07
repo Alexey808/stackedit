@@ -497,11 +497,19 @@ module.exports = PROXY_CONFIG;
 
 **angular.json**
 ```json
-/
+...
+"architect": {
+  "serve": {
+    "options": {
+       ...
+       "proxyConfig": "./proxy.conf.ts"
+    }
+  }
+}
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNDE0Njg2MSwtMTcxNTYzODUxMCwtMT
+eyJoaXN0b3J5IjpbLTg5NDk4MzgzMCwtMTcxNTYzODUxMCwtMT
 EyMzkwMDM0MiwxMDA3MzM2NTg2LC0xMDg2OTkyNzY2LC0xMTc0
 Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
 -->
