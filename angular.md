@@ -463,9 +463,10 @@ onResize(event) {
 
 # Angular settings  
 
-**Настройка абсолютных путей**
 
-tsconfig.app.json
+## Настройка абсолютных путей
+
+**tsconfig.app.json**
 ```json
 "compilerOptions": {
   ..
@@ -478,7 +479,7 @@ tsconfig.app.json
 }
 ```
 
-### Настройка proxy  
+## Настройка proxy  
 
 **proxy.conf.ts**
 ```ts
@@ -509,7 +510,7 @@ module.exports = PROXY_CONFIG;
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NDk4MzgzMCwtMTcxNTYzODUxMCwtMT
+eyJoaXN0b3J5IjpbMTc4NTcyODIzMSwtMTcxNTYzODUxMCwtMT
 EyMzkwMDM0MiwxMDA3MzM2NTg2LC0xMDg2OTkyNzY2LC0xMTc0
 Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
 -->
