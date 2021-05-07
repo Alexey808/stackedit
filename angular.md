@@ -478,25 +478,30 @@ tsconfig.app.json
 }
 ```
 
-### Настройка proxy
+### Настройка proxy  
+
 **proxy.conf.ts**
 ```ts
-const HOST = `https://admin-panel-front-dev-lit.forward.lc/`;  
+const HOST = `https://host.me/`;  
   
 const PROXY_CONFIG = {  
-  "/ap-bouncer/v1/*":{  
+  "/api/*":{  
     "target": HOST,  
-  "secure": true,  
-  "changeOrigin": true  
+    "secure": true,  
+    "changeOrigin": true  
   }  
 }  
   
 module.exports = PROXY_CONFIG;
 ```
 
+**angular.json**
+```json
+/
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NzMxMzc2NiwtMTcxNTYzODUxMCwtMT
+eyJoaXN0b3J5IjpbMTkyNDE0Njg2MSwtMTcxNTYzODUxMCwtMT
 EyMzkwMDM0MiwxMDA3MzM2NTg2LC0xMDg2OTkyNzY2LC0xMTc0
 Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
 -->
