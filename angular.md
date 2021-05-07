@@ -461,15 +461,17 @@ onResize(event) {
 }
 ```
 
-# Angular settings
+# Angular settings  
+
 **Настройка абсолютных путей**
-tsconfig.json
+
+tsconfig.app.json
 ```json
 "compilerOptions": {
   ..
   "paths": {  
-  "@api/*": ["app/api/*"],  
-  "@data/*": ["app/data-services/*"],  
+    "@api/*": ["app/api/*"],  
+    "@data/*": ["app/data-services/*"],  
     "@modules/*": ["app/modules/*"],  
     "@env/*": ["environments/*"]  
   }
@@ -477,7 +479,7 @@ tsconfig.json
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTc4MTI1MzUsLTExMjM5MDAzNDIsMT
+eyJoaXN0b3J5IjpbLTE3MTU2Mzg1MTAsLTExMjM5MDAzNDIsMT
 AwNzMzNjU4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMTI2
 Mjc1Njg2NywxMDgxMDYxNTVdfQ==
 -->
