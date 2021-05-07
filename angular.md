@@ -476,10 +476,27 @@ tsconfig.app.json
     "@env/*": ["environments/*"]  
   }
 }
-
 ```
+
+### Настройка proxy
+**proxy.conf.ts**
+```ts
+const HOST = `https://admin-panel-front-dev-lit.forward.lc/`;  
+  
+const PROXY_CONFIG = {  
+  "/ap-bouncer/v1/*":{  
+    "target": HOST,  
+  "secure": true,  
+  "changeOrigin": true  
+  }  
+}  
+  
+module.exports = PROXY_CONFIG;
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU2Mzg1MTAsLTExMjM5MDAzNDIsMT
-AwNzMzNjU4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMTI2
-Mjc1Njg2NywxMDgxMDYxNTVdfQ==
+eyJoaXN0b3J5IjpbMTY4NzMxMzc2NiwtMTcxNTYzODUxMCwtMT
+EyMzkwMDM0MiwxMDA3MzM2NTg2LC0xMDg2OTkyNzY2LC0xMTc0
+Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
 -->
