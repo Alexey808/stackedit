@@ -461,9 +461,10 @@ onResize(event) {
 }
 ```
 
-# Angular
+# Angular settings
+**Настройка путей**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTIzMDI0MjcsLTExMjM5MDAzNDIsMT
-AwNzMzNjU4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMTI2
-Mjc1Njg2NywxMDgxMDYxNTVdfQ==
+eyJoaXN0b3J5IjpbMzg5MzQ1MTc5LC0xMTIzOTAwMzQyLDEwMD
+czMzY1ODYsLTEwODY5OTI3NjYsLTExNzQyNzc0OTYsLTEyNjI3
+NTY4NjcsMTA4MTA2MTU1XX0=
 -->
