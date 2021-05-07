@@ -461,9 +461,9 @@ onResize(event) {
 }
 ```
 
-
+# Angular
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjM5MDAzNDIsMTAwNzMzNjU4NiwtMT
-A4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMTI2Mjc1Njg2NywxMDgx
-MDYxNTVdfQ==
+eyJoaXN0b3J5IjpbLTE0MTIzMDI0MjcsLTExMjM5MDAzNDIsMT
+AwNzMzNjU4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMTI2
+Mjc1Njg2NywxMDgxMDYxNTVdfQ==
 -->
