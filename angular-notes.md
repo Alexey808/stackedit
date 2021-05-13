@@ -148,21 +148,21 @@ a {}
 /* stylelint-disable-next-line declaration-no-important */
 color: pink !important;
 ```
-## Подключение prettier в WebStorm
+## Подключение prettier в WebStorm  
 
-**Установка**  
+**Установка**   
 `git checkout -b feature/prettier`  
 `npm install --save-dev --save-exact prettier`  
 По умолчанию обычно редактор сам находит плагин. 
 
-**settings -> Languages & Frameworks -> JavaScript -> Prettier**
+**settings -> Languages & Frameworks -> JavaScript -> Prettier**  
 ```
 Node interpreter: Project node (/usr/bin/node)
 
 Prettier package: ~/projects/job/forward/admin-panel-front/node_modules/prettier
 ```
 
-**.prettierrc**
+**.prettierrc**  
 ```
 {  
   "singleQuote": true,  
@@ -170,10 +170,10 @@ Prettier package: ~/projects/job/forward/admin-panel-front/node_modules/prettier
 }
 ```
 
-**Ссылки**
+**Ссылки**  
 https://www.jetbrains.com/help/webstorm/prettier.html#ws_prettier_apply_code_style   
 https://prettier.io/docs/en/configuration.html  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NTExNjQ1NSwxNjU5MjYwODk3LC03OT
-IyNDkxNDEsLTIwOTA3MjYyMCwtMTUyNDY2NTMwMl19
+eyJoaXN0b3J5IjpbLTEyNzY2MDI1NzMsMTY1OTI2MDg5NywtNz
+kyMjQ5MTQxLC0yMDkwNzI2MjAsLTE1MjQ2NjUzMDJdfQ==
 -->
