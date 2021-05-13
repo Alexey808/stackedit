@@ -150,11 +150,19 @@ color: pink !important;
 ```
 ## Подключение prettier в WebStorm
 
-git checkout -b feature/prettier
-npm install --save-dev --save-exact prettier
-
+**Установка**  
+`git checkout -b feature/prettier`  
+`npm install --save-dev --save-exact prettier`  
+По умолчанию обычно 
+**.prettierrc**  
+```
+{  
+  "singleQuote": true,  
+  "trailingComma": "all"  
+}
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQzODU3NjIxLDE2NTkyNjA4OTcsLTc5Mj
-I0OTE0MSwtMjA5MDcyNjIwLC0xNTI0NjY1MzAyXX0=
+eyJoaXN0b3J5IjpbLTkwMjM2NDMsMTY1OTI2MDg5NywtNzkyMj
+Q5MTQxLC0yMDkwNzI2MjAsLTE1MjQ2NjUzMDJdfQ==
 -->
