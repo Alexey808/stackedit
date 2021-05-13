@@ -153,7 +153,7 @@ color: pink !important;
 **Установка**  
 `git checkout -b feature/prettier`  
 `npm install --save-dev --save-exact prettier`  
-По умолчанию обычно 
+По умолчанию обычно редактор сам находит плагин. Но настройки тут: settings -> Languages & Frameworks -> JavaScri
 **.prettierrc**  
 ```
 {  
@@ -163,6 +163,6 @@ color: pink !important;
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMjM2NDMsMTY1OTI2MDg5NywtNzkyMj
-Q5MTQxLC0yMDkwNzI2MjAsLTE1MjQ2NjUzMDJdfQ==
+eyJoaXN0b3J5IjpbOTU1NDQwNzcwLDE2NTkyNjA4OTcsLTc5Mj
+I0OTE0MSwtMjA5MDcyNjIwLC0xNTI0NjY1MzAyXX0=
 -->
