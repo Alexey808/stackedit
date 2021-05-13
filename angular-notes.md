@@ -171,9 +171,9 @@ Prettier package: ~/projects/job/forward/admin-panel-front/node_modules/prettier
 ```
 
 **Ссылки**
-https://www.jetbrains.com/help/webstorm/prettier.html#ws_prettier_apply_code_style
+https://www.jetbrains.com/help/webstorm/prettier.html#ws_prettier_apply_code_style   
 https://prettier.io/docs/en/configuration.html  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzEyMDEwNTEsMTY1OTI2MDg5NywtNz
-kyMjQ5MTQxLC0yMDkwNzI2MjAsLTE1MjQ2NjUzMDJdfQ==
+eyJoaXN0b3J5IjpbMTg0NTExNjQ1NSwxNjU5MjYwODk3LC03OT
+IyNDkxNDEsLTIwOTA3MjYyMCwtMTUyNDY2NTMwMl19
 -->
