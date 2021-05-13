@@ -148,8 +148,13 @@ a {}
 /* stylelint-disable-next-line declaration-no-important */
 color: pink !important;
 ```
+## Подключение prettier в WebStorm
+
+git checkout -b feature/prettier
+npm install --save-dev --save-exact prettier
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1OTI2MDg5NywtNzkyMjQ5MTQxLC0yMD
-kwNzI2MjAsLTE1MjQ2NjUzMDJdfQ==
+eyJoaXN0b3J5IjpbMzQzODU3NjIxLDE2NTkyNjA4OTcsLTc5Mj
+I0OTE0MSwtMjA5MDcyNjIwLC0xNTI0NjY1MzAyXX0=
 -->
