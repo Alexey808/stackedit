@@ -430,6 +430,19 @@ onResize(event) {
 ```
 # Dependency Injection (DI token)
 
+**Токен**
+```ts
+import { InjectionToken } from '@angular/core';  
+  
+export  const TEST_DI_TOKEN = new InjectionToken<string>(  
+  'test injection token',  
+  {  
+    factory: () => {  
+      return 'test_di_token';  
+    }  
+  }  
+);
+```
 **Компонент** 
 ```ts
 constructor(  
@@ -437,8 +450,8 @@ constructor(
 ) { }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjU0Njc4NjYsLTExMjM5MDAzNDIsLT
-U4NDYwMTQ3MywxNzg1NzI4MjMxLC0xNzE1NjM4NTEwLDEwMDcz
-MzY1ODYsLTEwODY5OTI3NjYsLTExNzQyNzc0OTYsLTEyNjI3NT
-Y4NjcsMTA4MTA2MTU1XX0=
+eyJoaXN0b3J5IjpbMTI2NzQ3NDQ0MSwtMTEyMzkwMDM0MiwtNT
+g0NjAxNDczLDE3ODU3MjgyMzEsLTE3MTU2Mzg1MTAsMTAwNzMz
+NjU4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMTI2Mjc1Nj
+g2NywxMDgxMDYxNTVdfQ==
 -->
