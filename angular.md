@@ -452,7 +452,19 @@ this.router.navigate(['/page', id], {
   fragment: 'fragment'
 });
 ```
-
+**Подписки на роутинг**
+```ts
+constructor(  
+  private routActive: ActivatedRoute,  
+  private router: Router,  
+) { }  
+  
+ngOnInit(): void {  
+  this.routActive.params.subscribe((params: Params) => {});  
+  this.routActive.queryParams.subscribe((params: Params) => {});  
+  this.routActive.fragment.subscribe((fragment) => {});  
+}
+```
 
 # Dependency Injection
 
@@ -481,7 +493,7 @@ constructor(
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNzk4NDkwNCwtMTA2NDIyMTcwNSwtMz
+eyJoaXN0b3J5IjpbMTI5Njg0ODk0MCwtMTA2NDIyMTcwNSwtMz
 UyMzIwMDY4LC0xMTIzOTAwMzQyLC01ODQ2MDE0NzMsMTc4NTcy
 ODIzMSwtMTcxNTYzODUxMCwxMDA3MzM2NTg2LC0xMDg2OTkyNz
 Y2LC0xMTc0Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
