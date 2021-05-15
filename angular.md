@@ -428,6 +428,30 @@ onResize(event) {
   event.target.innerWidth;
 }
 ```
+
+## Routing
+```html
+<a routerLink="">1</a>
+```
+```html
+`<a routerLink="/about">2</a>`
+```
+```html
+`<a [routerLink]="['/page2', item.id]"
+   [queryParams]="{showId: true}"
+   fragment="fragment">3<a>`
+```
+
+
+
+```ts
+this.router.navigate(['/page', id], {
+  queryParams: {
+    bool: true
+  },
+  fragment: 'my-fragment'
+});
+```
 # Dependency Injection
 
 
@@ -455,8 +479,9 @@ constructor(
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjQyMjE3MDUsLTM1MjMyMDA2OCwtMT
-EyMzkwMDM0MiwtNTg0NjAxNDczLDE3ODU3MjgyMzEsLTE3MTU2
-Mzg1MTAsMTAwNzMzNjU4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3Nz
-Q5NiwtMTI2Mjc1Njg2NywxMDgxMDYxNTVdfQ==
+eyJoaXN0b3J5IjpbLTEzMzMwNTczNTksLTEwNjQyMjE3MDUsLT
+M1MjMyMDA2OCwtMTEyMzkwMDM0MiwtNTg0NjAxNDczLDE3ODU3
+MjgyMzEsLTE3MTU2Mzg1MTAsMTAwNzMzNjU4NiwtMTA4Njk5Mj
+c2NiwtMTE3NDI3NzQ5NiwtMTI2Mjc1Njg2NywxMDgxMDYxNTVd
+fQ==
 -->
