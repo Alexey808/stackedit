@@ -428,11 +428,17 @@ onResize(event) {
   event.target.innerWidth;
 }
 ```
-# Dependency
+# Dependency Injection (DI token)
 
+**Компонент** 
+```ts
+constructor(  
+  @Inject(TEST_DI_TOKEN) readonly testDiToken: string,  
+) { }
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NDIyMDg1LC0xMTIzOTAwMzQyLC01OD
-Q2MDE0NzMsMTc4NTcyODIzMSwtMTcxNTYzODUxMCwxMDA3MzM2
-NTg2LC0xMDg2OTkyNzY2LC0xMTc0Mjc3NDk2LC0xMjYyNzU2OD
-Y3LDEwODEwNjE1NV19
+eyJoaXN0b3J5IjpbLTE1NjU0Njc4NjYsLTExMjM5MDAzNDIsLT
+U4NDYwMTQ3MywxNzg1NzI4MjMxLC0xNzE1NjM4NTEwLDEwMDcz
+MzY1ODYsLTEwODY5OTI3NjYsLTExNzQyNzc0OTYsLTEyNjI3NT
+Y4NjcsMTA4MTA2MTU1XX0=
 -->
