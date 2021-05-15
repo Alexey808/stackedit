@@ -461,72 +461,10 @@ onResize(event) {
 }
 ```
 
-# Angular settings  
-
-
-## Настройка абсолютных путей
-
-**tsconfig.app.json**
-```json
-"compilerOptions": {
-  ..
-  "paths": {  
-    "@api/*": ["app/api/*"],  
-    "@data/*": ["app/data-services/*"],  
-    "@modules/*": ["app/modules/*"],  
-    "@env/*": ["environments/*"]  
-  }
-}
-```
-
-## Настройка proxy  
-
-**proxy.conf.ts**
-```ts
-const HOST = `https://host.me/`;  
-  
-const PROXY_CONFIG = {  
-  "/api/*":{  
-    "target": HOST,  
-    "secure": true,  
-    "changeOrigin": true  
-  }  
-}  
-  
-module.exports = PROXY_CONFIG;
-```
-
-**angular.json**
-```json
-...
-"architect": {
-  "serve": {
-    "options": {
-       ...
-       "proxyConfig": "./proxy.conf.ts"
-    }
-  }
-}
-```
-
-## Events 
-
-**Отлавливаем событие resize**  
-```html
-<div (window:resize)="onResize$.next()"></div>
-```
-или
-```ts
-@HostListener('window:resize', ['$event'])
-onResize(event) {
-  event.target.innerWidth;
-}
-```
-
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NDYwMTQ3MywxNzg1NzI4MjMxLC0xNz
-E1NjM4NTEwLC0xMTIzOTAwMzQyLDEwMDczMzY1ODYsLTEwODY5
-OTI3NjYsLTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMTA4MTA2MT
-U1XX0=
+eyJoaXN0b3J5IjpbLTExMjM5MDAzNDIsLTU4NDYwMTQ3MywxNz
+g1NzI4MjMxLC0xNzE1NjM4NTEwLC0xMTIzOTAwMzQyLDEwMDcz
+MzY1ODYsLTEwODY5OTI3NjYsLTExNzQyNzc0OTYsLTEyNjI3NT
+Y4NjcsMTA4MTA2MTU1XX0=
 -->
