@@ -429,18 +429,17 @@ onResize(event) {
 }
 ```
 
-## Routing
+## Routing  
+
+**Навигация**
 ```html
-`<a routerLink="/about">1</a>`
+`<a routerLink="/page">1</a>`
 ```
 ```html
-`<a [routerLink]="['/page2', item.id]"
-   [queryParams]="{showId: true}"
-   fragment="fragment">2<a>`
+`<a [routerLink]="['/page', item.id]"
+    [queryParams]="{bool: true}"
+    fragment="fragment">2<a>`
 ```
-
-
-
 ```ts
 constructor(  
  private router: Router,  
@@ -450,9 +449,11 @@ this.router.navigate(['/page', id], {
   queryParams: {
     bool: true
   },
-  fragment: 'my-fragment'
+  fragment: 'fragment'
 });
 ```
+
+
 # Dependency Injection
 
 
@@ -480,7 +481,7 @@ constructor(
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2ODA4MzQ5OCwtMTA2NDIyMTcwNSwtMz
+eyJoaXN0b3J5IjpbMTEzNzk4NDkwNCwtMTA2NDIyMTcwNSwtMz
 UyMzIwMDY4LC0xMTIzOTAwMzQyLC01ODQ2MDE0NzMsMTc4NTcy
 ODIzMSwtMTcxNTYzODUxMCwxMDA3MzM2NTg2LC0xMDg2OTkyNz
 Y2LC0xMTc0Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
