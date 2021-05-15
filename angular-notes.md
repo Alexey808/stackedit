@@ -149,8 +149,52 @@ a {}
 color: pink !important;
 ```
 
+## Настройка абсолютных путей
+
+**tsconfig.app.json**
+```json
+"compilerOptions": {
+  ..
+  "paths": {  
+    "@api/*": ["app/api/*"],  
+    "@data/*": ["app/data-services/*"],  
+    "@modules/*": ["app/modules/*"],  
+    "@env/*": ["environments/*"]  
+  }
+}
+```
+
+## Настройка proxy  
+
+**proxy.conf.ts**
+```ts
+const HOST = `https://host.me/`;  
+  
+const PROXY_CONFIG = {  
+  "/api/*":{  
+    "target": HOST,  
+    "secure": true,  
+    "changeOrigin": true  
+  }  
+}  
+  
+module.exports = PROXY_CONFIG;
+```
+
+**angular.json**
+```json
+...
+"architect": {
+  "serve": {
+    "options": {
+       ...
+       "proxyConfig": "./proxy.conf.ts"
+    }
+  }
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1OTI2MDg5NywtMTI3NjYwMjU3MywxNj
-U5MjYwODk3LC03OTIyNDkxNDEsLTIwOTA3MjYyMCwtMTUyNDY2
-NTMwMl19
+eyJoaXN0b3J5IjpbMTM2OTc3MjE2LDE2NTkyNjA4OTcsLTEyNz
+Y2MDI1NzMsLTc5MjI0OTE0MSwtMjA5MDcyNjIwLC0xNTI0NjY1
+MzAyXX0=
 -->
