@@ -462,7 +462,7 @@ constructor(
 ngOnInit(): void {  
   this.routActive.params.subscribe((params: Params) => {});  
   this.routActive.queryParams.subscribe((params: Params) => {});  
-  this.routActive.fragment.subscribe((fragment) => {});  
+  this.routActive.fragment.subscribe((fragment: string) => {});  
 }
 ```
 
@@ -493,9 +493,9 @@ constructor(
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5Njg0ODk0MCwtMTA2NDIyMTcwNSwtMz
-UyMzIwMDY4LC0xMTIzOTAwMzQyLC01ODQ2MDE0NzMsMTc4NTcy
-ODIzMSwtMTcxNTYzODUxMCwxMDA3MzM2NTg2LC0xMDg2OTkyNz
-Y2LC0xMTc0Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
+eyJoaXN0b3J5IjpbMjU0MjgyNTk1LC0xMDY0MjIxNzA1LC0zNT
+IzMjAwNjgsLTExMjM5MDAzNDIsLTU4NDYwMTQ3MywxNzg1NzI4
+MjMxLC0xNzE1NjM4NTEwLDEwMDczMzY1ODYsLTEwODY5OTI3Nj
+YsLTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMTA4MTA2MTU1XX0=
 
 -->
