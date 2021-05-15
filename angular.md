@@ -447,10 +447,12 @@ export  const TEST_DI_TOKEN = new InjectionToken<string>(
 ```ts
 constructor(  
   @Inject(TEST_DI_TOKEN) readonly testDiToken: string,  
-) { }
+) {
+  console.log(this.testDiToken); // test_di_token
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NzQ3NDQ0MSwtMTEyMzkwMDM0MiwtNT
+eyJoaXN0b3J5IjpbLTM1MjMyMDA2OCwtMTEyMzkwMDM0MiwtNT
 g0NjAxNDczLDE3ODU3MjgyMzEsLTE3MTU2Mzg1MTAsMTAwNzMz
 NjU4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMTI2Mjc1Nj
 g2NywxMDgxMDYxNTVdfQ==
