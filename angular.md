@@ -436,7 +436,7 @@ onResize(event) {
 `<a routerLink="/page">1</a>`
 ```
 ```html
-`<a [routerLink]="['/page', item.id]"
+`<a [routerLink]="['page', item.id]"
     [queryParams]="{bool: true}"
     fragment="fragment">2<a>`
 ```
@@ -493,7 +493,7 @@ constructor(
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU0MjgyNTk1LC0xMDY0MjIxNzA1LC0zNT
+eyJoaXN0b3J5IjpbOTI5MTkzNjUwLC0xMDY0MjIxNzA1LC0zNT
 IzMjAwNjgsLTExMjM5MDAzNDIsLTU4NDYwMTQ3MywxNzg1NzI4
 MjMxLC0xNzE1NjM4NTEwLDEwMDczMzY1ODYsLTEwODY5OTI3Nj
 YsLTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMTA4MTA2MTU1XX0=
