@@ -428,7 +428,7 @@ onResize(event) {
   event.target.innerWidth;
 }
 ```
-# Dependency Injection (DI token)
+# Dependency Injection
 
 
 ## Example DI token  
@@ -455,7 +455,7 @@ constructor(
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTM4MzcyNTIsLTM1MjMyMDA2OCwtMT
+eyJoaXN0b3J5IjpbLTEwNjQyMjE3MDUsLTM1MjMyMDA2OCwtMT
 EyMzkwMDM0MiwtNTg0NjAxNDczLDE3ODU3MjgyMzEsLTE3MTU2
 Mzg1MTAsMTAwNzMzNjU4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3Nz
 Q5NiwtMTI2Mjc1Njg2NywxMDgxMDYxNTVdfQ==
