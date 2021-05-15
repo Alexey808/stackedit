@@ -415,38 +415,6 @@ this.ngZone.runOutsideAngular(() => {
 });
 ```
 
-## Tests  
-
-**Тесты | #toBe, #toContain, #beforeEach, #beforeAll, #afterEach, #afterAll**
-Базовое в юнит тестах
-```ts
-/* base unit tests */
-describe('myMethod', () => {
-	it('should ...', () => {
-		expect(myFunc(1)).toBe(2); // toBe жёсткое соответствие
-		expect(getMyStr('test')).toContain('test'); // toContain частич соответств, прим к строкам массивам
-		expect(getMyArray()).toContain('test3'); // toContain частич соответств
-	})
-})
-```
-**Базовое в тестировании компонентов**
-```ts
-/* base testing component */
-describe('myComponent', () => {
-	let myComponent: MyComponent;
-
-	beforeEach(() => { // вызывается перед каждый тестом it-ом
-		component = new MyComponent();
-	});
-	beforeAll(() => {}); // вызывается перед всеми "it"
-	afterEach(() => {}); // вызывается после завершения каждого "it"
-	afterAll(() => {}); // вызывается после завершения всех "it"
-
-	it('should ...', () => {
-		expect(myFunc(1)).toBe(2); // toBe жёсткое соответствие
-	})
-})
-```
 ## Events 
 
 **Отлавливаем событие resize**  
@@ -463,8 +431,8 @@ onResize(event) {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjM5MDAzNDIsLTU4NDYwMTQ3MywxNz
-g1NzI4MjMxLC0xNzE1NjM4NTEwLC0xMTIzOTAwMzQyLDEwMDcz
+eyJoaXN0b3J5IjpbLTE2NTA4OTU0ODUsLTExMjM5MDAzNDIsLT
+U4NDYwMTQ3MywxNzg1NzI4MjMxLC0xNzE1NjM4NTEwLDEwMDcz
 MzY1ODYsLTEwODY5OTI3NjYsLTExNzQyNzc0OTYsLTEyNjI3NT
 Y4NjcsMTA4MTA2MTU1XX0=
 -->
