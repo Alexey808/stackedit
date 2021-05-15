@@ -431,20 +431,21 @@ onResize(event) {
 
 ## Routing
 ```html
-<a routerLink="">1</a>
-```
-```html
-`<a routerLink="/about">2</a>`
+`<a routerLink="/about">1</a>`
 ```
 ```html
 `<a [routerLink]="['/page2', item.id]"
    [queryParams]="{showId: true}"
-   fragment="fragment">3<a>`
+   fragment="fragment">2<a>`
 ```
 
 
 
 ```ts
+constructor(  
+ private router: Router,  
+) { }
+// ...
 this.router.navigate(['/page', id], {
   queryParams: {
     bool: true
@@ -479,9 +480,9 @@ constructor(
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzMwNTczNTksLTEwNjQyMjE3MDUsLT
-M1MjMyMDA2OCwtMTEyMzkwMDM0MiwtNTg0NjAxNDczLDE3ODU3
-MjgyMzEsLTE3MTU2Mzg1MTAsMTAwNzMzNjU4NiwtMTA4Njk5Mj
-c2NiwtMTE3NDI3NzQ5NiwtMTI2Mjc1Njg2NywxMDgxMDYxNTVd
-fQ==
+eyJoaXN0b3J5IjpbMTI2ODA4MzQ5OCwtMTA2NDIyMTcwNSwtMz
+UyMzIwMDY4LC0xMTIzOTAwMzQyLC01ODQ2MDE0NzMsMTc4NTcy
+ODIzMSwtMTcxNTYzODUxMCwxMDA3MzM2NTg2LC0xMDg2OTkyNz
+Y2LC0xMTc0Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
+
 -->
