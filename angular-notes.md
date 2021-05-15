@@ -1,3 +1,5 @@
+# Angular settings  
+
 
 ## Добавление env
 Добавленные здесь `channel` и `theme` опционально. Как пример для изменения api или темы в зависимости от окружения. Подобные изменения нужно применить и к дефолтным `environment.ts` и `environment.prod.ts` соответственно.
@@ -194,7 +196,7 @@ module.exports = PROXY_CONFIG;
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2OTc3MjE2LDE2NTkyNjA4OTcsLTEyNz
-Y2MDI1NzMsLTc5MjI0OTE0MSwtMjA5MDcyNjIwLC0xNTI0NjY1
-MzAyXX0=
+eyJoaXN0b3J5IjpbODE2MzU3MTIyLDEzNjk3NzIxNiwxNjU5Mj
+YwODk3LC0xMjc2NjAyNTczLC03OTIyNDkxNDEsLTIwOTA3MjYy
+MCwtMTUyNDY2NTMwMl19
 -->
