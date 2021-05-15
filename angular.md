@@ -509,8 +509,24 @@ module.exports = PROXY_CONFIG;
 }
 ```
 
+## Events 
+
+**Отлавливаем событие resize**  
+```html
+<div (window:resize)="onResize$.next()"></div>
+```
+или
+```ts
+@HostListener('window:resize', ['$event'])
+onResize(event) {
+  event.target.innerWidth;
+}
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NTcyODIzMSwtMTcxNTYzODUxMCwtMT
-EyMzkwMDM0MiwxMDA3MzM2NTg2LC0xMDg2OTkyNzY2LC0xMTc0
-Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
+eyJoaXN0b3J5IjpbLTU4NDYwMTQ3MywxNzg1NzI4MjMxLC0xNz
+E1NjM4NTEwLC0xMTIzOTAwMzQyLDEwMDczMzY1ODYsLTEwODY5
+OTI3NjYsLTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMTA4MTA2MT
+U1XX0=
 -->
