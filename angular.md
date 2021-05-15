@@ -431,7 +431,7 @@ onResize(event) {
 
 ## Routing  
 
-**Навигация**
+**Навигация**  
 ```html
 `<a routerLink="/page">1</a>`
 ```
@@ -452,7 +452,7 @@ this.router.navigate(['/page', id], {
   fragment: 'fragment'
 });
 ```
-**Подписки на роутинг**
+**Подписки на роутинг**  
 ```ts
 constructor(  
   private routActive: ActivatedRoute,  
@@ -493,9 +493,9 @@ constructor(
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5MTkzNjUwLC0xMDY0MjIxNzA1LC0zNT
-IzMjAwNjgsLTExMjM5MDAzNDIsLTU4NDYwMTQ3MywxNzg1NzI4
-MjMxLC0xNzE1NjM4NTEwLDEwMDczMzY1ODYsLTEwODY5OTI3Nj
-YsLTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMTA4MTA2MTU1XX0=
-
+eyJoaXN0b3J5IjpbLTE5MzM5NDc1OTgsLTEwNjQyMjE3MDUsLT
+M1MjMyMDA2OCwtMTEyMzkwMDM0MiwtNTg0NjAxNDczLDE3ODU3
+MjgyMzEsLTE3MTU2Mzg1MTAsMTAwNzMzNjU4NiwtMTA4Njk5Mj
+c2NiwtMTE3NDI3NzQ5NiwtMTI2Mjc1Njg2NywxMDgxMDYxNTVd
+fQ==
 -->
