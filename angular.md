@@ -237,9 +237,8 @@ onBlur(value: string) {
 <ng-template #myElse>
   <div>myElse</div>
 </ng-template>
-
 ...
-<div  *ngIf="bool; then thenBlock"></div>
+<div  *ngIf="condition; then thenBlock else elseBlock"></div>
 <ng-template  #thenBlock>Content to render when condition is true.</ng-template>
 <ng-template  #elseBlock>Content to render when condition is false.</ng-template>
 ```
@@ -532,9 +531,9 @@ constructor(
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjUyNDA1MjcsLTE5MzM5NDc1OTgsLT
-EwNjQyMjE3MDUsLTM1MjMyMDA2OCwtMTEyMzkwMDM0MiwtNTg0
-NjAxNDczLDE3ODU3MjgyMzEsLTE3MTU2Mzg1MTAsMTAwNzMzNj
-U4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMTI2Mjc1Njg2
-NywxMDgxMDYxNTVdfQ==
+eyJoaXN0b3J5IjpbLTU2NjY5MzAyOSwtMTkzMzk0NzU5OCwtMT
+A2NDIyMTcwNSwtMzUyMzIwMDY4LC0xMTIzOTAwMzQyLC01ODQ2
+MDE0NzMsMTc4NTcyODIzMSwtMTcxNTYzODUxMCwxMDA3MzM2NT
+g2LC0xMDg2OTkyNzY2LC0xMTc0Mjc3NDk2LC0xMjYyNzU2ODY3
+LDEwODEwNjE1NV19
 -->
