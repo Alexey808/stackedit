@@ -237,6 +237,11 @@ onBlur(value: string) {
 <ng-template #myElse>
   <div>myElse</div>
 </ng-template>
+
+...
+<div  *ngIf="bool; then thenBlock"></div>
+<ng-template  #thenBlock>Content to render when condition is true.</ng-template>
+<ng-template  #elseBlock>Content to render when condition is false.</ng-template>
 ```
 
 **Структурная директива ngSwitch| #ngSwitch, #ngSwitchCase, #ngSwitchDefault**
@@ -431,7 +436,7 @@ onResize(event) {
 
 ## Routing  
 
-**Навигация**  
+авигация**  
 ```html
 `<a routerLink="/page">1</a>`
 ```
@@ -457,12 +462,31 @@ this.router.navigate(['/page', id], {
 constructor(  
   private routActive: ActivatedRoute,  
   private router: Router,  
-) { }  
+)
+## {  
+        "],  
+    "@data/*": ["app/data-services/*"],  
+    "@modules/*": ["app/modules/*"],  
+    "@env/*": ["environments/*"]  
+  }
+}
+```
+
+## Настройка proxy  
+
+**proxy.conf.ts**
+```ts
+const HOST = `https://host.me/`;  
+  
+const PROXY_CONFIG = { }  
   
 ngOnInit(): void {  
-  this.routActive.params.subscribe((params: Params) => {});  
-  this.routActive.queryParams.subscribe((params: Params) => {});  
-  this.routActive.fragment.subscribe((fragment: string) => {});  
+  this.routActive.params.subscribe((params: Params) => {});"/api/*":{  
+    "target": HOST,  
+  
+  this.routActive.queryParams.subscribe((params: Params) => {});"secure": true,  
+  
+  this.routActive.fragment.subscribe((fragment"changeOrigin": string) => {});  
 }
 ```
 
@@ -479,8 +503,20 @@ export  const TEST_DI_TOKEN = new InjectionToken<string>(
   'test injection token',  
   {  
     factory: () => {  
-      return 'test_di_token';  
-    }  
+      return 'test_di_token';  ue  
+  }  
+}  
+  
+module.exports = PROXY_CONFIG;
+```
+
+**angular.json**
+```json
+...
+"architect": {
+  "serve": {
+    "options": {
+    }   ...
   }  
 );
 ```
@@ -489,13 +525,16 @@ export  const TEST_DI_TOKEN = new InjectionToken<string>(
 constructor(  
   @Inject(TEST_DI_TOKEN) readonly testDiToken: string,  
 ) {
-  console.log(this.testDiToken); // test_di_token
+  console.log(this.testDiToken); // test_di_token   "proxyConfig": "./proxy.conf.ts"
+    }
+  }
 }
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzM5NDc1OTgsLTEwNjQyMjE3MDUsLT
-M1MjMyMDA2OCwtMTEyMzkwMDM0MiwtNTg0NjAxNDczLDE3ODU3
-MjgyMzEsLTE3MTU2Mzg1MTAsMTAwNzMzNjU4NiwtMTA4Njk5Mj
-c2NiwtMTE3NDI3NzQ5NiwtMTI2Mjc1Njg2NywxMDgxMDYxNTVd
-fQ==
+eyJoaXN0b3J5IjpbLTEwNjUyNDA1MjcsLTE5MzM5NDc1OTgsLT
+EwNjQyMjE3MDUsLTM1MjMyMDA2OCwtMTEyMzkwMDM0MiwtNTg0
+NjAxNDczLDE3ODU3MjgyMzEsLTE3MTU2Mzg1MTAsMTAwNzMzNj
+U4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMTI2Mjc1Njg2
+NywxMDgxMDYxNTVdfQ==
 -->
