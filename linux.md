@@ -98,7 +98,10 @@ WantedBy=multi-user.target
 `service nginx restart`
 `sudo nginx -s reload`
 
+### Установка .deb
+`dpkg -i file. deb
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2Mzg2MzYzNywxMjU2MTI1Mjk4LDE3NT
-I3MjE5MTcsMjk1MjA0ODQsNzUzMzM0MzcyXX0=
+eyJoaXN0b3J5IjpbMjEzNjc5OTU2MywtMjYzODYzNjM3LDEyNT
+YxMjUyOTgsMTc1MjcyMTkxNywyOTUyMDQ4NCw3NTMzMzQzNzJd
+fQ==
 -->
