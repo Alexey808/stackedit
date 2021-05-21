@@ -68,16 +68,11 @@ describe('AppService', () => {
 });
 ```
 
-## Async
+## Async  
+
+**Способ 2**  
 ```ts
 it('should save', fakeAsync(() => { 
-
-  // 1 способ 
-  tick(100);  
-  fixture.detectChanges(); 
-  
- 
-  // 2 способ 
   fixture.whenStable().then(() => {  
     const oldTariff = component.tariff;  
     const updatedTariff = component.getUpdatedTariff();  
@@ -85,10 +80,23 @@ it('should save', fakeAsync(() => {
     updatedTariff.startDate);  
     expect(updatedTariff).toEqual(oldTariff);  
   })  
+}));
+```
 
+**Способ 1**  
+```ts
+it('should save', fakeAsync(() => { 
+  tick(100);  
+  fixture.detectChanges(); 
+
+  const oldTariff = component.tariff;  
+  const updatedTariff = component.getUpdatedTariff();  
+  fixture.detectChanges();
+  updatedTariff.startDate);  
+  expect(updatedTariff).toEqual(oldTariff); 
 }));
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjczNjI0NjUsLTU5Mjg1NDA1OSwxMD
-IyMzYzNDQ4XX0=
+eyJoaXN0b3J5IjpbODEwNzgyMTQwLC01OTI4NTQwNTksMTAyMj
+M2MzQ0OF19
 -->
