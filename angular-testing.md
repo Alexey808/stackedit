@@ -72,31 +72,22 @@ describe('AppService', () => {
 
 **Способ 2**  
 ```ts
-it('should save', fakeAsync(() => { 
+it('', fakeAsync(() => { 
   fixture.whenStable().then(() => {  
-    const oldTariff = component.tariff;  
-    const updatedTariff = component.getUpdatedTariff();  
-    fixture.detectChanges();
-    updatedTariff.startDate);  
-    expect(updatedTariff).toEqual(oldTariff);  
+	 // code
   })  
 }));
 ```
 
 **Способ 1**  
 ```ts
-it('should save', fakeAsync(() => { 
+it('', fakeAsync(() => { 
   tick(100);  
   fixture.detectChanges(); 
-
-  const oldTariff = component.tariff;  
-  const updatedTariff = component.getUpdatedTariff();  
-  fixture.detectChanges();
-  updatedTariff.startDate);  
-  expect(updatedTariff).toEqual(oldTariff); 
+  // code
 }));
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEwNzgyMTQwLC01OTI4NTQwNTksMTAyMj
-M2MzQ0OF19
+eyJoaXN0b3J5IjpbLTE3MTkxNTM1NTAsODEwNzgyMTQwLC01OT
+I4NTQwNTksMTAyMjM2MzQ0OF19
 -->
