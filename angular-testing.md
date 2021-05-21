@@ -70,22 +70,25 @@ describe('AppService', () => {
 
 ## Async
 ```ts
-it('should save', fakeAsync(() => {  
-  // tick(500);  
- // fixture.detectChanges();  
+it('should save', fakeAsync(() => { 
+
+  // 1 способ 
+  tick(100);  
+  fixture.detectChanges(); 
+  
+ 
+  // 2 способ 
   fixture.whenStable().then(() => {  
     const oldTariff = component.tariff;  
     const updatedTariff = component.getUpdatedTariff();  
-  fixture.detectChanges();  
-  console.log('1 ---------> ', oldTariff.startDate);  
-  console.log('2 ---------> ', updatedTariff.startDate);  
-  expect(updatedTariff).toEqual(oldTariff);  
+    fixture.detectChanges();
+    updatedTariff.startDate);  
+    expect(updatedTariff).toEqual(oldTariff);  
   })  
-  
-  
+
 }));
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MjMzMzEwLC01OTI4NTQwNTksMTAyMj
-M2MzQ0OF19
+eyJoaXN0b3J5IjpbLTIwNjczNjI0NjUsLTU5Mjg1NDA1OSwxMD
+IyMzYzNDQ4XX0=
 -->
