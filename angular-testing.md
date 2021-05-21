@@ -74,7 +74,7 @@ describe('AppService', () => {
 ```ts
 it('', fakeAsync(() => { 
   fixture.whenStable().then(() => {  
-	 // code
+    // code
   })  
 }));
 ```
@@ -88,6 +88,6 @@ it('', fakeAsync(() => {
 }));
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTkxNTM1NTAsODEwNzgyMTQwLC01OT
+eyJoaXN0b3J5IjpbLTEzOTQwODA0NDYsODEwNzgyMTQwLC01OT
 I4NTQwNTksMTAyMjM2MzQ0OF19
 -->
