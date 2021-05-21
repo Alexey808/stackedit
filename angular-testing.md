@@ -67,6 +67,25 @@ describe('AppService', () => {
   });
 });
 ```
+
+## Async
+```ts
+it('should save', fakeAsync(() => {  
+  // tick(500);  
+ // fixture.detectChanges();  
+  fixture.whenStable().then(() => {  
+    const oldTariff = component.tariff;  
+    const updatedTariff = component.getUpdatedTariff();  
+  fixture.detectChanges();  
+  console.log('1 ---------> ', oldTariff.startDate);  
+  console.log('2 ---------> ', updatedTariff.startDate);  
+  expect(updatedTariff).toEqual(oldTariff);  
+  })  
+  
+  
+}));
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5Mjg1NDA1OSwxMDIyMzYzNDQ4XX0=
+eyJoaXN0b3J5IjpbLTg0MjMzMzEwLC01OTI4NTQwNTksMTAyMj
+M2MzQ0OF19
 -->
