@@ -1,4 +1,4 @@
-# Angular settings  3131321312
+# Angular settings  
 
 
 ## Добавление env
@@ -196,7 +196,7 @@ module.exports = PROXY_CONFIG;
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU1NTMyMTI4LDgxNjM1NzEyMiwxMzY5Nz
+eyJoaXN0b3J5IjpbODE2MzU3MTIyLDgxNjM1NzEyMiwxMzY5Nz
 cyMTYsMTY1OTI2MDg5NywtMTI3NjYwMjU3MywtNzkyMjQ5MTQx
 LC0yMDkwNzI2MjAsLTE1MjQ2NjUzMDJdfQ==
 -->
