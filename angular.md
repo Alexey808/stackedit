@@ -1,5 +1,21 @@
 [https://habr.com/ru/company/ruvds/blog/476956/](https://habr.com/ru/company/ruvds/blog/476956/)
 
+
+
+# Заголовок 1 уровня
+## Заголовок 2 уровня
+### Заголовок 3 уровня
+**жирное начертание**
+__жирное начерт__
+_наклонное начертание_
+```html
+подсветка синтаксиса HTML
+```
+
+```css
+подсветка синтаксиса css
+```
+
 **Принудительный ререндер | #markDirty**  
 Возможно ререндер идёт с корня. Ломая стратегию OnPush в других компонентах. Но рекомендовали использовать markDirty а не detectChanges
 ```ts
@@ -531,9 +547,9 @@ constructor(
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NjY5MzAyOSwtMTkzMzk0NzU5OCwtMT
-A2NDIyMTcwNSwtMzUyMzIwMDY4LC0xMTIzOTAwMzQyLC01ODQ2
-MDE0NzMsMTc4NTcyODIzMSwtMTcxNTYzODUxMCwxMDA3MzM2NT
-g2LC0xMDg2OTkyNzY2LC0xMTc0Mjc3NDk2LC0xMjYyNzU2ODY3
-LDEwODEwNjE1NV19
+eyJoaXN0b3J5IjpbLTEzMDUxNTg3MjUsLTU2NjY5MzAyOSwtMT
+kzMzk0NzU5OCwtMTA2NDIyMTcwNSwtMzUyMzIwMDY4LC0xMTIz
+OTAwMzQyLC01ODQ2MDE0NzMsMTc4NTcyODIzMSwtMTcxNTYzOD
+UxMCwxMDA3MzM2NTg2LC0xMDg2OTkyNzY2LC0xMTc0Mjc3NDk2
+LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
 -->
