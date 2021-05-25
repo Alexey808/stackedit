@@ -99,9 +99,9 @@ WantedBy=multi-user.target
 `sudo nginx -s reload`
 
 ### Установка .deb
-dpkg -i NAME.deb
+`sudo dpkg -i PACKAGE_NAME.deb`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTk5ODE1MjgsNTg5MTU5OTQ2LC0yNj
-M4NjM2MzcsMTI1NjEyNTI5OCwxNzUyNzIxOTE3LDI5NTIwNDg0
-LDc1MzMzNDM3Ml19
+eyJoaXN0b3J5IjpbNDQ1NTMzMTEyLDU4OTE1OTk0NiwtMjYzOD
+YzNjM3LDEyNTYxMjUyOTgsMTc1MjcyMTkxNywyOTUyMDQ4NCw3
+NTMzMzQzNzJdfQ==
 -->
