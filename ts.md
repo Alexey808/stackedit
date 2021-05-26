@@ -1,14 +1,26 @@
 # TS
 
-## tsconfig
 
+
+# Выжимка из "Эффективный TypeScript"
+
+## tsconfig
 **Хардкорные параметры**
 ```ts
 noImplicitAny
 strictNullChecks
 strict
 ```
-# Выжимка из "Эффективный TypeScript"
+
+**Перегрузка функций**
+```ts
+function add(a: number, b: number): number;
+function add(a: string, b: string): string;
+function add(a, b) {
+   return a + b;
+}
+```
+
 ## Examples
 
 **Слияние типов (|)**   
@@ -106,6 +118,6 @@ export interface IPassportForm extends PassportForm {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNzYyNTMyOCwxNTYwMzc1MTY3LDQxMj
+eyJoaXN0b3J5IjpbLTIwOTU3NjE1MiwxNTYwMzc1MTY3LDQxMj
 UzNDE3NywtMTc3MjY0NDU2OCwtMjc5MjI0ODkyXX0=
 -->
