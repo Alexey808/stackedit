@@ -8,7 +8,7 @@ noImplicitAny
 strictNullChecks
 strict
 ```
-
+# Выжимка из "Эффективный TypeScript"
 ## Examples
 
 **Слияние типов (|)**   
@@ -106,6 +106,6 @@ export interface IPassportForm extends PassportForm {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDM3NTE2Nyw0MTI1MzQxNzcsLTE3Nz
-I2NDQ1NjgsLTI3OTIyNDg5Ml19
+eyJoaXN0b3J5IjpbMTgwNzYyNTMyOCwxNTYwMzc1MTY3LDQxMj
+UzNDE3NywtMTc3MjY0NDU2OCwtMjc5MjI0ODkyXX0=
 -->
