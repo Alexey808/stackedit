@@ -1,4 +1,14 @@
 # TS
+
+## tsconfig
+
+```ts
+noImplicitAny
+strictNullChecks
+```
+
+## Examples
+
 **Слияние типов (|)**   
 ```ts
 interface A {
@@ -94,6 +104,6 @@ export interface IPassportForm extends PassportForm {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEyNTM0MTc3LC0xNzcyNjQ0NTY4LC0yNz
-kyMjQ4OTJdfQ==
+eyJoaXN0b3J5IjpbMTE1NTQyMDg5LDQxMjUzNDE3NywtMTc3Mj
+Y0NDU2OCwtMjc5MjI0ODkyXX0=
 -->
