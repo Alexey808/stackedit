@@ -2,9 +2,11 @@
 
 ## tsconfig
 
+**Хардкорные параметры**
 ```ts
 noImplicitAny
 strictNullChecks
+strict
 ```
 
 ## Examples
@@ -104,6 +106,6 @@ export interface IPassportForm extends PassportForm {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NTQyMDg5LDQxMjUzNDE3NywtMTc3Mj
-Y0NDU2OCwtMjc5MjI0ODkyXX0=
+eyJoaXN0b3J5IjpbMTU2MDM3NTE2Nyw0MTI1MzQxNzcsLTE3Nz
+I2NDQ1NjgsLTI3OTIyNDg5Ml19
 -->
