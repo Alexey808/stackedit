@@ -1,3 +1,6 @@
+## Плагины для автодополнения  
+https://www.tabnine.com/
+
 ## Подключение prettier в WebStorm  
 
 **Установка**   
@@ -23,3 +26,6 @@ Prettier package: ~/projects/job/forward/admin-panel-front/node_modules/prettier
 **Ссылки**  
 https://www.jetbrains.com/help/webstorm/prettier.html#ws_prettier_apply_code_style   
 https://prettier.io/docs/en/configuration.html  
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzA3MTYxNzE4XX0=
+-->
