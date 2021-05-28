@@ -548,11 +548,12 @@ constructor(
 
 ## Form | Validator
 
-**component**
+### Custom validator  
+_component_
 ```ts
 MinDate.validate('01.01.2000')
 ```
-**min-date.ts**
+_min-date.ts_
 ```ts
 import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';  
 import { parse, isAfter } from 'date-fns';  
@@ -577,9 +578,9 @@ export class MinDate {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MTQ3ODIwMywtMTMwNTE1ODcyNSwtNT
-Y2NjkzMDI5LC0xOTMzOTQ3NTk4LC0xMDY0MjIxNzA1LC0zNTIz
-MjAwNjgsLTExMjM5MDAzNDIsLTU4NDYwMTQ3MywxNzg1NzI4Mj
-MxLC0xNzE1NjM4NTEwLDEwMDczMzY1ODYsLTEwODY5OTI3NjYs
-LTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMTA4MTA2MTU1XX0=
+eyJoaXN0b3J5IjpbLTExMjg0MTIwMDEsLTEzMDUxNTg3MjUsLT
+U2NjY5MzAyOSwtMTkzMzk0NzU5OCwtMTA2NDIyMTcwNSwtMzUy
+MzIwMDY4LC0xMTIzOTAwMzQyLC01ODQ2MDE0NzMsMTc4NTcyOD
+IzMSwtMTcxNTYzODUxMCwxMDA3MzM2NTg2LC0xMDg2OTkyNzY2
+LC0xMTc0Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
 -->
