@@ -26,6 +26,10 @@ Prettier package: ~/projects/job/forward/admin-panel-front/node_modules/prettier
 **Ссылки**  
 https://www.jetbrains.com/help/webstorm/prettier.html#ws_prettier_apply_code_style   
 https://prettier.io/docs/en/configuration.html  
+
+
+# test changes
+this add at job
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA3MTYxNzE4XX0=
+eyJoaXN0b3J5IjpbLTU4MzExMzQzMyw3MDcxNjE3MThdfQ==
 -->
