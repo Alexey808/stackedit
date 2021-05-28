@@ -546,10 +546,40 @@ constructor(
 }
 ```
 
+## Form | Validator
+
+**component**
+```ts
+MinDate.validate('01.01.2000')
+```
+**min-date.ts**
+```ts
+import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';  
+import { parse, isAfter } from 'date-fns';  
+  
+import { DATE_FORMAT } from '../../utils/global';  
+  
+  
+export class MinDate {  
+  public static validate(min: string): ValidatorFn {  
+    return (control: AbstractControl): ValidationErrors | null => {  
+      const minDate = parse(  
+        min,  
+  DATE_FORMAT,  
+ new Date(),  
+  );  
+ const dateIsAfter = isAfter(control.value, minDate);  
+  
+ return dateIsAfter ? null : { issueMinDate: true };  
+  };  
+  }  
+}
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDUxNTg3MjUsLTU2NjY5MzAyOSwtMT
-kzMzk0NzU5OCwtMTA2NDIyMTcwNSwtMzUyMzIwMDY4LC0xMTIz
-OTAwMzQyLC01ODQ2MDE0NzMsMTc4NTcyODIzMSwtMTcxNTYzOD
-UxMCwxMDA3MzM2NTg2LC0xMDg2OTkyNzY2LC0xMTc0Mjc3NDk2
-LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
+eyJoaXN0b3J5IjpbMTI3MTQ3ODIwMywtMTMwNTE1ODcyNSwtNT
+Y2NjkzMDI5LC0xOTMzOTQ3NTk4LC0xMDY0MjIxNzA1LC0zNTIz
+MjAwNjgsLTExMjM5MDAzNDIsLTU4NDYwMTQ3MywxNzg1NzI4Mj
+MxLC0xNzE1NjM4NTEwLDEwMDczMzY1ODYsLTEwODY5OTI3NjYs
+LTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMTA4MTA2MTU1XX0=
 -->
