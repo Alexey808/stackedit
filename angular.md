@@ -347,7 +347,8 @@ export class TestDirectiveDirective {
   }
 }
 ```
-_HostListener enter_
+
+_HostListener enter_  
 ```ts
 @HostListener('document:keydown.enter', ['$event.target']) enter(event: Event) {  
   console.log('ENTER -> ', event);  
@@ -584,10 +585,10 @@ export class MinDate {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjM5MDkwODksLTExMjg0MTIwMDEsLT
-EzMDUxNTg3MjUsLTU2NjY5MzAyOSwtMTkzMzk0NzU5OCwtMTA2
-NDIyMTcwNSwtMzUyMzIwMDY4LC0xMTIzOTAwMzQyLC01ODQ2MD
-E0NzMsMTc4NTcyODIzMSwtMTcxNTYzODUxMCwxMDA3MzM2NTg2
-LC0xMDg2OTkyNzY2LC0xMTc0Mjc3NDk2LC0xMjYyNzU2ODY3LD
-EwODEwNjE1NV19
+eyJoaXN0b3J5IjpbLTQ1NDQyNDExNSwtMTEyODQxMjAwMSwtMT
+MwNTE1ODcyNSwtNTY2NjkzMDI5LC0xOTMzOTQ3NTk4LC0xMDY0
+MjIxNzA1LC0zNTIzMjAwNjgsLTExMjM5MDAzNDIsLTU4NDYwMT
+Q3MywxNzg1NzI4MjMxLC0xNzE1NjM4NTEwLDEwMDczMzY1ODYs
+LTEwODY5OTI3NjYsLTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMT
+A4MTA2MTU1XX0=
 -->
