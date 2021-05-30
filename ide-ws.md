@@ -30,6 +30,8 @@ https://prettier.io/docs/en/configuration.html
 
 # test changes
 this add at job
+this add at home
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MzExMzQzMyw3MDcxNjE3MThdfQ==
+eyJoaXN0b3J5IjpbLTE3OTI4MjE1NTgsLTU4MzExMzQzMyw3MD
+cxNjE3MThdfQ==
 -->
