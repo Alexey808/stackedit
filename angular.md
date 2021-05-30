@@ -347,6 +347,12 @@ export class TestDirectiveDirective {
   }
 }
 ```
+_HostListener enter_
+```ts
+@HostListener('document:keydown.enter', ['$event.target']) enter(event: Event) {  
+  console.log('ENTER -> ', event);  
+}
+```
 **Структурная дирректива | #@Directive**
 ```html
 <div *appMyIf="bool">test content</div>
@@ -578,9 +584,10 @@ export class MinDate {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjg0MTIwMDEsLTEzMDUxNTg3MjUsLT
-U2NjY5MzAyOSwtMTkzMzk0NzU5OCwtMTA2NDIyMTcwNSwtMzUy
-MzIwMDY4LC0xMTIzOTAwMzQyLC01ODQ2MDE0NzMsMTc4NTcyOD
-IzMSwtMTcxNTYzODUxMCwxMDA3MzM2NTg2LC0xMDg2OTkyNzY2
-LC0xMTc0Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
+eyJoaXN0b3J5IjpbLTIwMjM5MDkwODksLTExMjg0MTIwMDEsLT
+EzMDUxNTg3MjUsLTU2NjY5MzAyOSwtMTkzMzk0NzU5OCwtMTA2
+NDIyMTcwNSwtMzUyMzIwMDY4LC0xMTIzOTAwMzQyLC01ODQ2MD
+E0NzMsMTc4NTcyODIzMSwtMTcxNTYzODUxMCwxMDA3MzM2NTg2
+LC0xMDg2OTkyNzY2LC0xMTc0Mjc3NDk2LC0xMjYyNzU2ODY3LD
+EwODEwNjE1NV19
 -->
