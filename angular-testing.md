@@ -146,40 +146,41 @@ import { By } from '@angular/platform-browser';
   
 import { DateMaskTestComponent } from './date-mask.test.component';  
 import { TestingModule } from '../../testing.module';  
+import { DebugElement } from '@angular/core';  
   
-describe('DateMaskDirective', () => {  
-  let fixture: ComponentFixture<DateMaskTestComponent>;  
- let input: HTMLInputElement;  
- let component: DateMaskTestComponent;  
+let fixture: ComponentFixture<DateMaskTestComponent>;  
+let input: HTMLInputElement;  
+let component: DateMaskTestComponent;  
+let directive: DateMaskDirective;  
+let debugElement: DebugElement;  
   
-  beforeEach(() => {  
-    fixture = TestBed.configureTestingModule({  
-      declarations: [DateMaskDirective],  
+beforeEach(() => {  
+  fixture = TestBed.configureTestingModule({  
+    declarations: [DateMaskDirective],  
   imports: [FormsModule, ReactiveFormsModule, TestingModule],  
   }).createComponent(DateMaskTestComponent);  
   
   component = fixture.componentInstance;  
-  input = fixture.debugElement.query(  
-      By.directive(DateMaskDirective),  
-  ).nativeElement as HTMLInputElement;  
+  debugElement = fixture.debugElement.query(By.directive(DateMaskDirective));  
+  input = debugElement.nativeElement as HTMLInputElement;  
+  directive = debugElement.injector.get(DateMaskDirective);  
   fixture.detectChanges();  
-  });  
+});  
   
-  it('should create an instance', () => {  
-    expect(fixture.componentInstance).toBeTruthy();  
-  });  
+it('should create an instance', () => {  
+  expect(fixture.componentInstance).toBeTruthy();  
+});  
   
-  it('should emit dateChange', () => {  
-    const date = new Date('01.01.2021');  
+it('should emit dateChange', () => {  
+  const date = new Date('01.01.2021');  
   
-  spyOn(component, 'dateChange');  
+  spyOn(directive.onDateChange, 'emit');  
   
   input.value = '01.01.2021';  
   input.dispatchEvent(new Event('input'));  
   fixture.detectChanges();  
   
-  expect(component.dateChange).toHaveBeenCalledWith(date, 'dateMask');  
-  });  
+  expect(directive.onDateChange.emit).toHaveBeenCalledWith(date);  
 });
 ```
 ```ts
@@ -241,7 +242,7 @@ export class DateMaskDirective implements OnDestroy {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTk1ODU0NTIsMTIzMDY1OTc2MSwtMT
-M5NDA4MDQ0Niw4MTA3ODIxNDAsLTU5Mjg1NDA1OSwxMDIyMzYz
-NDQ4XX0=
+eyJoaXN0b3J5IjpbLTY2MjgwNjMsLTE3MTk1ODU0NTIsMTIzMD
+Y1OTc2MSwtMTM5NDA4MDQ0Niw4MTA3ODIxNDAsLTU5Mjg1NDA1
+OSwxMDIyMzYzNDQ4XX0=
 -->
