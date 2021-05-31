@@ -96,18 +96,47 @@ it('should do something on window scroll', () => {
 });
 ```
 
-## Ввод значений в input. Тестирование HostListener/
+## Ввод значений в input. Тестирование HostListener
 ```ts
-it('should run to hide', () => {  
-  expect(component.isHidden).toBeFalsy();  
+import { DateMaskDirective } from './date-mask.directive';  
+import { ComponentFixture, TestBed } from '@angular/core/testing';  
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';  
+import { DateMaskTestComponent } from './date-mask-test.component';  
+import { By } from '@angular/platform-browser';  
+  
+fdescribe('DateMaskDirective', () => {  
+  let fixture: ComponentFixture<DateMaskTestComponent>;  
+ let input: HTMLInputElement;  
+ let component: DateMaskTestComponent;  
+  
+  beforeEach(() => {  
+    fixture = TestBed.configureTestingModule({  
+      declarations: [DateMaskDirective, DateMaskTestComponent],  
+  imports: [FormsModule, ReactiveFormsModule],  
+  }).createComponent(DateMaskTestComponent);  
+  
+  component = fixture.componentInstance;  
+  input = fixture.debugElement.query(  
+      By.directive(DateMaskDirective),  
+  ).nativeElement as HTMLInputElement;  
+  fixture.detectChanges();  
+  });  
+  
+  it('should create an instance', () => {  
+    expect(fixture.componentInstance).toBeTruthy();  
+  });  
+  
+  it('should run to hide', () => {  
+    expect(component.isHide).toBeFalsy();  
   input.value = '01.01.2021';  
   input.dispatchEvent(new Event('input'));  
   fixture.detectChanges();  
-  expect(component.isHidden).toBeTruthy();  
+  expect(component.isHide).toBeTruthy();  
+  });  
 });
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTQ2NTU5NTIsMTIzMDY1OTc2MSwtMT
-M5NDA4MDQ0Niw4MTA3ODIxNDAsLTU5Mjg1NDA1OSwxMDIyMzYz
-NDQ4XX0=
+eyJoaXN0b3J5IjpbNDM5NTExMTE3LDEyMzA2NTk3NjEsLTEzOT
+QwODA0NDYsODEwNzgyMTQwLC01OTI4NTQwNTksMTAyMjM2MzQ0
+OF19
 -->
