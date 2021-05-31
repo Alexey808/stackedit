@@ -148,15 +148,16 @@ import { DateMaskTestComponent } from './date-mask.test.component';
 import { TestingModule } from '../../testing.module';  
 import { DebugElement } from '@angular/core';  
   
-let fixture: ComponentFixture<DateMaskTestComponent>;  
-let input: HTMLInputElement;  
-let component: DateMaskTestComponent;  
-let directive: DateMaskDirective;  
-let debugElement: DebugElement;  
+describe('DateMaskDirective', () => {  
+  let fixture: ComponentFixture<DateMaskTestComponent>;  
+ let input: HTMLInputElement;  
+ let component: DateMaskTestComponent;  
+ let debugElement: DebugElement;  
+ let directive: DateMaskDirective;  
   
-beforeEach(() => {  
-  fixture = TestBed.configureTestingModule({  
-    declarations: [DateMaskDirective],  
+  beforeEach(() => {  
+    fixture = TestBed.configureTestingModule({  
+      declarations: [DateMaskDirective],  
   imports: [FormsModule, ReactiveFormsModule, TestingModule],  
   }).createComponent(DateMaskTestComponent);  
   
@@ -165,14 +166,14 @@ beforeEach(() => {
   input = debugElement.nativeElement as HTMLInputElement;  
   directive = debugElement.injector.get(DateMaskDirective);  
   fixture.detectChanges();  
-});  
+  });  
   
-it('should create an instance', () => {  
-  expect(fixture.componentInstance).toBeTruthy();  
-});  
+  it('should create an instance', () => {  
+    expect(fixture.componentInstance).toBeTruthy();  
+  });  
   
-it('should emit dateChange', () => {  
-  const date = new Date('01.01.2021');  
+  it('should emit dateChange', () => {  
+    const date = new Date('01.01.2021');  
   
   spyOn(directive.onDateChange, 'emit');  
   
@@ -181,6 +182,8 @@ it('should emit dateChange', () => {
   fixture.detectChanges();  
   
   expect(directive.onDateChange.emit).toHaveBeenCalledWith(date);  
+  });  
+  
 });
 ```
 ```ts
@@ -242,7 +245,7 @@ export class DateMaskDirective implements OnDestroy {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MjgwNjMsLTE3MTk1ODU0NTIsMTIzMD
-Y1OTc2MSwtMTM5NDA4MDQ0Niw4MTA3ODIxNDAsLTU5Mjg1NDA1
-OSwxMDIyMzYzNDQ4XX0=
+eyJoaXN0b3J5IjpbLTg1OTM0NjUyMSwtNjYyODA2MywtMTcxOT
+U4NTQ1MiwxMjMwNjU5NzYxLC0xMzk0MDgwNDQ2LDgxMDc4MjE0
+MCwtNTkyODU0MDU5LDEwMjIzNjM0NDhdfQ==
 -->
