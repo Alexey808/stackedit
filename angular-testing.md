@@ -95,7 +95,19 @@ it('should do something on window scroll', () => {
   expect(...)....
 });
 ```
+
+## Ввод значений в input. Тестирование HostListener/
+```ts
+it('should run to hide', () => {  
+  expect(component.isHidden).toBeFalsy();  
+  input.value = '01.01.2021';  
+  input.dispatchEvent(new Event('input'));  
+  fixture.detectChanges();  
+  expect(component.isHidden).toBeTruthy();  
+});
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMDY1OTc2MSwtMTM5NDA4MDQ0Niw4MT
-A3ODIxNDAsLTU5Mjg1NDA1OSwxMDIyMzYzNDQ4XX0=
+eyJoaXN0b3J5IjpbLTIwMTQ2NTU5NTIsMTIzMDY1OTc2MSwtMT
+M5NDA4MDQ0Niw4MTA3ODIxNDAsLTU5Mjg1NDA1OSwxMDIyMzYz
+NDQ4XX0=
 -->
