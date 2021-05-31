@@ -198,9 +198,50 @@ export class DateMaskTestComponent {
 }
 ```
 ```ts
-
+import { Directive, ElementRef, OnDestroy, Output, EventEmitter, HostListener } from '@angular/core';  
+import * as textMask from 'vanilla-text-mask/dist/vanillaTextMask.js';  
+import { parse, isValid } from 'date-fns';  
+  
+import { DATE_FORMAT } from '../../../utils/global';  
+  
+@Directive({  
+  selector: '[admDateMask]',  
+})  
+export class DateMaskDirective implements OnDestroy {  
+  @Output() onDateChange = new EventEmitter<Date>();  
+  @Output() hidePicker = new EventEmitter<void>();  
+  
+  mask = [/[0123]/, /\d/, '.', /[01]/, /\d/, '.', /\d/, /\d/, /\d/, /\d/]; // dd/mm/yyyy  
+  
+  maskedInputController;  
+  
+ constructor(  
+    private element: ElementRef,  
+  ) {  
+    this.maskedInputController = textMask.maskInput({  
+      inputElement: this.element.nativeElement,  
+  mask: this.mask,  
+  });  
+  }  
+  
+  ngOnDestroy() {  
+    this.maskedInputController.destroy();  
+  }  
+  
+  @HostListener('input', ['$event'])  
+  onInput(element) {  
+    const value = element?.currentTarget?.value;  
+ const date = parse(value, DATE_FORMAT, new Date());  
+ const validDate = isValid(date);  
+  
+ if (validDate) {  
+      this.onDateChange.emit(date);  
+  }  
+  }  
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDUyMzU0NjIsMTIzMDY1OTc2MSwtMT
+eyJoaXN0b3J5IjpbLTE3MTk1ODU0NTIsMTIzMDY1OTc2MSwtMT
 M5NDA4MDQ0Niw4MTA3ODIxNDAsLTU5Mjg1NDA1OSwxMDIyMzYz
 NDQ4XX0=
 -->
