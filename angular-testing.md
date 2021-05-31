@@ -135,8 +135,72 @@ fdescribe('DateMaskDirective', () => {
   });  
 });
 ```
+
+## Тест диррективы которая эмитит значение на основе тестового компонента
+
+```ts
+import { DateMaskDirective } from './date-mask.directive';  
+import { ComponentFixture, TestBed } from '@angular/core/testing';  
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';  
+import { By } from '@angular/platform-browser';  
+  
+import { DateMaskTestComponent } from './date-mask.test.component';  
+import { TestingModule } from '../../testing.module';  
+  
+describe('DateMaskDirective', () => {  
+  let fixture: ComponentFixture<DateMaskTestComponent>;  
+ let input: HTMLInputElement;  
+ let component: DateMaskTestComponent;  
+  
+  beforeEach(() => {  
+    fixture = TestBed.configureTestingModule({  
+      declarations: [DateMaskDirective],  
+  imports: [FormsModule, ReactiveFormsModule, TestingModule],  
+  }).createComponent(DateMaskTestComponent);  
+  
+  component = fixture.componentInstance;  
+  input = fixture.debugElement.query(  
+      By.directive(DateMaskDirective),  
+  ).nativeElement as HTMLInputElement;  
+  fixture.detectChanges();  
+  });  
+  
+  it('should create an instance', () => {  
+    expect(fixture.componentInstance).toBeTruthy();  
+  });  
+  
+  it('should emit dateChange', () => {  
+    const date = new Date('01.01.2021');  
+  
+  spyOn(component, 'dateChange');  
+  
+  input.value = '01.01.2021';  
+  input.dispatchEvent(new Event('input'));  
+  fixture.detectChanges();  
+  
+  expect(component.dateChange).toHaveBeenCalledWith(date, 'dateMask');  
+  });  
+});
+```
+```ts
+import { Component } from '@angular/core';  
+  
+@Component({  
+  selector: 'adm-date-mask-test',  
+  template: `  
+ <input admDateMask (onDateChange)="dateChange($event, 'dateMask')"  
+ /> `,  
+})  
+export class DateMaskTestComponent {  
+  constructor() { }  
+  
+  dateChange(date: Date, control): void {}  
+}
+```
+```ts
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM5NTExMTE3LDEyMzA2NTk3NjEsLTEzOT
-QwODA0NDYsODEwNzgyMTQwLC01OTI4NTQwNTksMTAyMjM2MzQ0
-OF19
+eyJoaXN0b3J5IjpbLTEwNDUyMzU0NjIsMTIzMDY1OTc2MSwtMT
+M5NDA4MDQ0Niw4MTA3ODIxNDAsLTU5Mjg1NDA1OSwxMDIyMzYz
+NDQ4XX0=
 -->
