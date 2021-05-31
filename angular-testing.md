@@ -87,7 +87,15 @@ it('', fakeAsync(() => {
   // code
 }));
 ```
+
+## window scroll
+```ts
+it('should do something on window scroll', () => {
+  window.dispatchEvent(new Event('scroll'));
+  expect(...)....
+});
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTQwODA0NDYsODEwNzgyMTQwLC01OT
-I4NTQwNTksMTAyMjM2MzQ0OF19
+eyJoaXN0b3J5IjpbMTIzMDY1OTc2MSwtMTM5NDA4MDQ0Niw4MT
+A3ODIxNDAsLTU5Mjg1NDA1OSwxMDIyMzYzNDQ4XX0=
 -->
