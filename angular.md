@@ -569,11 +569,34 @@ export class MinDate {
 }
 ```
 
+## Media | Video
+_доступ к камере_
+```html
+<video #player controls autoplay></video>
+```
+
+```ts
+@ViewChild('player') player: ElementRef;
+
+...
+
+const constraints = {  
+  video: true,  
+};  
+navigator.mediaDevices.getUserMedia(constraints)  
+  .then((stream) => {  
+    try {  
+      this.player.nativeElement.srcObject = stream;  
+  } catch (error) {  
+      this.player.nativeElement.src = window.URL.createObjectURL(stream);  
+  }  
+});
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMDQ5Njg5NSwtNDU0NDI0MTE1LC0xMT
-I4NDEyMDAxLC0xMzA1MTU4NzI1LC01NjY2OTMwMjksLTE5MzM5
-NDc1OTgsLTEwNjQyMjE3MDUsLTM1MjMyMDA2OCwtMTEyMzkwMD
-M0MiwtNTg0NjAxNDczLDE3ODU3MjgyMzEsLTE3MTU2Mzg1MTAs
-MTAwNzMzNjU4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMT
-I2Mjc1Njg2NywxMDgxMDYxNTVdfQ==
+eyJoaXN0b3J5IjpbOTAwNTY0MTEwLDE5MDA0OTY4OTUsLTQ1ND
+QyNDExNSwtMTEyODQxMjAwMSwtMTMwNTE1ODcyNSwtNTY2Njkz
+MDI5LC0xOTMzOTQ3NTk4LC0xMDY0MjIxNzA1LC0zNTIzMjAwNj
+gsLTExMjM5MDAzNDIsLTU4NDYwMTQ3MywxNzg1NzI4MjMxLC0x
+NzE1NjM4NTEwLDEwMDczMzY1ODYsLTEwODY5OTI3NjYsLTExNz
+QyNzc0OTYsLTEyNjI3NTY4NjcsMTA4MTA2MTU1XX0=
 -->
