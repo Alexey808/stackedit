@@ -1,21 +1,6 @@
 [https://habr.com/ru/company/ruvds/blog/476956/](https://habr.com/ru/company/ruvds/blog/476956/)
 
 
-
-# Заголовок 1 уровня
-## Заголовок 2 уровня
-### Заголовок 3 уровня
-**жирное начертание**
-__жирное начерт__
-_наклонное начертание_
-```html
-подсветка синтаксиса HTML
-```
-
-```css
-подсветка синтаксиса css
-```
-
 **Принудительный ререндер | #markDirty**  
 Возможно ререндер идёт с корня. Ломая стратегию OnPush в других компонентах. Но рекомендовали использовать markDirty а не detectChanges
 ```ts
@@ -585,10 +570,10 @@ export class MinDate {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NDQyNDExNSwtMTEyODQxMjAwMSwtMT
-MwNTE1ODcyNSwtNTY2NjkzMDI5LC0xOTMzOTQ3NTk4LC0xMDY0
-MjIxNzA1LC0zNTIzMjAwNjgsLTExMjM5MDAzNDIsLTU4NDYwMT
-Q3MywxNzg1NzI4MjMxLC0xNzE1NjM4NTEwLDEwMDczMzY1ODYs
-LTEwODY5OTI3NjYsLTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMT
-A4MTA2MTU1XX0=
+eyJoaXN0b3J5IjpbMTkwMDQ5Njg5NSwtNDU0NDI0MTE1LC0xMT
+I4NDEyMDAxLC0xMzA1MTU4NzI1LC01NjY2OTMwMjksLTE5MzM5
+NDc1OTgsLTEwNjQyMjE3MDUsLTM1MjMyMDA2OCwtMTEyMzkwMD
+M0MiwtNTg0NjAxNDczLDE3ODU3MjgyMzEsLTE3MTU2Mzg1MTAs
+MTAwNzMzNjU4NiwtMTA4Njk5Mjc2NiwtMTE3NDI3NzQ5NiwtMT
+I2Mjc1Njg2NywxMDgxMDYxNTVdfQ==
 -->
