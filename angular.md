@@ -422,6 +422,12 @@ export class SearchFilterPipe implements PipeTransform {
 
 **runOutsideAngular**
 ```ts
+import { NgZone } from '@angular/core';
+// ...
+constructor(  
+  private ngZone: NgZone,
+) {}
+// ...
 this.ngZone.runOutsideAngular(() => {  
    // .... 
 });
@@ -591,10 +597,11 @@ navigator.mediaDevices.getUserMedia(constraints)
 });
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTU5NDkzMCwxOTAwNDk2ODk1LC00NT
-Q0MjQxMTUsLTExMjg0MTIwMDEsLTEzMDUxNTg3MjUsLTU2NjY5
-MzAyOSwtMTkzMzk0NzU5OCwtMTA2NDIyMTcwNSwtMzUyMzIwMD
-Y4LC0xMTIzOTAwMzQyLC01ODQ2MDE0NzMsMTc4NTcyODIzMSwt
-MTcxNTYzODUxMCwxMDA3MzM2NTg2LC0xMDg2OTkyNzY2LC0xMT
-c0Mjc3NDk2LC0xMjYyNzU2ODY3LDEwODEwNjE1NV19
+eyJoaXN0b3J5IjpbMTM0NTI1MTQ3NywtNzExNTk0OTMwLDE5MD
+A0OTY4OTUsLTQ1NDQyNDExNSwtMTEyODQxMjAwMSwtMTMwNTE1
+ODcyNSwtNTY2NjkzMDI5LC0xOTMzOTQ3NTk4LC0xMDY0MjIxNz
+A1LC0zNTIzMjAwNjgsLTExMjM5MDAzNDIsLTU4NDYwMTQ3Mywx
+Nzg1NzI4MjMxLC0xNzE1NjM4NTEwLDEwMDczMzY1ODYsLTEwOD
+Y5OTI3NjYsLTExNzQyNzc0OTYsLTEyNjI3NTY4NjcsMTA4MTA2
+MTU1XX0=
 -->
