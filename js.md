@@ -118,3 +118,11 @@ eyJoaXN0b3J5IjpbMjA0NzIzNTAxNSw3OTEwNzQ3NzcsLTY5OD
 g3MTM1MCwtMjA5NjM3NDc5NSwtMTExMjQ1ODcxLDcyODMyNzEx
 NSwtMTYzMjU3MjgxN119
 -->
+
+**Scroll**  
+```js
+window.scrollTo({
+   top: value,
+   behavior: 'smooth'
+});
+```
