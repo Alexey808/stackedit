@@ -189,7 +189,7 @@ forkJoin([s1$, s2$]).pipe(
 2: {id: 3}  
 */
 ```
-_merge_, _reduce_
+_merge_, _reduce_,  _map_
 ```ts
 const s1$ = from([{id: 2}, {id: 1}]);  
 const s2$ = from([{id: 3}]);  
@@ -207,10 +207,10 @@ merge(s1$, s2$).pipe(
 */
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5ODk1NjEwNywxNzAxMTc4MTEwLDE4OT
-c0NDQwMTQsLTEyNzIxMDU4NDUsMTQ2NDAxMTU1MywxODcyNzUz
-NjExLDE2ODE1NDYxLDgwMjg4NTUxNywyMDkzNTk5MDk2LC0zMz
-I0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1MzI1NDc5
-NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMTI1NjQ3LD
-EwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNjc3ODkwMDA1LDE3MDExNzgxMTAsMTg5Nz
+Q0NDAxNCwtMTI3MjEwNTg0NSwxNDY0MDExNTUzLDE4NzI3NTM2
+MTEsMTY4MTU0NjEsODAyODg1NTE3LDIwOTM1OTkwOTYsLTMzMj
+QzOTAzNiwxNjAzNTg5MzU5LC0yMDYwMzgxMjEyLDUzMjU0Nzk0
+MSwtMTY0NzQyNDYyMSwtODEzMzU4MzYsLTE1NDMxMjU2NDcsMT
+A2ODg2NTQ4Myw3MzA5OTgxMTZdfQ==
 -->
