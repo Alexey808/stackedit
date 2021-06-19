@@ -90,40 +90,12 @@ const inteval$ = interval(500)
 setTimeout(()  => inteval$.unsubscribe(),  1000);
 ```
 
-**Объеденить 2 стрима | method | #merge**
-```ts
-const one$ = from([1, 2]);  
-const two$ = from([3, 4]);  
-const result = merge(one$, two$);  
-result.subscribe((item) => {  
-  console.log(item);  
-});
-// 1
-// 2
-// 3
-// 4
 ```
 **Запихнуть стрим в массив | operators | #toArray**
 ```ts
 addedUser$.pipe(toArray())
 ```
 
-**Отписки в Angular**
-```ts
-subscription: Subscription = new Subscription();
-...
-method() {
-  this.subscription.add(  
-    this.abc.subscribe();
-  );
-}
-...
-ngOnDestroy(): void {  
-  if (this.subscription) {  
-    this.subscription.unsubscribe();
-  }
-}
-```
 ## Отписки | #unsubscribe
 Операторы которые отписываются при определённых условиях
 - take(n)
@@ -207,10 +179,10 @@ merge(s1$, s2$).pipe(
 */
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2ODI1NzgyNywxNzAxMTc4MTEwLDE4OT
-c0NDQwMTQsLTEyNzIxMDU4NDUsMTQ2NDAxMTU1MywxODcyNzUz
-NjExLDE2ODE1NDYxLDgwMjg4NTUxNywyMDkzNTk5MDk2LC0zMz
-I0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1MzI1NDc5
-NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMTI1NjQ3LD
-EwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMjExMTI1NzY0MywtNjY4MjU3ODI3LDE3MD
+ExNzgxMTAsMTg5NzQ0NDAxNCwtMTI3MjEwNTg0NSwxNDY0MDEx
+NTUzLDE4NzI3NTM2MTEsMTY4MTU0NjEsODAyODg1NTE3LDIwOT
+M1OTkwOTYsLTMzMjQzOTAzNiwxNjAzNTg5MzU5LC0yMDYwMzgx
+MjEyLDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtODEzMzU4MzYsLT
+E1NDMxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgxMTZdfQ==
 -->
