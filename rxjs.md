@@ -97,18 +97,25 @@ addedUser$.pipe(toArray())
 
 ## MAP(ы)
 ```ts
-const getData =  (param)  =>  {  return of(`retrieved new data with param ${param}`).pipe( delay(1000)  )  }  
+const getData = (param) => {
+   return of(`retrieved new data with param ${param}`).pipe(delay(1000))
+}  
 
 // используем  map  
 from([1,2,3,4]).pipe(
-   map(param => getData(param))
+  map(param => getData(param))
 ).subscribe(val => val.subscribe(data => console.log(data)));  
 
 // используем map и mergeAll  
-from([1,2,3,4]).pipe( map(param => getData(param)), mergeAll()  ).subscribe(val => console.log(val));  
+from([1,2,3,4]).pipe(
+  map(param => getData(param)),
+  mergeAll()
+).subscribe(val => console.log(val));  
 
 // используем mergeMap  
-from([1,2,3,4]).pipe( mergeMap(param => getData(param))  ).subscribe(val => console.log(val));
+from([1,2,3,4]).pipe(
+  mergeMap(param => getData(param))
+).subscribe(val => console.log(val));
 ```
 
 ## Отписки | #unsubscribe
@@ -194,7 +201,7 @@ merge(s1$, s2$).pipe(
 */
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDU5OTAzMTYsLTY2ODI1NzgyNywxNz
+eyJoaXN0b3J5IjpbLTE5NDYyNzYyNDAsLTY2ODI1NzgyNywxNz
 AxMTc4MTEwLDE4OTc0NDQwMTQsLTEyNzIxMDU4NDUsMTQ2NDAx
 MTU1MywxODcyNzUzNjExLDE2ODE1NDYxLDgwMjg4NTUxNywyMD
 kzNTk5MDk2LC0zMzI0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4
