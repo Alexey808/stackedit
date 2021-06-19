@@ -90,10 +90,25 @@ const inteval$ = interval(500)
 setTimeout(()  => inteval$.unsubscribe(),  1000);
 ```
 
-```
 **Запихнуть стрим в массив | operators | #toArray**
 ```ts
 addedUser$.pipe(toArray())
+```
+
+## MAP(ы)
+```ts
+const getData =  (param)  =>  {  return of(`retrieved new data with param ${param}`).pipe( delay(1000)  )  }  
+
+// используем  map  
+from([1,2,3,4]).pipe(
+   map(param => getData(param))
+).subscribe(val => val.subscribe(data => console.log(data)));  
+
+// используем map и mergeAll  
+from([1,2,3,4]).pipe( map(param => getData(param)), mergeAll()  ).subscribe(val => console.log(val));  
+
+// используем mergeMap  
+from([1,2,3,4]).pipe( mergeMap(param => getData(param))  ).subscribe(val => console.log(val));
 ```
 
 ## Отписки | #unsubscribe
@@ -179,10 +194,10 @@ merge(s1$, s2$).pipe(
 */
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMTI1NzY0MywtNjY4MjU3ODI3LDE3MD
-ExNzgxMTAsMTg5NzQ0NDAxNCwtMTI3MjEwNTg0NSwxNDY0MDEx
-NTUzLDE4NzI3NTM2MTEsMTY4MTU0NjEsODAyODg1NTE3LDIwOT
-M1OTkwOTYsLTMzMjQzOTAzNiwxNjAzNTg5MzU5LC0yMDYwMzgx
-MjEyLDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtODEzMzU4MzYsLT
-E1NDMxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEyNDU5OTAzMTYsLTY2ODI1NzgyNywxNz
+AxMTc4MTEwLDE4OTc0NDQwMTQsLTEyNzIxMDU4NDUsMTQ2NDAx
+MTU1MywxODcyNzUzNjExLDE2ODE1NDYxLDgwMjg4NTUxNywyMD
+kzNTk5MDk2LC0zMzI0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4
+MTIxMiw1MzI1NDc5NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC
+0xNTQzMTI1NjQ3LDEwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
 -->
