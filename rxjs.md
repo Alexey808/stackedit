@@ -155,7 +155,7 @@ function AutoUnsub() {
 export class AppComponent implements OnInit { ... }
 ```
 
-# update   
+# -
 
 _zip_,  _concat_,  _sort_
 ```ts
@@ -177,7 +177,7 @@ zip(s1$, s2$, s3$)
  */
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MjExNTg4MSwxODcyNzUzNjExLDE2OD
+eyJoaXN0b3J5IjpbMTQ2NDAxMTU1MywxODcyNzUzNjExLDE2OD
 E1NDYxLDgwMjg4NTUxNywyMDkzNTk5MDk2LC0zMzI0MzkwMzYs
 MTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1MzI1NDc5NDEsLTE2ND
 c0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMTI1NjQ3LDEwNjg4NjU0
