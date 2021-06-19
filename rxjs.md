@@ -95,7 +95,7 @@ setTimeout(()  => inteval$.unsubscribe(),  1000);
 addedUser$.pipe(toArray())
 ```
 
-## MAP(ы)
+## map, mergeAll, mergeMap
 ```ts
 const getData = (param) => {
    return of(`retrieved new data with param ${param}`).pipe(delay(1000))
@@ -201,10 +201,10 @@ merge(s1$, s2$).pipe(
 */
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDYyNzYyNDAsLTY2ODI1NzgyNywxNz
-AxMTc4MTEwLDE4OTc0NDQwMTQsLTEyNzIxMDU4NDUsMTQ2NDAx
-MTU1MywxODcyNzUzNjExLDE2ODE1NDYxLDgwMjg4NTUxNywyMD
-kzNTk5MDk2LC0zMzI0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4
-MTIxMiw1MzI1NDc5NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC
-0xNTQzMTI1NjQ3LDEwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbODc0MDExMjc1LC02NjgyNTc4MjcsMTcwMT
+E3ODExMCwxODk3NDQ0MDE0LC0xMjcyMTA1ODQ1LDE0NjQwMTE1
+NTMsMTg3Mjc1MzYxMSwxNjgxNTQ2MSw4MDI4ODU1MTcsMjA5Mz
+U5OTA5NiwtMzMyNDM5MDM2LDE2MDM1ODkzNTksLTIwNjAzODEy
+MTIsNTMyNTQ3OTQxLC0xNjQ3NDI0NjIxLC04MTMzNTgzNiwtMT
+U0MzEyNTY0NywxMDY4ODY1NDgzLDczMDk5ODExNl19
 -->
