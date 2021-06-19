@@ -154,10 +154,31 @@ function AutoUnsub() {
 @AutoUnsub  
 export class AppComponent implements OnInit { ... }
 ```
+
+# update
+__zip___
+```ts
+const s1$ = of([{id: 4}, {id: 2}]);  
+const s2$ = of([{id: 1}]);  
+const s3$ = of([{id: 3}]);  
+  
+zip(s1$, s2$, s3$)  
+  .pipe(  
+    map(res => [].concat(...res)),  
+  map(res => res.sort((a, b) => a.id - b.id))  
+  )  
+  .subscribe(res => console.log(res));  
+/**  
+ 0: {id: 1}
+ 1: {id: 2}
+ 2: {id: 3}
+ 3: {id: 4}
+ */
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3Mjc1MzYxMSwxNjgxNTQ2MSw4MDI4OD
-U1MTcsMjA5MzU5OTA5NiwtMzMyNDM5MDM2LDE2MDM1ODkzNTks
-LTIwNjAzODEyMTIsNTMyNTQ3OTQxLC0xNjQ3NDI0NjIxLC04MT
-MzNTgzNiwtMTU0MzEyNTY0NywxMDY4ODY1NDgzLDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbLTE5NTQ2NDE3NjgsMTg3Mjc1MzYxMSwxNj
+gxNTQ2MSw4MDI4ODU1MTcsMjA5MzU5OTA5NiwtMzMyNDM5MDM2
+LDE2MDM1ODkzNTksLTIwNjAzODEyMTIsNTMyNTQ3OTQxLC0xNj
+Q3NDI0NjIxLC04MTMzNTgzNiwtMTU0MzEyNTY0NywxMDY4ODY1
+NDgzLDczMDk5ODExNl19
 -->
