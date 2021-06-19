@@ -155,7 +155,7 @@ function AutoUnsub() {
 export class AppComponent implements OnInit { ... }
 ```
 
-# -
+# Объед
 
 _zip_,  _concat_
 ```ts
@@ -176,10 +176,28 @@ zip(s1$, s2$, s3$)
  3: {id: 4}
  */
 ```
+_forkJoin_, _map_
+```ts
+const b1$ = of([{id: 2}, {id: 1}]);  
+const b2$ = of([{id: 3}]);  
+  
+forkJoin([b1$, b2$]).pipe(  
+  map(([b1, b2]) => [...b1, ...b2]),  
+  map(res => res.sort((a, b) => a.id - b.id))  
+).subscribe((res) => {  
+  console.log(res);  
+});  
+/*  
+0: {id: 1}  
+1: {id: 2}  
+2: {id: 3}  
+*/
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzIxMDU4NDUsMTQ2NDAxMTU1MywxOD
-cyNzUzNjExLDE2ODE1NDYxLDgwMjg4NTUxNywyMDkzNTk5MDk2
-LC0zMzI0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1Mz
-I1NDc5NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMTI1
-NjQ3LDEwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTM5MTYxMzcyNCwtMTI3MjEwNTg0NSwxND
+Y0MDExNTUzLDE4NzI3NTM2MTEsMTY4MTU0NjEsODAyODg1NTE3
+LDIwOTM1OTkwOTYsLTMzMjQzOTAzNiwxNjAzNTg5MzU5LC0yMD
+YwMzgxMjEyLDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtODEzMzU4
+MzYsLTE1NDMxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgxMTZdfQ
+==
 -->
