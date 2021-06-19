@@ -157,7 +157,7 @@ export class AppComponent implements OnInit { ... }
 
 # -
 
-_zip_,  _concat_,  _sort_
+_zip_,  _concat_
 ```ts
 const s1$ = of([{id: 4}, {id: 2}]);  
 const s2$ = of([{id: 1}]);  
@@ -177,9 +177,9 @@ zip(s1$, s2$, s3$)
  */
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NDAxMTU1MywxODcyNzUzNjExLDE2OD
-E1NDYxLDgwMjg4NTUxNywyMDkzNTk5MDk2LC0zMzI0MzkwMzYs
-MTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1MzI1NDc5NDEsLTE2ND
-c0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMTI1NjQ3LDEwNjg4NjU0
-ODMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEyNzIxMDU4NDUsMTQ2NDAxMTU1MywxOD
+cyNzUzNjExLDE2ODE1NDYxLDgwMjg4NTUxNywyMDkzNTk5MDk2
+LC0zMzI0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1Mz
+I1NDc5NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMTI1
+NjQ3LDEwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
 -->
