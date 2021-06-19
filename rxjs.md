@@ -159,11 +159,10 @@ export class AppComponent implements OnInit { ... }
 
 _zip_,  _concat_
 ```ts
-const s1$ = of([{id: 4}, {id: 2}]);  
-const s2$ = of([{id: 1}]);  
-const s3$ = of([{id: 3}]);  
+const s1$ = of([{id: 2}, {id: 1}]);  
+const s2$ = of([{id: 3}]);  
   
-zip(s1$, s2$, s3$)  
+zip(s1$, s2$)  
   .pipe(  
     map(res => [].concat(...res)),  
     map(res => res.sort((a, b) => a.id - b.id))  
@@ -173,7 +172,6 @@ zip(s1$, s2$, s3$)
  0: {id: 1}
  1: {id: 2}
  2: {id: 3}
- 3: {id: 4}
  */
 ```
 _forkJoin_, _map_
@@ -209,7 +207,7 @@ merge(s1$, s2$).pipe(
 */
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NTkzOTQwMSwxNzAxMTc4MTEwLDE4OT
+eyJoaXN0b3J5IjpbMTI5ODk1NjEwNywxNzAxMTc4MTEwLDE4OT
 c0NDQwMTQsLTEyNzIxMDU4NDUsMTQ2NDAxMTU1MywxODcyNzUz
 NjExLDE2ODE1NDYxLDgwMjg4NTUxNywyMDkzNTk5MDk2LC0zMz
 I0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1MzI1NDc5
