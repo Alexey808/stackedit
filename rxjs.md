@@ -155,7 +155,7 @@ function AutoUnsub() {
 export class AppComponent implements OnInit { ... }
 ```
 
-# Объед
+# Объединяющие
 
 _zip_,  _concat_
 ```ts
@@ -194,7 +194,7 @@ forkJoin([b1$, b2$]).pipe(
 */
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MTYxMzcyNCwtMTI3MjEwNTg0NSwxND
+eyJoaXN0b3J5IjpbMTg5NzQ0NDAxNCwtMTI3MjEwNTg0NSwxND
 Y0MDExNTUzLDE4NzI3NTM2MTEsMTY4MTU0NjEsODAyODg1NTE3
 LDIwOTM1OTkwOTYsLTMzMjQzOTAzNiwxNjAzNTg5MzU5LC0yMD
 YwMzgxMjEyLDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtODEzMzU4
