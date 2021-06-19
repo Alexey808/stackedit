@@ -166,7 +166,7 @@ const s3$ = of([{id: 3}]);
 zip(s1$, s2$, s3$)  
   .pipe(  
     map(res => [].concat(...res)),  
-  map(res => res.sort((a, b) => a.id - b.id))  
+    map(res => res.sort((a, b) => a.id - b.id))  
   )  
   .subscribe(res => console.log(res));  
 /**  
@@ -178,11 +178,11 @@ zip(s1$, s2$, s3$)
 ```
 _forkJoin_, _map_
 ```ts
-const b1$ = of([{id: 2}, {id: 1}]);  
-const b2$ = of([{id: 3}]);  
+const s1$ = of([{id: 2}, {id: 1}]);  
+const s2$ = of([{id: 3}]);  
   
-forkJoin([b1$, b2$]).pipe(  
-  map(([b1, b2]) => [...b1, ...b2]),  
+forkJoin([s1$, s2$]).pipe(  
+  map(([s1, s2]) => [...s1, ...s2]),  
   map(res => res.sort((a, b) => a.id - b.id))  
 ).subscribe((res) => {  
   console.log(res);  
@@ -193,11 +193,28 @@ forkJoin([b1$, b2$]).pipe(
 2: {id: 3}  
 */
 ```
+_merge_, _reduce_
+```ts
+const s1$ = from([{id: 2}, {id: 1}]);  
+const s2$ = from([{id: 3}]);  
+  
+merge(s1$, s2$).pipe(  
+  reduce((result, value) => {  
+    return [...result, value];  
+  }, []),  
+  map(res => res.sort((a, b) => a.id - b.id))  
+).subscribe((res) => console.log(res));  
+/*  
+0: {id: 1}  
+1: {id: 2}  
+2: {id: 3}  
+*/
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NzQ0NDAxNCwtMTI3MjEwNTg0NSwxND
-Y0MDExNTUzLDE4NzI3NTM2MTEsMTY4MTU0NjEsODAyODg1NTE3
-LDIwOTM1OTkwOTYsLTMzMjQzOTAzNiwxNjAzNTg5MzU5LC0yMD
-YwMzgxMjEyLDUzMjU0Nzk0MSwtMTY0NzQyNDYyMSwtODEzMzU4
-MzYsLTE1NDMxMjU2NDcsMTA2ODg2NTQ4Myw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbMTcwMTE3ODExMCwxODk3NDQ0MDE0LC0xMj
+cyMTA1ODQ1LDE0NjQwMTE1NTMsMTg3Mjc1MzYxMSwxNjgxNTQ2
+MSw4MDI4ODU1MTcsMjA5MzU5OTA5NiwtMzMyNDM5MDM2LDE2MD
+M1ODkzNTksLTIwNjAzODEyMTIsNTMyNTQ3OTQxLC0xNjQ3NDI0
+NjIxLC04MTMzNTgzNiwtMTU0MzEyNTY0NywxMDY4ODY1NDgzLD
+czMDk5ODExNl19
 -->
