@@ -184,9 +184,7 @@ const s2$ = of([{id: 3}]);
 forkJoin([s1$, s2$]).pipe(  
   map(([s1, s2]) => [...s1, ...s2]),  
   map(res => res.sort((a, b) => a.id - b.id))  
-).subscribe((res) => {  
-  console.log(res);  
-});  
+).subscribe((res) => console.log(res));  
 /*  
 0: {id: 1}  
 1: {id: 2}  
@@ -211,10 +209,10 @@ merge(s1$, s2$).pipe(
 */
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMTE3ODExMCwxODk3NDQ0MDE0LC0xMj
-cyMTA1ODQ1LDE0NjQwMTE1NTMsMTg3Mjc1MzYxMSwxNjgxNTQ2
-MSw4MDI4ODU1MTcsMjA5MzU5OTA5NiwtMzMyNDM5MDM2LDE2MD
-M1ODkzNTksLTIwNjAzODEyMTIsNTMyNTQ3OTQxLC0xNjQ3NDI0
-NjIxLC04MTMzNTgzNiwtMTU0MzEyNTY0NywxMDY4ODY1NDgzLD
-czMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTE0NTkzOTQwMSwxNzAxMTc4MTEwLDE4OT
+c0NDQwMTQsLTEyNzIxMDU4NDUsMTQ2NDAxMTU1MywxODcyNzUz
+NjExLDE2ODE1NDYxLDgwMjg4NTUxNywyMDkzNTk5MDk2LC0zMz
+I0MzkwMzYsMTYwMzU4OTM1OSwtMjA2MDM4MTIxMiw1MzI1NDc5
+NDEsLTE2NDc0MjQ2MjEsLTgxMzM1ODM2LC0xNTQzMTI1NjQ3LD
+EwNjg4NjU0ODMsNzMwOTk4MTE2XX0=
 -->
