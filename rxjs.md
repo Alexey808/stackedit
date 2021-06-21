@@ -247,6 +247,36 @@ chars$
 // (synchronously) upper G
 ```
 
+### connectable (аналог connect), для рассылки  
+```ts
+import { connectable, merge, of } from "rxjs";
+import { filter, map } from "rxjs/operators";
+
+const chars$ = of("A", "b", "C", "D", "e", "f", "G");
+const connectableChars$ = connectable(chars$);
+
+const lower$ = connectableChars$.pipe(
+  filter(x => x.toLowerCase() === x),
+  map(x => `lower ${x.toUpperCase()}`)
+);
+
+const upper$ = connectableChars$.pipe(
+  filter(x => x.toLowerCase() !== x),
+  map(x => `upper ${x}`)
+);
+
+merge(lower$, upper$).subscribe(console.log);
+
+connectableChars$.connect();
+// (synchronously) upper A
+// (synchronously) lower B
+// (synchronously) upper C
+// (synchronously) upper D
+// (synchronously) lower E
+// (synchronously) lower F
+// (synchronously) upper G
+```
+
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbODc0MDExMjc1LC02NjgyNTc4MjcsMTcwMT
