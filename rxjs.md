@@ -216,6 +216,38 @@ merge(s1$, s2$).pipe(
 2: {id: 3}  
 */
 ```
+# v.7  
+
+### connect, для рассылки  
+```ts
+const chars$ = of("A", "b", "C", "D", "e", "f", "G");
+
+chars$
+  .pipe(
+    connect(shared$ =>
+      merge(
+        shared$.pipe(
+          filter(x => x.toLowerCase() === x),
+          map(x => `lower ${x.toUpperCase()}`)
+        ),
+        shared$.pipe(
+          filter(x => x.toLowerCase() !== x),
+          map(x => `upper ${x}`)
+        )
+      )
+    )
+  )
+  .subscribe(console.log);
+// (synchronously) upper A
+// (synchronously) lower B
+// (synchronously) upper C
+// (synchronously) upper D
+// (synchronously) lower E
+// (synchronously) lower F
+// (synchronously) upper G
+```
+
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbODc0MDExMjc1LC02NjgyNTc4MjcsMTcwMT
 E3ODExMCwxODk3NDQ0MDE0LC0xMjcyMTA1ODQ1LDE0NjQwMTE1
