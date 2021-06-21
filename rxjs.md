@@ -89,6 +89,22 @@ const inteval$ = interval(500)
   .subscribe(v => console.log('interval', v));  // каждые 500мс number++
 setTimeout(()  => inteval$.unsubscribe(),  1000);
 ```
+**fromFetch**
+```ts
+of(1, 2, 3)
+  .pipe(
+    map(id =>
+      fromFetch(`https://jsonplaceholder.typicode.com/todos/${id}`, {
+        selector: resp => resp.json()
+      })
+    ),
+    concatAll()
+  )
+  .subscribe(todo => console.log(todo.title));
+// (after some time) delectus aut autem
+// (after some time) quis ut nam facilis et officia qui
+// (after some time) fugiat veniam minus
+```
 
 **Запихнуть стрим в массив | operators | #toArray**
 ```ts
