@@ -598,21 +598,23 @@ navigator.mediaDevices.getUserMedia(constraints)
 ```
 
 ## Шаблоны
-_вривести bind параметры к any, к примеру может понадобиться с не типизированными библиотеками | $any()_  
+**вривести bind параметры к any, к примеру может понадобиться с не типизированными библиотеками | $any()**  
 ```html
 <component [value]="$any(value)"></componentn>
 ```
-_альтернативный отступ &nbsp; | &ngsp;_  
+
+**альтернативный отступ &nbsp; | &ngsp;** 
 `&ngsp;`
 
-_сохранение пробелов | ngPreserveWhitespaces_  
+**сохранение пробелов | ngPreserveWhitespaces** 
 ```html
 <div ngPreserveWhitespaces>
   whitespaces are preserved here
   <span>    and here </span>
 </div>
 ```
-_Селекторы в ng-content_  
+
+**Селекторы в ng-content** 
 ```html
 <component>
   <strong>strong</strong>
