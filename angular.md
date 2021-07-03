@@ -596,6 +596,50 @@ navigator.mediaDevices.getUserMedia(constraints)
   }  
 });
 ```
+
+## Шаблоны
+_вривести bind параметры к any, к примеру может понадобиться с не типизированными библиотеками | $any()_  
+```html
+<component [value]="$any(value)"></componentn>
+```
+_альтернативный отступ &nbsp; | &ngsp;_  
+`&ngsp;`
+
+_сохранение пробелов | ngPreserveWhitespaces_  
+```html
+<div ngPreserveWhitespaces>
+  whitespaces are preserved here
+  <span>    and here </span>
+</div>
+```
+_Селекторы в ng-content_  
+```html
+<component>
+  <strong>strong</strong>
+
+  <div>just ng-content</div>
+
+  <div myattr="test">myattr test</div>
+  <div myattr>myattr</div>
+
+
+  <ng-container ngProjectAs="my-container">
+    <div>my-container</div>
+  </ng-container>
+</component>
+```
+```html
+<!-- component -->
+<div>
+  <ng-content select="strong"></ng-content>
+  <ng-content select="[myattr=test]"></ng-content>
+  <ng-content select="[myattr]"></ng-content>
+  <ng-content select="my-container"></ng-content>
+  <!--  <ng-content></ng-content>-->
+</div>
+```
+
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTM0NTI1MTQ3NywtNzExNTk0OTMwLDE5MD
 A0OTY4OTUsLTQ1NDQyNDExNSwtMTEyODQxMjAwMSwtMTMwNTE1
